@@ -1,0 +1,7 @@
+site_name: MkLorum
+nav:
+    - Home: index.md
+    - Morphology: morphology.md
+    - Phonology: phonology.md
+    - Orthography: orthography.md
+theme: readthedocs
