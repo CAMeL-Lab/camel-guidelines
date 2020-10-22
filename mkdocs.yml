@@ -1,4 +1,4 @@
-site_name: MkLorum
+site_name: CAMeL Lab Guidelines
 nav:
     - Home: index.md
     - Morphology: morphology.md
