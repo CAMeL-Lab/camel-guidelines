@@ -1,7 +1,10 @@
 site_name: CAMeL Lab Guidelines
 nav:
     - Home: index.md
-    - Morphology: morphology.md
-    - Phonology: phonology.md
-    - Orthography: orthography.md
+    - Test1: test1.md
+    - Topic1:
+        - Test2: test2.md
+    # - Morphology: morphology.md
+    # - Phonology: phonology.md
+    # - Orthography: orthography.md
 theme: readthedocs
