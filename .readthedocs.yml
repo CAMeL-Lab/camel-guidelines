@@ -12,3 +12,8 @@ mkdocs:
 # Optionally build your docs in additional formats such as PDF
 formats:
   - pdf
+
+python:
+  version: 3.6
+  install:
+    - requirements: docs/requirements.txt
