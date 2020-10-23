@@ -1,19 +1,8 @@
----
-layout: single
-title: CAMeL Guidelines | Morphology
-camelpos: CAMEL POS
-moreExamples: Annotation examples
-permalink: /morphology/
-toc: true
-toc_sticky: true
-sidebar:
-  nav: "docs"
----
 # CAMEL POS Schema and Guidelines
 
 ## Motivation and Goals:
-{{ page.camelpos }} is inspired by the ARZATB tagset and guidelines (Maamouri et al., 2012) 
-which is  based on the PATB guidelines (Maamouri et al., 2009). The {{ page.camelpos }} 
+CAMEL POS is inspired by the ARZATB tagset and guidelines (Maamouri et al., 2012) 
+which is  based on the PATB guidelines (Maamouri et al., 2009). The CAMEL POS 
 is designed as single tagset for both MSA and the dialects with the following goals in 
 mind: 
 
@@ -25,13 +14,13 @@ with Arabic morphosyntactic rules than form based
 analysis (Alkuhlani and Habash, 2011).
 
 ## Overview
-The {{ page.camelpos }} tags and features are the union of those in MSA and the dialects. 
+The CAMEL POS tags and features are the union of those in MSA and the dialects. 
 Features are available to use when needed. 
 For example case and state features are used more often in MSA; but on 
 the other hand, dialects tend to have many more clitics than MSA, including 
 non-MSA ones. 
 
-One main property of {{ page.camelpos }} tagset that sets it apart from ARZATB is that 
+One main property of CAMEL POS tagset that sets it apart from ARZATB is that 
 the morphological features of both gender and number of nominals are annotated 
 functionally (i.e. semantically) (Alkuhlani and Habash, 2011; Smrž, 2007). 
 This decision allows us to assign the features to the baseword without the need to 
@@ -39,7 +28,7 @@ specify the surface form affixes that mark form gender and number.
 This is not the case in ARZATB, where broken (irregular) plural nouns are tagged 
 as singular because they do not use the sound plural affixes. 
 
-Another property is that in {{ page.camelpos }} tagest we omit case and state 
+Another property is that in CAMEL POS tagest we omit case and state 
 features for nominals, and voice and mood for verbs when annotating dialecta 
 Arabic as the dialects have almost lost them completely, except for some high 
 frequency fossilized MSA forms, such as <span dir="rtl">طبعاً</span> 
@@ -58,12 +47,12 @@ as the baseword (i.e.`PRON.features`).
 The following table shows the list of `POS` tagset used in this schema compared 
 with the ones used ARZATB. The tagset is divided into three categories according 
 to the D3 tokenization scheme (Habash et al, 2010): proclitics (14 tags), enclitics
-(2 tags) and baseword (39 tags). Together with the features, {{ page.camelpos }} tagset
+(2 tags) and baseword (39 tags). Together with the features, CAMEL POS tagset
 maps to ARZATB and retains backward compatibility. It also offers an intuitive 
 Arabic scheme that is suitable to use for annotation.
 
-### Features {#general-features}
-{{ page.camelpos }} provides full array of features: 
+### Features
+CAMEL POS provides full array of features: 
 
 - **A**spect with the values **P**erfective, **I**mperfective and **C**ommand.
 - **P**erson with the values **1**st, **2**nd, **3**rd.
@@ -76,10 +65,7 @@ Arabic scheme that is suitable to use for annotation.
 
 Not all the features mentioned are necessarily relevant to the dialects. In the
 full POS tag, the specified values of the different features
-will appear in the following order:
-
-`<POS>.<A><P><G><N>.<S><C><V><M>`
-{: style="text-align: center;"}
+will appear in the following order: `<POS>.<A><P><G><N>.<S><C><V><M>`
 
 
 For a subset of `POS` tags in the baseword category, each tag has a limited 
@@ -89,8 +75,8 @@ Note that the below combinations are for the dialects, in the case of MSA,
 nominals take **C**ase and **S**tate, and verbs take **V**oice and
 **M**ood in addition to the listed feature combinations.
 
-- **NOUN**, __NOUN\_\*__, **ADJ**, __ADJ_*__ All nominals take the combination 
-of **G**ender, **N**umber. For example جالس /y aa l i s/ ‘sitting’ is tagged 
+- **NOUN**, **NOUN\_\***, **ADJ**, **ADJ_\*** All nominals take the combination 
+of **G**ender, **N**umber. For example جالس <span class="caphi">/y aa l i s/</span> ‘sitting’ is tagged 
 `ADJ.MS` ; In the occasional uses of **S**tate, such as <span dir="rtl">طبعاً</span> 
 <span class="caphi">/t. a b 3 a n/</span> ‘of course’ the tag would be `NOUN.MS.I`. 
 
@@ -111,7 +97,7 @@ the imperfective 1st person verb <span dir="rtl">أقول</span> <span class="ca
 tagged as `VERB.I1S`
 
 ## Detailed annotation guideliens
-Morphological annotation using {{ page.camelpos }} assumes that each word is 
+Morphological annotation using CAMEL POS assumes that each word is 
 tokenized using the D3 tokenization scheme. Therefore, each token gets at least a `POS` tag according to the table above.
 In a large-scale full morphological annotation task, additional annotations are usually provided, such as lemmatization, English gloss, amd dialect identification.
 In this section we provide detailed guidelines in the context of a comperhensive annotation task.
@@ -120,10 +106,7 @@ In this section we provide detailed guidelines in the context of a comperhensive
 
 * * *
 
-<details>
-
-<summary>### Tokenization
-</summary>
+#### Tokenization
 
 The tokenization scheme recommended when annotating using {{ page.cameltools}} is D3.
 : **D3** tokenizes all clitics: question particle, conjunctions, particles, prepositions, articles, and pronominal enclitics.
@@ -149,12 +132,9 @@ Clitics are syntactically independent morphems that are orthographically attache
 
 - Clitics may interact with the spelling of the baseword. See the notes above on Tokenization and the [CODA general rules](www.camel-lab.com). <!--put link for ortho-->
 - Although writers -in dialectal Arabic mostly- tend to attach what is considered as a direct object clitic with the baseword (verbs, adjectives that are active participles), in the CODA convention they should be separate. For example <span dir="rtl">اجيبلك</span> should be <span dir="rtl">اجيب لك</span>, and <span dir="rtl">جايبلها</span> should be <span dir="rtl">جايب لها</span>. For the list of clitics, please refer to the CODA seed lexicon page: https://sites.google.com/a/nyu.edu/coda/dialect-specific <!--TODO: link to the new location of the seed lexicon-->
-</details>
 
-<details>
-<summary markdown="block">
-### Features
-</summary>
+
+#### Features
 Features refer to specific morphosyntactic aspects of the word that are abstracted away in the lemma form. For example, the word <span dir="rtl">أميرات</span> 'princesses' has the lemma <span dir="rtl">أمير</span> 'prince' with the features gender: feminine and number: plural.
 
 **Notes**
@@ -173,14 +153,10 @@ Features refer to specific morphosyntactic aspects of the word that are abstract
 | .MS      	| هو       	| اسم 	| NOUN       	| Gender:(M);Number:(S) الجنس:مذكر؛العدد:مفرد                                     	|
 
 
-</details>
 
 ### CAMEL POS tagset
 
-<details>
-<summary markdown="block">
-### NOUN - <span dir="rtl">اسم</span>
-</summary>
+#### NOUN - <span dir="rtl">اسم</span>
 
 **Common Nouns**
 : Common nouns refer to entities and concepts that have a more general reference than proper nouns. Common nouns inflect for prefixes and suffixes of person, gender, number.
@@ -193,47 +169,50 @@ To assign features for those cases, use a syntactic test for a nonsensical seman
 - Common nouns also include a set of borrowed nouns.
 - In the context of dialectal text annotation, only nouns that appear to have a case ending such as <span dir="rtl">غصبٍ</span> will have state and case feature annotated. The 'case' feature in this situation is not the real case but rather a remnant from the MSA.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
-
-| Tag     	| العلامة 	| Arabic Word 	| English Gloss       	| Dialect 	|
-|---------	|---------	|-------------	|---------------------	|---------	|
-| NOUN.FP 	| اسم.هن  	| حرمات       	| women               	| GLF     	|
-| NOUN.FP 	| اسم.هن  	| حريم        	| women               	| GLF     	|
-| NOUN.FP 	| اسم.هن  	| نسوان       	| women               	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| خالوه       	| aunt! (maternal)    	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| عموه        	| aunt! (paternal)    	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| حجرة        	| room                	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| ميز         	| table               	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| بكرة        	| tomorrow            	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| شيشة        	| waterpipe           	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| حرمة        	| woman               	| GLF     	|
-| NOUN.FS 	| اسم.هي  	| مرة         	| woman               	| GLF     	|
-| NOUN.MP 	| اسم.هم  	| بزران       	| child               	| GLF     	|
-| NOUN.MP 	| اسم.هم  	| عيال        	| child               	| GLF     	|
-| NOUN.MP 	| اسم.هم  	| رجّال        	| men                 	| GLF     	|
-| NOUN.MP 	| اسم.هم  	| رجاجيل      	| men                 	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| حق          	| for the benefit of  	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| خلاص        	| enough              	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| سكين        	| knife               	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| مكتوب       	| letter              	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| مثل         	| like                	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| حلق         	| mouth               	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| خشم         	| nose                	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| مال         	| of                  	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| حقّ          	| of, belongs to      	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| برع         	| outside, outside of 	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| حد          	| somebody, someone   	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| باكر        	| tomorrow            	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| امس         	| yesterday           	| GLF     	|
-| NOUN.MS 	| اسم.هو  	| كذي         	| like this, as this  	| GLF     	|
-
-</details>
-</details>
 
 <details>
-<summary markdown="block">
-### NOUN_PROP - <span dir="rtl">اسم_علم</span>
-</summary>
+
+<summary>
+    </summary>
+
+
+| Tag     | العلامة | Arabic Word | English Gloss       | Dialect |
+|---------|---------|-------------|---------------------|---------|
+| NOUN.FP | اسم.هن  | حرمات       | women               | GLF     |
+| NOUN.FP | اسم.هن  | حريم        | women               | GLF     |
+| NOUN.FP | اسم.هن  | نسوان       | women               | GLF     |
+| NOUN.FS | اسم.هي  | خالوه       | aunt! (maternal)    | GLF     |
+| NOUN.FS | اسم.هي  | عموه        | aunt! (paternal)    | GLF     |
+| NOUN.FS | اسم.هي  | حجرة        | room                | GLF     |
+| NOUN.FS | اسم.هي  | ميز         | table               | GLF     |
+| NOUN.FS | اسم.هي  | بكرة        | tomorrow            | GLF     |
+| NOUN.FS | اسم.هي  | شيشة        | waterpipe           | GLF     |
+| NOUN.FS | اسم.هي  | حرمة        | woman               | GLF     |
+| NOUN.FS | اسم.هي  | مرة         | woman               | GLF     |
+| NOUN.MP | اسم.هم  | بزران       | child               | GLF     |
+| NOUN.MP | اسم.هم  | عيال        | child               | GLF     |
+| NOUN.MP | اسم.هم  | رجّال        | men                 | GLF     |
+| NOUN.MP | اسم.هم  | رجاجيل      | men                 | GLF     |
+| NOUN.MS | اسم.هو  | حق          | for the benefit of  | GLF     |
+| NOUN.MS | اسم.هو  | خلاص        | enough              | GLF     |
+| NOUN.MS | اسم.هو  | سكين        | knife               | GLF     |
+| NOUN.MS | اسم.هو  | مكتوب       | letter              | GLF     |
+| NOUN.MS | اسم.هو  | مثل         | like                | GLF     |
+| NOUN.MS | اسم.هو  | حلق         | mouth               | GLF     |
+| NOUN.MS | اسم.هو  | خشم         | nose                | GLF     |
+| NOUN.MS | اسم.هو  | مال         | of                  | GLF     |
+| NOUN.MS | اسم.هو  | حقّ          | of, belongs to      | GLF     |
+| NOUN.MS | اسم.هو  | برع         | outside, outside of | GLF     |
+| NOUN.MS | اسم.هو  | حد          | somebody, someone   | GLF     |
+| NOUN.MS | اسم.هو  | باكر        | tomorrow            | GLF     |
+| NOUN.MS | اسم.هو  | امس         | yesterday           | GLF     |
+| NOUN.MS | اسم.هو  | كذي         | like this, as this  | GLF     |
+
+
+</details>
+
+
+#### NOUN_PROP - <span dir="rtl">اسم_علم</span>
 
 **Proper Nouns**
 : Proper nouns are nouns that have a unique referential meaning in context that is mutually exclusive with other entities.
@@ -246,7 +225,7 @@ To assign features for those cases, use a syntactic test for a nonsensical seman
 - : Proper nouns can be confused with common nouns. A case in point is the word <span dir="rtl">جَنُوب إِفرِيقيا</span>, the two parts of the word are considered as proper nouns when it refers to the country, South Africa.
 - The lemma of a proper noun does not include Al but it includes the 'Ta Marbuta'. The proper noun <span dir="rtl">القاهرة</span> has the lemma <span dir="rtl">قاهرة</span>.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص               	| Arabic Example 	| English Gloss                  	|    Comments/Examples/Diaclect                 	|
 |--------------	|----------------------------------	|---------------	|----------------------------	|---------------------------------------------------	|
@@ -261,29 +240,22 @@ To assign features for those cases, use a syntactic test for a nonsensical seman
 | NOUN_PROP.FS 	| اسم علم.هي                       	| الاخوان       	| The Muslim Brotherhood     	| GLF,EGY , تلقت الإخوان تمويلاً ;newspaper          	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### NOUN_QUANT - <span dir="rtl">اسم_كم</span>
-</summary>
+#### NOUN_QUANT - <span dir="rtl">اسم_كم</span>
 
 Noun quantifiers
 : Noun quantifiers express either quantity or approximation.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features  	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss 	| Comments/Examples/Diaclect 	|
 |---------------	|--------------------	|----------------	|---------------	|----------------------------	|
 | NOUN_QUANT.MS 	| اسم كم.هو          	| نص             	| half          	| GLF,EGY , نص ساعة          	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### NOUN_NUM - <span dir="rtl">اسم_عدد</span>
-</summary>
+
+#### NOUN_NUM - <span dir="rtl">اسم_عدد</span>
 
 **Cardinal numbers**
 : Cardinal numbers quantify rather than rank. They answer the question “How many?”
@@ -292,7 +264,7 @@ Noun quantifiers
 - Cardinal numbers can occur in pre-nominal and post-nominal positions without any agreement with the noun they occur with. They are invariable.
 <!--TODO discuss the MSA inverse agreement-->
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss      	| Comments/Examples/Diaclect 	|
 |--------------	|--------------------	|----------------	|--------------------	|----------------------------	|
@@ -346,19 +318,16 @@ Noun quantifiers
 | NOUN_NUM.FP  	| اسم عدد.هن         	| تسعمية         	| 900, nine hundred  	| GLF                        	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PRON - <span dir="rtl">ضمير</span>
-</summary>
+
+#### PRON - <span dir="rtl">ضمير</span>
 
 **Bound pronouns** - <span dir="rtl">**الضمائر المتصلة**</span>
 : Bound pronouns are morphemes that cannot occur independently of another morpheme. They are related to other words called their hosts.
 
 These pronouns bind to verbs to mark direct object, to nouns to mark possession, and to prepositions.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss     	| Comments/Examples/Diaclect 	|
 |:--------------	|-----------------------------------:	|-------------------------------:	|:-------------------	|:----------------------------	|
@@ -382,7 +351,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 **Unbound pronouns** - <span dir="rtl">**الضمائر المنفصلة**</span>
 : Unbound pronouns are free morphemes that occur as separate words.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                        	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------:	|---------------------------------------:	|---------------	|----------------------------	|
@@ -399,13 +368,10 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON.3P      	| <span dir="rtl">ضمير.هم⚥</span>   	| <span dir="rtl">هم</span>             	| they          	| GLF                        	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PRON_DEM - <span dir="rtl">ضمير_إشارة</span>
 
-</summary>
+#### PRON_DEM - <span dir="rtl">ضمير_إشارة</span>
+
 
 **Demonstrative pronouns**
 : Demonstrative pronouns are pronouns used for proximal or distal reference.
@@ -413,7 +379,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 - Demonstrative Pronouns can be basewords and/or proclitics, some baseword pronouns take no fetures, see examples below.
 - The relationship between proximity and distance which does not seem to exist in Egyptian Arabic.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                         	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------------------:	|-------------------------------:	|---------------	|----------------------------	|
@@ -422,20 +388,15 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON_DEM.P   	| <span dir="rtl">ضمير_إشارة.هم⚥</span>     	| <span dir="rtl">ذول </span>   	| these/those   	| GLF                        	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PRON_INTERROG - <span dir="rtl">ضمير_استفهام</span>
-
-</summary>
+#### PRON_INTERROG - <span dir="rtl">ضمير_استفهام</span>
 
 **Interrogative Pronouns**
 : Interrogative Pronouns are independent words that used to form direct questions.
 
 - Interrogative pronouns don't take features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features  	| قسم الكلام.الخصائص                    	| Arabic Example               	| English Gloss 	| Comments/Examples/Diaclect 	|
 |---------------	|--------------------------------------:	|--------------------------:	|---------------	|----------------------------	|
@@ -446,41 +407,33 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON_INTERROG 	| <span dir="rtl">ضمير_استفهام</span>   	| <span dir="rtl">شو</span>   	| what          	| GLF                        	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### PRON_REL - <span dir="rtl">ضمير_موصول</span>
+#### PRON_REL - <span dir="rtl">ضمير_موصول</span>
 
-</summary>
 
 **Relative pronouns**
 : Relative pronouns introduce relative clauses
 
 - Relative pronouns don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features  	| قسم الكلام.الخصائص                   	| Arabic Example                    	| English Gloss        	| Comments/Examples/Diaclect 	|
 |---------------	|-------------------------------------:	|------------------------------:	|-----------------------	|----------------------------	|
 | PRON_REL      	| <span dir="rtl">ضمير_موصول</span>   	| <span dir="rtl">اللي</span>   	| who, which, whom      	| GLF                        	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PRON_EXCLAM - <span dir="rtl">ضمير_تعجب</span>
 
-</summary>
+#### PRON_EXCLAM - <span dir="rtl">ضمير_تعجب</span>
 
 **Exclamative Pronouns**
 : Exclamative Pronouns introduces exclamative structure
 
 - Exclamative Pronouns don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -493,14 +446,9 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON_EXCLAM      	| <span dir="rtl">ضمير_تعجب</span>   	| <span dir="rtl">ما</span>   	| what          	| GLF, الله ما أكبر غلاك       	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### ADJ - <span dir="rtl">صفة</span>
-
-</summary>
+#### ADJ - <span dir="rtl">صفة</span>
 
 **Adjectives**
 : Adjectives are nominals that describe or clarify a noun
@@ -512,7 +460,7 @@ For example of agreement: the word <span dir="rtl">مهم</span> inflects in agr
 For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or an adjective. <span dir="rtl">عرب</span> as in <span dir="rtl">جاء الرجال العرب</span> 'The Arab men came' is tagged as an adjective, whereas in <span dir="rtl">معجم لسان العرب</span> 'Lisan Al Arab dictionary' <span dir="rtl">عرب</span> is tagged as a noun.
 - Although adjective must inflict in agreement with the noun, the features of the adjectives are annotated independently. In the example <span dir="rtl">كتب مهمة</span> the adjective <span dir="rtl">مهمة</span> is annotated with features feminine singular and NOT masculine plural.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -521,18 +469,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADJ.MS       	| <span dir="rtl">صفة.هو</span>   	| <span dir="rtl">زين</span>    	| good          	| GLF                        	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### ADJ_NUM - <span dir="rtl">صفة_عدد</span>
-
-</summary>
+#### ADJ_NUM - <span dir="rtl">صفة_عدد</span>
 
 **Ordinal numbers**
 : Ordinal numbers are used for ranking.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -541,13 +484,8 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADJ_NUM.FS   	| <span dir="rtl">صفة_عدد.هي</span>  	| <span dir="rtl">الثانية</span>  	| second        	| GLF,EGY                    	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### ADJ_COMP - <span dir="rtl">صفة_مقارنة</span>
-
-</summary>
+#### ADJ_COMP - <span dir="rtl">صفة_مقارنة</span>
 
 **Comparative Adjectives**
 : A comparative adjective is a form derived from verbs according to their inflectional category.
@@ -555,7 +493,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 - No morphological distinction is made between the comparative and the superlative meanings. The distinction is made based on the use of idafa (construct) with the superlative.
 
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -564,18 +502,14 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADJ_COMP.MS  	| <span dir="rtl">صفة_مقارنة.هو</span> 	| <span dir="rtl">احسن</span>   	| better/best   	| GLF                        	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### VERB - <span dir="rtl">فعل</span>
 
-</summary>
+#### VERB - <span dir="rtl">فعل</span>
 
 **Verbs**
 : A verb is a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                    	| Arabic Example                	| English Gloss     	| Comments/Examples/Diaclect                                                    	|
 |--------------	|---------------------------------------	|-------------------------------	|-------------------	|-------------------------------------------------------------------------------	|
@@ -644,20 +578,15 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | VERB.C2FP    	| <span dir="rtl">فعل.أمر.انتن</span>    	| <span dir="rtl">شوفن</span>   	| see               	| GLF                                                                           	|>
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### VERB_PSEUDO - <span dir="rtl">شبه_فعل</span>
-
-</summary>
+#### VERB_PSEUDO - <span dir="rtl">شبه_فعل</span>
 
 **Pseudo Verbs**
 : Pseudo verbs are words that have the same syntactic behavior as verbs in that they take a subject and a predicate, or a sentential complement.
 
 - Pseduo verbs don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss                 	| Comments/Examples/Diaclect                            	|
 |--------------	|-------------------------------	|-------------------------------	|-------------------------------	|-------------------------------------------------------	|
@@ -666,19 +595,14 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | VERB_PSEUDO  	| <span dir="rtl">شبه_فعل</span>   	| <span dir="rtl">تو</span>     	| just now, at the moment          	| GLF, <span dir="rtl">كانت توها داشة الفيلا</span>      	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### VERB_NOM - <span dir="rtl">اسم_فعل</span>
-
-</summary>
+#### VERB_NOM - <span dir="rtl">اسم_فعل</span>
 
 **Non-Inflectional verbs**, also called **Frozen Verbs** 
 : These are frozen expressions that behave like verbs syntactically but not morphologically. From a morphological point of view they are not inflectional, meaning that they do not inflect for all their tenses, sometimes none, and they do not have gender/number agreement. Syntactically, they subcategorize for arguments in the form of prepositional phrases and direct objects.
 
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss                 	| Comments/Examples/Diaclect                        	|
 |--------------	|-----------------------------------	|-------------------------------	|-------------------------------	|---------------------------------------------------	|
@@ -700,13 +624,8 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | VERB_NOM     	| <span dir="rtl">اسم_فعل</span>    	| <span dir="rtl">اف</span>     	| (ugh)                          	| GLF <span dir="rtl">أُفّ مِنّكْ</span>                 	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### ADV - <span dir="rtl">ظرف</span>
-
-</summary>
+#### ADV - <span dir="rtl">ظرف</span>
 
 **Adverbs**
 : Adverbs are invariable and terminal words that give information about the time, location, manner, cause, purpose, or any other adverbial function modifying the verb or sentence.
@@ -715,7 +634,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 - Some adverbs take pronominal clitics, in such cases, those pronouns are going to be cliticized normally. Example, <span dir="rtl">يا دوب +ك</span>. Also, note that adverbs with initial <span dir="rtl">يا</span> are considered to be two separate words.
 - Adverbs don't take features.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss                                                                  	| Comments/Examples/Diaclect                                               	|
 |--------------	|--------------------	|----------------	|--------------------------------------------------------------------------------	|--------------------------------------------------------------------------	|
@@ -743,21 +662,16 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADV          	| <span dir="rtl">يظرف</span>                	| <span dir="rtl">يهناك</span>           	| there                                                                          	| GLF                                                                      	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### ADV_INTERROG - <span dir="rtl">ظرف_استفهام</span>
-
-</summary>
+#### ADV_INTERROG - <span dir="rtl">ظرف_استفهام</span>
 
 **Interrogative Adverbs**
 : Interrogative adverbs are invariable words that introduce questions that give specific information about time, location, manner, or purpose.
 
 - Interrogative Adverbs don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example            	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|---------------------------	|---------------	|----------------------------	|
@@ -767,42 +681,32 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADV_INTERROG 	| <span dir="rtl">ظرف_استفهام</span>  	| <span dir="rtl">متى</span>  	| when          	| GLF                        	|
 | ADV_INTERROG 	| <span dir="rtl">ظرف_استفهام</span>  	| <span dir="rtl">وين</span>  	| where         	| GLF                        	|
 | ADV_INTERROG 	| <span dir="rtl">ظرف_استفهام</span>  	| <span dir="rtl">ليش</span>  	| why           	| GLF                        	|
-
-</details>
 </details>
 
-<details>
-<summary markdown="block">
-### ADV_REL - <span dir="rtl">ظرف_موصول</span>
+#### ADV_REL - <span dir="rtl">ظرف_موصول</span>
 
-</summary>
 
 **Relative Adverbs**
 : Relative adverbs are invariable words that introduce adverbial relative clauses that give specific information about time, location, manner, or purpose.
 
 - Relative Adverbs don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example            	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|---------------------------	|---------------	|----------------------------	|
 | ADV_REL 	| <span dir="rtl">ظرف_موصول</span>  	| <span dir="rtl">وين</span>  	| where           	| GLF, <span dir="rtl">لازم تخبرني وين سرت</span>    	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PREP - <span dir="rtl">حرف_جر</span>
-
-</summary>
+#### PREP - <span dir="rtl">حرف_جر</span>
 
 **Prepositions**
 : The term **preposition** is used to represent the closed class of items which have traditionally been identified as prepositions in Arabic.
 
 - Prepositions don't take any features.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example             	| English Gloss 	| Comments/Examples/Diaclect                   	|
 |--------------	|-------------------------------	|----------------------------	|---------------	|----------------------------------------------	|
@@ -813,20 +717,15 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | PREP         	| <span dir="rtl">حرف_جر</span> 	| <span dir="rtl">و+</span>  	| by            	| GLF,EGY, <span dir="rtl">والله العظيم</span> 	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### INTERJ - <span dir="rtl">تعجب</span>
-
-</summary>
+#### INTERJ - <span dir="rtl">تعجب</span>
  
  **Interjections**
 : Interjections are words or phrases (response particles) that express the speaker’s reaction to a particular proposition or sentence.
 
 - Interjections don't take any features.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss      	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|-------------------------------	|--------------------	|----------------------------	|
@@ -840,20 +739,15 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | INTERJ       	| <span dir="rtl">تعجب</span>   	| <span dir="rtl">حشى</span>    	| GLF                	|                            	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### CONJ - <span dir="rtl">حرف_عطف</span>
-
-</summary>
+#### CONJ - <span dir="rtl">حرف_عطف</span>
 
 **Coordinating Conjunctions**
 : Conjunctions are used to coordinate and link independent constituents with each other.
 
 - Conjunctions don't take any features.
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss     	| Comments/Examples/Diaclect                                                 	|
 |--------------	|--------------------	|----------------	|-------------------	|----------------------------------------------------------------------------	|
@@ -863,83 +757,71 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | CONJ         	| <span dir="rtl">حرف_عطف</span>            	| <span dir="rtl">ولا</span>            	| or (in questions) 	| GLF                                                                        	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### CONJ_SUB - <span dir="rtl">أداة_ربط</span>
+#### CONJ_SUB - <span dir="rtl">أداة_ربط</span>
 
-</summary>
+
 
 **Subordinating Conjunctions**
 : A subordinating conjunction marks a sentence as dependent to another sentence that is independent and called the main clause.
 
 - Subordinating conjunction don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example            	| English Gloss    	| Comments/Examples/Diaclect                              	|
 |--------------	|-----------------------------------	|----------------------------	|-----------------	|----------------------------------------------------------	|
 | CONJ_SUB     	| <span dir="rtl">أداة_ربط</span>    	| <span dir="rtl">و+</span>    	| while            	| GLF,EGY , <span dir="rtl">شفتها وهي طالعة مالبيت</span> 	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### PART_VOC - <span dir="rtl">حرف_نداء</span>
+#### PART_VOC - <span dir="rtl">حرف_نداء</span>
 
-</summary>
+
 
 **Vocative Particles**
 
 - Vocative Particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------- -----	|----------------------------	|
 | PART_VOC     	| <span dir="rtl">حرف_نداء</span>    	| <span dir="rtl">يا</span> 	| o, hey           	| GLF,EGY                   	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### PART_RESTRICT - <span dir="rtl">اداة_استثناء</span>
+#### PART_RESTRICT - <span dir="rtl">اداة_استثناء</span>
 
-</summary>
+
 
 **Restrictive Particles**
 : It is used in a negative construction marking a restriction.
 
 - Restrictive Particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                            	| Arabic Example               	| English Gloss    	| Comments/Examples/Diaclect                            	|
 |--------------	|-----------------------------------------------	|----------------------------	|---------------	|-------------------------------------------------------	|
 | PART_RESTRICT     	| <span dir="rtl">اداة_استثناء</span>    	| <span dir="rtl">الا</span> 	| Except for/only  	| GLF,EGY , <span dir="rtl">ما يعلم به إلاّ ربّنا</span>    	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### PART_NEG - <span dir="rtl">اداة_نفي</span>
+#### PART_NEG - <span dir="rtl">اداة_نفي</span>
 
-</summary>
+
 
 **Negative Particles**
 : A particle that negate what comes after it.
 
 - Negative particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example            	| English Gloss     	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|---------------------------	|-------------------	|----------------------------	|
@@ -950,34 +832,28 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | PART_NEG     	| <span dir="rtl">اداة_نفي</span>  	| <span dir="rtl">لا</span>  	| not, neither, nor 	| GLF                        	|
 
 </details>
-</details>
 
 
-<details>
-<summary markdown="block">
-### PART_DET - <span dir="rtl">اداة_تعريف</span>
+#### PART_DET - <span dir="rtl">اداة_تعريف</span>
 
-</summary>
+
 
 **Determiner Particles**
 : A clitic that attaches to nominals.
 
 - Determiner particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------- -----	|----------------------------	|
 | PART_DET     	| <span dir="rtl">اداة_تعريف</span>    	| <span dir="rtl">ال+</span> 	| the           	| GLF,EGY                   	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PART_INTERROG - <span dir="rtl">اداة_استفهام</span>
+#### PART_INTERROG - <span dir="rtl">اداة_استفهام</span>
 
-</summary>
+
 
 **Interrogative Particles**
 : Interrogative particles introduce questions.
@@ -986,18 +862,16 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 </details>
 
-<details>
-<summary markdown="block">
-### PART_FUT - <span dir="rtl">اداة_استقبال</span>
+#### PART_FUT - <span dir="rtl">اداة_استقبال</span>
 
-</summary>
+
 
 **Future Particles**
 : Interrogative particles mark the future when attaches to imperfective verbs.
 
 - Future particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------------	|----------------------------	|
@@ -1005,80 +879,66 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | PART_FUT     	| <span dir="rtl">اداة_استقبال</span>    	| <span dir="rtl">رح</span> 	| will           	| GLF                   	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PART_FOCUS - <span dir="rtl">اداة_تفصيل</span>
+#### PART_FOCUS - <span dir="rtl">اداة_تفصيل</span>
 
-</summary>
+
 
 **Focus Particles**
 : Focus particles highlight the topic of the sentence or adds emphasis.
 
 - Focus particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------------	|----------------------------	|
 | PART_FOCUS     	| <span dir="rtl">اداة_تفصيل</span>    	| <span dir="rtl">اما</span> 	| As for           	| GLF                   	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PART_EMPHATIC - <span dir="rtl">اداة_توكيد</span>
+#### PART_EMPHATIC - <span dir="rtl">اداة_توكيد</span>
 
-</summary>
+
 
 **Emphatic Particles**
 : Emphatic particles adds emphasis.
 
 - Emphatic particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|---------------	|----------------------------	|
 | PART_EMPHATIC     	| <span dir="rtl">اداة_توكيد</span>    	| <span dir="rtl">ل+</span> 	| That           	| GLF , <span dir="rtl">والله لأضاربك</span>   	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PART_RC - <span dir="rtl">جواب_شرط</span>
-
-</summary>
+#### PART_RC - <span dir="rtl">جواب_شرط</span>
 
 **Response Conditional Particles**
 : Response conditional particles are used in conditional sentences introducing the apodosis sentence/main clause.
 
 - Response conditional particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|---------------	|----------------------------	|
 | PART_RC     	| <span dir="rtl">جواب_شرط</span>    	| <span dir="rtl">ف+</span> 	| So then           	| EGY , <span dir="rtl">إن كنت عايز فخلّيك; إذا كان كده فمعليش</span>   	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PART - <span dir="rtl">حرف</span>
+#### PART - <span dir="rtl">حرف</span>
 
-</summary>
+
 
 **Particles**
 : Particles do not assign case and they can be omitted without affecting or altering meaning and/or structure.
 
 - Particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features 	| قسم الكلام.الخصائص           	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect                                	|
 |--------------	|------------------------------	|----------------------------	|---------------	|-----------------------------------------------------------	|
@@ -1086,13 +946,10 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | PART     	| <span dir="rtl">حرف</span>    	| <span dir="rtl">جان</span> 	| if, and so    	| GLF , <span dir="rtl">لولاها جان ما كانت الكل بالكل</span>   	|
 
 </details>
-</details>
 
-<details>
-<summary markdown="block">
-### PART_PROG - <span dir="rtl">حرف_مضارعة</span>
+#### PART_PROG - <span dir="rtl">حرف_مضارعة</span>
 
-</summary>
+
 
 **Progressive Particle**
 : Denotes that a verb is in action
@@ -1101,34 +958,29 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 </details>
 
-<details>
-<summary markdown="block">
-### PART_CONNECT - <span dir="rtl">حرف_ربط</span>
+#### PART_CONNECT - <span dir="rtl">حرف_ربط</span>
 
-</summary>
+
 
 **Connective Particles**
 : Connective particles connect two clauses. They are most commonly used to introduce a comment clause after a clause starting with <span dir="rtl">اما</span>.
 
 - Connective particles don't take any features
 
-<details><summary markdown='span'>{{ page.moreExamples }}</summary>
+<details><summary markdown='span'>Examples</summary>
 
 | POS.Features  	| قسم الكلام.الخصائص               	| Arabic Example               	| English Gloss            	| Comments/Examples/Diaclect                                                       	|
 |---------------	|----------------------------------	|----------------------------	|-----------------------	|-------------------------------------------------------------------------------	|
 | PART_CONNECT  	| <span dir="rtl">حرف_ربط</span>  	| <span dir="rtl">ف+</span> 	| {Discourse connective}  	| EGY , <span dir="rtl">أمّا أنا فمش رايحة; أمّا في البيت فأنت اللّي بتتحكّم</span> 	|
 
 </details>
-</details>
 
 * * *
 
 ### Aditional Annotation Tasks
 
-<details>
-<summary markdown="block"> 
-### Lemmatization
-</summary>
+#### Lemmatization
+
 
 The lemma is the citation form of the word.
 Across all our guidelines, we follow the lemma specification in 
@@ -1163,10 +1015,8 @@ except for the sukun ‘absence of a vowel’.
 
 </details>
 
-<details>
-<summary markdown="block"> 
-### Gloss
-</summary>
+#### Gloss
+
 
 The English gloss refers to the semantic translation of the Arabic lemma.
 - For nominals the gloss is the singular form of the word.
@@ -1179,10 +1029,8 @@ The English gloss refers to the semantic translation of the Arabic lemma.
 
 </details>
 
-<details>
-<summary markdown="block">
-### Dialect Identification
-</summary>
+#### Dialect Identification
+
 Dialect identification (DID) is the task of tagging a certain context with a given dialect tag.
 
 Deciding the dialect tag depends on the context of the sentence and/or the document. As dialects may share the same words within themselves or with MSA, the dialect is inferred from the sentence structure and word order of that specific dialect.
