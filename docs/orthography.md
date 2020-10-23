@@ -8,23 +8,16 @@ toc_sticky: true
 sidebar:
   nav: "docs"
 ---
-<!-- 
-# TOC
-{:.no_toc}
-
-* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
-{:toc} -->
 
 
+# CODA*: Conventional Orthography for Dialectal Arabic 
 
-CODA*: Conventional Orthography for Dialectal Arabic 
-===
 
-### CODA* Mission
+## CODA* Mission
 * Dialectal Arabic (DA) refers to the day-to-day vernaculars spoken in the Arab world. DA lives side-by-side with the official language, Modern Standard Arabic (MSA). DA differs from MSA on all levels of linguistic representation, from phonology and morphology to lexicon and syntax. Unlike MSA, DA has no standard orthography since there are no Arabic dialect academies, nor is there a large edited body of dialectal literature that follows the same spelling standard.
 * CODA* (pronounced CODA Star, as in, for any dialect) is a conventional orthography for dialectal Arabic. It is designed primarily for the purpose of developing computational models of Arabic dialects.
 
-### CODA* Goals & Intentions
+## CODA* Goals & Intentions
 1. CODA* is an internally consistent and coherent convention for writing DA.
 2. CODA* is created for computational purposes.
 3. CODA* uses the Arabic script.
@@ -32,7 +25,7 @@ CODA*: Conventional Orthography for Dialectal Arabic
 5. CODA* aims to strike an optimal balance by maintaining a level of dialectal uniqueness yet establish conventions based on MSA-DA similarities.
 6. CODA* strives to be easily learnable and readable.
 
-### CODA Design Principles
+## CODA Design Principles
 1. CODA* is an ad hoc convention. There are numerous decisions that could have been made differently especially when it comes to the phonology/orthography interface. These principles make CODA* comparable to English spelling (a bit phonological, a bit historical, with some exceptions). In some cases, we followed decisions that have been made by previously published efforts.
 2. CODA* uses only the inventory of Arabic script characters including the diacritics used for writing MSA. CODA* does not use extended Arabic characters, e.g. from Persian or Urdu. CODA* can be written undiacritized or diacritized.
 3. Each DA word has a unique orthographic form in CODA that represents its phonology, morphology, and lexical semantics [meaning].
@@ -44,21 +37,19 @@ CODA*: Conventional Orthography for Dialectal Arabic
 9. CODA* rules are dialect independent.  (note that dialect-specific exception lists from previous CODA versions have been redesigned and unified into dialect independent sets of specific rules).
 10. CODA* specific rules override general rules and apply to certain pre-defined classes of words – roughly corresponding to closed class or highly marking frequent words. The aim is to preserve important morphological information, maintain dialect integrity, and ensure overall readability.
 
-### CODA* Rules
+## CODA* Rules
 
-#### Introduction
+### Introduction
 
 CODA* (pronounced CODA Star, as in, for any dialect) is a conventional orthography for dialectal Arabic. It is designed primarily for the purpose of developing computational models of Arabic dialects. See CODA* Main Page for a description of CODA* mission statement and design guidelines.
 
 Some sections of these guidelines are continuously researched and updated as more dialectal data is incorporated.
 
 (CODA* version: 0.43)
-
-<!-- * TOC {:toc} -->
   
-#### Basic Terminology
+### Basic Terminology
 
-##### Sounds - Letters - Diacritics
+#### Sounds - Letters - Diacritics
 
 The term sounds is used in the context of pronunciation (phonology), while letters and diacritics are used in the context of writing (orthography). Sounds can be consonants or vowels, and they are represented using the CAPHI representation (see Phonology Reference) and are bounded by forward slashes when necessary. Letters and diacritics are symbols used in the Arabic script to write words. Letters in the Arabic language are always required to be written; while diacritics are optional.
 
@@ -78,33 +69,33 @@ Diacritics can be used to specify:
 * Vowels - “ َ ” (Fatha), i.e: /k a t a b/, كَتَب, 'he wrote'
 * Vowels+consonants - “ ً ”, /a n/, (Nunation), i.e: /f i 3 l a n/, فعلاً, 'verily'
 
-#### Basic Terminology
+<!-- #### Basic Terminology -->
 
-##### Patterns - Other Morphemes
+#### Patterns - Other Morphemes
 
 Arabic’s templatic morphology makes common reference to the concept of the root, a typically tri-consonantal abstraction capturing a general meaning about the word. For example, the root ك.ت.ب 'writing-related' appears in words like مكتب 'office' and كتاب 'book'. Each sound in the root is referred to as a radical. The general complement of the root is the pattern, which in the examples above are ma12a3 and 1i2A3 (here, 1, 2, 3 are slots for the root radicals). In addition to the root and pattern templatic morphemes, Arabic uses numerous other concatenative morphemes.
 
-#### Basic Terminology
+<!-- #### Basic Terminology -->
 
-##### Words - Base Words - Clitics
+#### Words - Base Words - Clitics
 
 
 We define an Arabic base word to consist of a stem and the minimal number of concatenative affixes needed to specify the obligatory features for its part of speech (POS). A stem can be non-templatic or it can be composed from the interdigitation of a root and a pattern. The pattern may specify the features fully, as in broken plurals. Base words are as such the smallest fully formed words. Examples include: كتابين 'two books' and يكتبون 'they write'. Clitics are syntactically independent but phonologically dependent morphemes that are attached to the word phonologically. Words can be base words or base words with added clitics. We use the term word to refer to the phonological utterance or the orthographic string, and we specify as needed. In CODA, phonological words typically map one-to-one to orthographic words; but there are many exceptions, pertaining mostly to clitics that are spelled as separate orthographic words.
 
 
-![words basewords clitics](assets/images/orthography/words_basewords_clitics_1.png)
+![words basewords clitics](images/orthography/words_basewords_clitics_1.png)
 
 ***
 
-![words basewords clitics](assets/images/orthography/words_basewords_clitics_2.png)
+![words basewords clitics](images/orthography/words_basewords_clitics_2.png)
 
 
 
-#### General
+### General
 
-##### Basic Phonology to Orthography Mapping
+### Basic Phonology to Orthography Mapping
 
-###### Hamza Rules
+#### Hamza Rules
 
 
 Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is unchanged from previous CODA versions. 
@@ -140,12 +131,12 @@ Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. I
 
 
 
-
+<!-- 
 #### General
 
-##### Basic Phonology to Orthography Mapping
+##### Basic Phonology to Orthography Mapping -->
 
-###### Diacritics
+#### Diacritics
 
 
 While Arabic diacritics are optional in general, they can be crucial for disambiguation in certain contexts. Arabic diacritics are primarily used for representing short vowels, or absence of vowels. However, the Shadda diacritic is used to represent consonantal gemination, e.g. كَتَّب /k a t t a b/ ‘he dictated’. As such, the Shadda interacts with the number of letters in a word. The Shadda general rule states that it is used within the base word (including suffixes and prefixes), but not across word-clitic boundaries. Any exceptions must be specified in the specific rules (see specific rule: "The Definite Article" for an example of where the general Shadda rule is overriden.
@@ -159,11 +150,11 @@ While Arabic diacritics are optional in general, they can be crucial for disambi
 
 
 
-#### General
+<!-- #### General
 
-##### Basic Phonology to Orthography Mapping
+##### Basic Phonology to Orthography Mapping -->
 
-###### Long/Short Vowel Spelling
+#### Long/Short Vowel Spelling
 
 In many dialects, base word long vowels may be shortened in certain contexts. Generally, the rule is to prefer the long letter-based spelling over the shortened diacritic spelling.
 
@@ -174,11 +165,11 @@ In many dialects, base word long vowels may be shortened in certain contexts. Ge
 
 
 
-#### General
+<!-- #### General
 
-##### Basic Phonology to Orthography Mapping
+##### Basic Phonology to Orthography Mapping -->
 
-###### Root Radical Spelling
+#### Root Radical Spelling
 
 Dialectal word root radicals which have MSA cognates will be spelled using the MSA cognate radical if the dialectal radical sound and the MSA radical sounds are paired according to a specific set of common sound changes.
 
@@ -261,11 +252,11 @@ Our list of allowed pairings is presented in the table below:
 
 
 
-#### General
+<!-- #### General
 
-##### Base Word Spelling
+##### Base Word Spelling -->
 
-###### Pattern Spelling
+#### Pattern Spelling
 
 
 Dialectal words with patterns that are cognates of MSA patterns will retain the spelling choice of the MSA pattern if the difference in pronunciation can be expressed using diacritics (for vowel change or absence), or if the pronunciation is a shortened form of the MSA pattern vowels.
@@ -277,11 +268,11 @@ Dialectal words with patterns that are cognates of MSA patterns will retain the 
 
 
 
-#### General
+<!-- #### General
 
-##### Base Word Spelling
+##### Base Word Spelling -->
 
-###### Alif Maqsura
+#### Alif Maqsura
 
 The MSA rules for spelling the Alif-Maqsura (ى), which are sometimes based on roots and sometimes on patterns, apply in CODA*.
 
@@ -295,11 +286,11 @@ The MSA rules for spelling the Alif-Maqsura (ى), which are sometimes based on r
 
 
 
-#### General
+<!-- #### General
 
-##### Base Word Spelling
+##### Base Word Spelling -->
 
-###### Clitic Spelling
+#### Clitic Spelling
 
 The general rule on phonological clitic spelling is that clitics that are mapped into single letters (with possible diacritics) will be spelled attached to the word, and will not interact with the spelling of the word. (For examples of specifc rules that override this rule, see "The Definite Article" and "Nominative Pronouns")
 
@@ -311,9 +302,9 @@ The general rule on phonological clitic spelling is that clitics that are mapped
 
 
 
-#### Specific Rules
+## Specific Rules
 
-##### The Definite Article
+### The Definite Article
 
 
 The Arabic definite article is always written as a proclitic ال+ـ, regardless of how it is pronounced (keep in mind that in DA, lunar/solar letters are not always the same as in MSA). As with MSA spelling, general cliticization rules apply except when following the proclitic ل+ـ, where the article is spelled without its ا. The general Shadda rule is overridden in the specific context of ل+ ال+ـ followed by an ل-initial base word.
@@ -339,9 +330,9 @@ The Arabic definite article is always written as a proclitic ال+ـ, regardless
 
 
 
-#### Specific Rules
+<!-- ## Specific Rules -->
 
-##### The Ta-Marbuta
+### The Ta-Marbuta
 
 
 The Ta-Marbuta (ة) is a secondary letter of the Arabic alphabet used to represent a particular suffix morpheme that is often (but not exclusively) associated with the feminine-singular feature (Alkuhlani and Habash, 2011). This morpheme has a number of allomorphs with differing pronunciations. Most notably, it appears as a vowel at the end of nominals, and changes to a ∼ /t/ when followed by possessive pronominal enclitics. The Ta-Marbuta should be written as ة in word-final positions, regardless of its pronunciation, and following general CODA rules in non-word-final positions.
@@ -361,9 +352,9 @@ The Ta-Marbuta (ة) is a secondary letter of the Arabic alphabet used to represe
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### The Plural Waw
+### The Plural Waw
 
 
 Verbal suffixes that indicate the feature plural subject [2p] & [3p] and end with the sounds (/u/, /uu/, /o/, /oo/, and /aw/) will represent those sounds as وا+ (‘Waw of Plurality’ واو الجماعة) in word-final positions, and also when followed by other attached clitics. This rule is similar to the MSA rule, except for expanding the phonetic definition.
@@ -384,9 +375,9 @@ Verbal suffixes that indicate the feature plural subject [2p] & [3p] and end wit
 
  
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Negation Clitics
+### Negation Clitics
 
 The negation particle (/m a/, /m aa/) has phonologically become a proclitic in many dialects. However, it is always written as a separate particle ما except when overridden by other specification rules. One example of such a rule is the case of negated pronouns (see "Nominative Pronouns"), in which ما is written attached. Another example involves some negated existentials (see "Existentials") in which the Alif can be ellided.
 
@@ -403,9 +394,9 @@ The negation particle (/m a/, /m aa/) has phonologically become a proclitic in m
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Prepositional Enclitics
+### Prepositional Enclitics
 
 
 Post-verbal and post-nominal prepositions that have phonologically become enclitics will nonetheless be spelled separately from the words they follow. The most prominent such case is the preposition ل+ـ ‘to, for’ which introduces indirect verb objects in a number of dialects.
@@ -421,9 +412,9 @@ Post-verbal and post-nominal prepositions that have phonologically become enclit
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Numbers
+### Numbers
 
 The words for numbers in Arabic dialects are amongst the most rich in phonological variety. The rules of writing number words in CODA* add the following exceptions to the general rules:
 * The sometimes reduced historical Ta-Marbuta in the middle of the teens (11-19) is always written as ت regardless of its pronunciation as /t/ or /t./. It is never reduced to a Shadda diacritic.
@@ -458,9 +449,9 @@ The above rules apply to all number words, whether ordinal, cardinal, or fractio
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Pronominal Enclitics
+### Pronominal Enclitics
 
 
 The set of specifications for the pronominal clitics which can serve as possessive pronouns. Some of the decisions follow from the general rules, but for the most part they are intended to normalize the spelling as close as possible to the MSA variety without adding unnecessary and unresolvable ambiguity (e.g., using diacritics). It is important to point out again that this list is not dialect specific, but rather, it lists all the phonological forms of the pronominal morphemes in all dialects. The CODA* spelling for a dialect will depend on the phonology-morphology pair it corresponds to. Some of these pronouns have a large number of variants that can be ambiguous cross-dialectally. An interesting example is the case of the morpheme pronunciation /a/ which can be 3rd masculine singular in Gulf Arabic, but 3rd feminine singular in North Levantine: /k t aa b + a/ can correspond to كتاب+ه ‘his book’ (Abu Dhabi) or to كتاب+ها ‘her book’ (Damascus). The CODA* specification does not address how a particular dialect may organize the use of the different forms in terms of morphotactics, e.g., the possessive 2nd person singular feminine pronominal clitic is always ك+ in Tunis, and always كي+ in Mosul; however, in Amman, it is كي+ post-vocalically, and ك+ otherwise. The underspecification of some features is intentional as some pronominal clitics may be used with different associated genders in different dialects, e.g. كن+ is 2nd person plural feminine in Doha, but its is gender ambiguous in Beirut.
@@ -498,9 +489,9 @@ Here is the specification table for Pronominal Clitics:
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Nominative Pronouns
+### Nominative Pronouns
 
 Nominative Pronouns are spelled as pronounced using general phonolgical rules, except for the final vowels, which are spelled in two different ways:
 * (a) as diacritical forms if (i) the vowel is short and (ii) the spelling of the undiacritized base word exactly matches the MSA form for هو، هي، هم، هن and انتَ [masculine singular].
@@ -546,9 +537,9 @@ Decision notes:
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Vocative Familial Expressions
+### Vocative Familial Expressions
 
 Some of the vocative expressions used primarily for familial reference have vocalic endings that are homophonous with pronominal suffixes. These endings are spelled following the general phonology-to-orthography rules. For example, the word /3 a m m o/ in the dialect of Amman can mean ‘uncle!’ (spelled in CODA as عمو) or ‘his uncle’ (spelled in CODA as عمه).
 
@@ -561,9 +552,9 @@ Some of the vocative expressions used primarily for familial reference have voca
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Relative Pronouns
+### Relative Pronouns
 
 Some forms containing relative pronouns can have different spelling rules, primarily to disambiguate differences in meaning.
 
@@ -578,9 +569,9 @@ Some forms containing relative pronouns can have different spelling rules, prima
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Waqt/Sa3a forms
+### Waqt/Sa3a forms
 
 
 Some forms related to time, such as the Cairene /d i l w a 2 t i/, دلوقتي, 'now', are frozen forms which etymologically transform and combine various morphemes, in this case: هذا + الوقت. Instead of spelling it phonologically دلوئتي, we preserve etymological information by considering the nominal part of the word and spelling it according to general root radical cognate rules.
@@ -609,9 +600,9 @@ Some forms related to time, such as the Cairene /d i l w a 2 t i/, دلوقتي,
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Words with the name of God ‘Allah’
+### Words with the name of God ‘Allah’
 
 Nominative Pronouns are spelled as pronounced using general phonolgical rules, except for the final vowels, which are spelled in two different ways:
 * Words containing the name of God ‘Allah’ will maintain its MSA spelling, i.e /b a l. l. a/, “بالله”
@@ -638,9 +629,9 @@ Decision notes:
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Exestentials
+### Exestentials
 
 1) The existential expression /f ii/, فيه, 'there is', is attached to the pronominal clitic [3ms] ه+, known in Arabic grammar as Dhameer Al Sha'n, ضمير الشأن, though its often not prounounced.
 2) Another existential rule involves negated existentials, as in the Cairene /m a f ii sh/, مفيش, 'there isn't', in which the negation clitic is shortened and attached.
@@ -661,9 +652,9 @@ Decision notes:
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### Demonstrative Pronouns
+### Demonstrative Pronouns
 
 Demonstrative pronouns can be found in three forms:
 * Simple pronouns: which is the demonstrative pronoun on its own, e.g.: /d oo l/, دول, 'these, those'
@@ -704,9 +695,9 @@ Demonstrative pronouns can be found in three forms:
 
 
 
-#### Specific Rules
+<!-- #### Specific Rules -->
 
-##### ADVERBIAL, like this/that
+### ADVERBIAL, like this/that
 
 1) Similar to demonstrative pronouns, this class of adverbials keeps general CODA rules, except for the "د" which is spelled as pronounced. Also note that "كده" was preferred with ه rather than ا (counter to general rules), because it appears much more frequently.
 
@@ -737,12 +728,12 @@ Demonstrative pronouns can be found in three forms:
 
 
 
-### CODA* Seed Lexicon
+## CODA* Seed Lexicon
 A large and growing database containing verified examples of CODA* spelling for dialectal words, including affixes and clitics, is available here.
 
-<iframe width="1200" height="675" src="https://datastudio.google.com/embed/reporting/9c0c420a-0ba2-440a-942e-b3e61cf6306d/page/jeFhB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe height="500" width="120%" src="https://datastudio.google.com/embed/reporting/9c0c420a-0ba2-440a-942e-b3e61cf6306d/page/jeFhB" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-### Publications
+## Publications
 - Habash, Nizar, Fadhl Eryani, Salam Khalifa, Owen Rambow,† Dana Abdulrahim, Alexander Erdmann, Reem Faraj, Wajdi Zaghouani, Houda Bouamor, Nasser Zalmout, Sara Hassan, Faisal Al-Shargi, Sakhar Alkhereyf, Basma Abdulkareem, Ramy Eskander, Mohammad Salameh, Hind Saddiki. "Unified Guidelines and Resources for Arabic Dialect Orthography". LREC 2018. [PDF](http://www.lrec-conf.org/proceedings/lrec2018/pdf/395.pdf){:target="_blank"}
 - Jarrar, Mustafa, Nizar Habash, Faeq Alrimawi, Diyam Akra and Nasser Zalmout. "Curras: an annotated corpus for the Palestinian Arabic dialect." Language Resources and Evaluation. 2017. [PDF](http://link.springer.com/article/10.1007/s10579-016-9370-7){:target="_blank"}
 - Khalifa, Salam, Nizar Habash, Dana Abdulrahim and Sara Hassan. A Large Scale Corpus of Gulf Arabic.LREC.2016. [PDF](http://www.lrec-conf.org/proceedings/lrec2016/pdf/823_Paper.pdf){:target="_blank"}
@@ -752,7 +743,7 @@ A large and growing database containing verified examples of CODA* spelling for 
 
 
 
-### Contributors
+## Contributors
 
 - Nizar Habash, New York University Abu Dhabi, UAE.
 - Mona Diab, George Washington University, USA.

@@ -4,7 +4,12 @@ nav:
     - Test1: test1.md
     - Topic1:
         - Test2: test2.md
-    # - Morphology: morphology.md
-    # - Phonology: phonology.md
-    # - Orthography: orthography.md
-theme: readthedocs
+    - Morphology: morphology.md
+    - Phonology: phonology.md
+    - Orthography: orthography.md
+theme: 
+    name: readthedocs
+    navigation_depth: 4
+
+extra_css:
+    - extra.css
