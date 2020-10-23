@@ -83,11 +83,11 @@ Arabic’s templatic morphology makes common reference to the concept of the roo
 We define an Arabic base word to consist of a stem and the minimal number of concatenative affixes needed to specify the obligatory features for its part of speech (POS). A stem can be non-templatic or it can be composed from the interdigitation of a root and a pattern. The pattern may specify the features fully, as in broken plurals. Base words are as such the smallest fully formed words. Examples include: كتابين 'two books' and يكتبون 'they write'. Clitics are syntactically independent but phonologically dependent morphemes that are attached to the word phonologically. Words can be base words or base words with added clitics. We use the term word to refer to the phonological utterance or the orthographic string, and we specify as needed. In CODA, phonological words typically map one-to-one to orthographic words; but there are many exceptions, pertaining mostly to clitics that are spelled as separate orthographic words.
 
 
-![words basewords clitics](images/orthography/words_basewords_clitics_1.png)
+![words basewords clitics](img/words_basewords_clitics_1.png)
 
 ***
 
-![words basewords clitics](images/orthography/words_basewords_clitics_2.png)
+![words basewords clitics](img/words_basewords_clitics_2.png)
 
 
 

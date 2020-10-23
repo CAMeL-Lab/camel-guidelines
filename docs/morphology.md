@@ -102,11 +102,9 @@ tokenized using the D3 tokenization scheme. Therefore, each token gets at least 
 In a large-scale full morphological annotation task, additional annotations are usually provided, such as lemmatization, English gloss, amd dialect identification.
 In this section we provide detailed guidelines in the context of a comperhensive annotation task.
 
-### Morphologican Annotation
-
 * * *
 
-#### Tokenization
+### Tokenization
 
 The tokenization scheme recommended when annotating using {{ page.cameltools}} is D3.
 : **D3** tokenizes all clitics: question particle, conjunctions, particles, prepositions, articles, and pronominal enclitics.
@@ -125,13 +123,15 @@ The tokenization scheme recommended when annotating using {{ page.cameltools}} i
 | Various clitics         	| وهتجننني    	| و+ ه+ تجنن +ني 	| and she will drive me crazy 	| EGY     	|
 | Various clitics         	| وبتجننني    	| و+ ب+ تجنن +ني 	| and she will drive me crazy 	| GLF     	|
 
-### Clitics
+#### Clitics
 Clitics are syntactically independent morphems that are orthographically attached to the baseword. They can be in a number of parts of speech.
 
 **Notes**:
 
 - Clitics may interact with the spelling of the baseword. See the notes above on Tokenization and the [CODA general rules](www.camel-lab.com). <!--put link for ortho-->
 - Although writers -in dialectal Arabic mostly- tend to attach what is considered as a direct object clitic with the baseword (verbs, adjectives that are active participles), in the CODA convention they should be separate. For example <span dir="rtl">اجيبلك</span> should be <span dir="rtl">اجيب لك</span>, and <span dir="rtl">جايبلها</span> should be <span dir="rtl">جايب لها</span>. For the list of clitics, please refer to the CODA seed lexicon page: https://sites.google.com/a/nyu.edu/coda/dialect-specific <!--TODO: link to the new location of the seed lexicon-->
+
+### CAMEL POS tagset
 
 
 #### Features
@@ -153,9 +153,6 @@ Features refer to specific morphosyntactic aspects of the word that are abstract
 | .MS      	| هو       	| اسم 	| NOUN       	| Gender:(M);Number:(S) الجنس:مذكر؛العدد:مفرد                                     	|
 
 
-
-### CAMEL POS tagset
-
 #### NOUN - <span dir="rtl">اسم</span>
 
 **Common Nouns**
@@ -169,12 +166,7 @@ To assign features for those cases, use a syntactic test for a nonsensical seman
 - Common nouns also include a set of borrowed nouns.
 - In the context of dialectal text annotation, only nouns that appear to have a case ending such as <span dir="rtl">غصبٍ</span> will have state and case feature annotated. The 'case' feature in this situation is not the real case but rather a remnant from the MSA.
 
-
-<details>
-
-<summary>
-    </summary>
-
+**Examples**
 
 | Tag     | العلامة | Arabic Word | English Gloss       | Dialect |
 |---------|---------|-------------|---------------------|---------|
@@ -209,9 +201,6 @@ To assign features for those cases, use a syntactic test for a nonsensical seman
 | NOUN.MS | اسم.هو  | كذي         | like this, as this  | GLF     |
 
 
-</details>
-
-
 #### NOUN_PROP - <span dir="rtl">اسم_علم</span>
 
 **Proper Nouns**
@@ -225,7 +214,7 @@ To assign features for those cases, use a syntactic test for a nonsensical seman
 - : Proper nouns can be confused with common nouns. A case in point is the word <span dir="rtl">جَنُوب إِفرِيقيا</span>, the two parts of the word are considered as proper nouns when it refers to the country, South Africa.
 - The lemma of a proper noun does not include Al but it includes the 'Ta Marbuta'. The proper noun <span dir="rtl">القاهرة</span> has the lemma <span dir="rtl">قاهرة</span>.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص               	| Arabic Example 	| English Gloss                  	|    Comments/Examples/Diaclect                 	|
 |--------------	|----------------------------------	|---------------	|----------------------------	|---------------------------------------------------	|
@@ -239,20 +228,20 @@ To assign features for those cases, use a syntactic test for a nonsensical seman
 | NOUN_PROP.MS 	| اسم علم.هو                       	| الاهرام       	| Al Ahram                   	| GLF,EGY , تلقى الاهرام اتصالا هاتفيا ;newspaper   	|
 | NOUN_PROP.FS 	| اسم علم.هي                       	| الاخوان       	| The Muslim Brotherhood     	| GLF,EGY , تلقت الإخوان تمويلاً ;newspaper          	|
 
-</details>
+
 
 #### NOUN_QUANT - <span dir="rtl">اسم_كم</span>
 
 Noun quantifiers
 : Noun quantifiers express either quantity or approximation.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features  	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss 	| Comments/Examples/Diaclect 	|
 |---------------	|--------------------	|----------------	|---------------	|----------------------------	|
 | NOUN_QUANT.MS 	| اسم كم.هو          	| نص             	| half          	| GLF,EGY , نص ساعة          	|
 
-</details>
+
 
 
 #### NOUN_NUM - <span dir="rtl">اسم_عدد</span>
@@ -264,7 +253,7 @@ Noun quantifiers
 - Cardinal numbers can occur in pre-nominal and post-nominal positions without any agreement with the noun they occur with. They are invariable.
 <!--TODO discuss the MSA inverse agreement-->
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss      	| Comments/Examples/Diaclect 	|
 |--------------	|--------------------	|----------------	|--------------------	|----------------------------	|
@@ -317,7 +306,7 @@ Noun quantifiers
 | NOUN_NUM.MP  	| اسم عدد.هم         	| تسعين          	| 90, ninety         	| GLF                        	|
 | NOUN_NUM.FP  	| اسم عدد.هن         	| تسعمية         	| 900, nine hundred  	| GLF                        	|
 
-</details>
+
 
 
 #### PRON - <span dir="rtl">ضمير</span>
@@ -327,7 +316,7 @@ Noun quantifiers
 
 These pronouns bind to verbs to mark direct object, to nouns to mark possession, and to prepositions.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss     	| Comments/Examples/Diaclect 	|
 |:--------------	|-----------------------------------:	|-------------------------------:	|:-------------------	|:----------------------------	|
@@ -344,14 +333,14 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON.3MP     	| <span dir="rtl">ضمير.هم♂</span>     	| <span dir="rtl">+هم</span>      	| their, them       	| GLF                        	|
 | PRON.3MS     	| <span dir="rtl">ضمير.هو</span>      	| <span dir="rtl">+ه</span>      	| him, his, it, its 	| GLF                        	|
 
-</details>
+
 
 * * *
 
 **Unbound pronouns** - <span dir="rtl">**الضمائر المنفصلة**</span>
 : Unbound pronouns are free morphemes that occur as separate words.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                        	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------:	|---------------------------------------:	|---------------	|----------------------------	|
@@ -367,7 +356,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON.3MS     	| <span dir="rtl">ضمير.هو</span>    	| <span dir="rtl">هو</span>             	| he, it        	| GLF                        	|
 | PRON.3P      	| <span dir="rtl">ضمير.هم⚥</span>   	| <span dir="rtl">هم</span>             	| they          	| GLF                        	|
 
-</details>
+
 
 
 #### PRON_DEM - <span dir="rtl">ضمير_إشارة</span>
@@ -379,7 +368,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 - Demonstrative Pronouns can be basewords and/or proclitics, some baseword pronouns take no fetures, see examples below.
 - The relationship between proximity and distance which does not seem to exist in Egyptian Arabic.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                         	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------------------:	|-------------------------------:	|---------------	|----------------------------	|
@@ -387,7 +376,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON_DEM.MS  	| <span dir="rtl">ضمير_إشارة.هو </span>     	| <span dir="rtl">هاذا</span>   	| this/that     	| GLF                        	|
 | PRON_DEM.P   	| <span dir="rtl">ضمير_إشارة.هم⚥</span>     	| <span dir="rtl">ذول </span>   	| these/those   	| GLF                        	|
 
-</details>
+
 
 #### PRON_INTERROG - <span dir="rtl">ضمير_استفهام</span>
 
@@ -396,7 +385,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 
 - Interrogative pronouns don't take features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features  	| قسم الكلام.الخصائص                    	| Arabic Example               	| English Gloss 	| Comments/Examples/Diaclect 	|
 |---------------	|--------------------------------------:	|--------------------------:	|---------------	|----------------------------	|
@@ -406,7 +395,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 | PRON_INTERROG 	| <span dir="rtl">ضمير_استفهام</span>   	| <span dir="rtl">ايش</span>   	| what          	| GLF                        	|
 | PRON_INTERROG 	| <span dir="rtl">ضمير_استفهام</span>   	| <span dir="rtl">شو</span>   	| what          	| GLF                        	|
 
-</details>
+
 
 
 #### PRON_REL - <span dir="rtl">ضمير_موصول</span>
@@ -417,13 +406,13 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 
 - Relative pronouns don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features  	| قسم الكلام.الخصائص                   	| Arabic Example                    	| English Gloss        	| Comments/Examples/Diaclect 	|
 |---------------	|-------------------------------------:	|------------------------------:	|-----------------------	|----------------------------	|
 | PRON_REL      	| <span dir="rtl">ضمير_موصول</span>   	| <span dir="rtl">اللي</span>   	| who, which, whom      	| GLF                        	|
 
-</details>
+
 
 
 #### PRON_EXCLAM - <span dir="rtl">ضمير_تعجب</span>
@@ -433,7 +422,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 
 - Exclamative Pronouns don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -445,7 +434,7 @@ These pronouns bind to verbs to mark direct object, to nouns to mark possession,
 |---------------	|-------------------------------------:	|-----------------------------:	|------------------	|---------------------------	|
 | PRON_EXCLAM      	| <span dir="rtl">ضمير_تعجب</span>   	| <span dir="rtl">ما</span>   	| what          	| GLF, الله ما أكبر غلاك       	|
 
-</details>
+
 
 
 #### ADJ - <span dir="rtl">صفة</span>
@@ -460,7 +449,7 @@ For example of agreement: the word <span dir="rtl">مهم</span> inflects in agr
 For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or an adjective. <span dir="rtl">عرب</span> as in <span dir="rtl">جاء الرجال العرب</span> 'The Arab men came' is tagged as an adjective, whereas in <span dir="rtl">معجم لسان العرب</span> 'Lisan Al Arab dictionary' <span dir="rtl">عرب</span> is tagged as a noun.
 - Although adjective must inflict in agreement with the noun, the features of the adjectives are annotated independently. In the example <span dir="rtl">كتب مهمة</span> the adjective <span dir="rtl">مهمة</span> is annotated with features feminine singular and NOT masculine plural.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -468,14 +457,14 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADJ.MS       	| <span dir="rtl">صفة.هو</span>   	| <span dir="rtl">سيّئ</span>    	| bad           	| GLF                        	|
 | ADJ.MS       	| <span dir="rtl">صفة.هو</span>   	| <span dir="rtl">زين</span>    	| good          	| GLF                        	|
 
-</details>
+
 
 #### ADJ_NUM - <span dir="rtl">صفة_عدد</span>
 
 **Ordinal numbers**
 : Ordinal numbers are used for ranking.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -483,7 +472,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADJ_NUM.MS   	| <span dir="rtl">صفة_عدد.هو</span>  	| <span dir="rtl">اول </span>   	| first         	| GLF,EGY , <span dir="rtl">اول المشوار</span>      	|
 | ADJ_NUM.FS   	| <span dir="rtl">صفة_عدد.هي</span>  	| <span dir="rtl">الثانية</span>  	| second        	| GLF,EGY                    	|
 
-</details>
+
 
 #### ADJ_COMP - <span dir="rtl">صفة_مقارنة</span>
 
@@ -493,7 +482,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 - No morphological distinction is made between the comparative and the superlative meanings. The distinction is made based on the use of idafa (construct) with the superlative.
 
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|-------------------------------	|---------------	|----------------------------	|
@@ -501,7 +490,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADJ_COMP.MS  	| <span dir="rtl">صفة_مقارنة.هو</span> 	| <span dir="rtl">اقل</span>    	| less/least    	| GLF                        	|
 | ADJ_COMP.MS  	| <span dir="rtl">صفة_مقارنة.هو</span> 	| <span dir="rtl">احسن</span>   	| better/best   	| GLF                        	|
 
-</details>
+
 
 
 #### VERB - <span dir="rtl">فعل</span>
@@ -509,7 +498,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 **Verbs**
 : A verb is a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                    	| Arabic Example                	| English Gloss     	| Comments/Examples/Diaclect                                                    	|
 |--------------	|---------------------------------------	|-------------------------------	|-------------------	|-------------------------------------------------------------------------------	|
@@ -577,7 +566,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | VERB.C2P     	| <span dir="rtl">فعل.أمر.انتم⚥</span>    	| <span dir="rtl">شوفوا</span>  	| see               	| GLF                                                                           	|
 | VERB.C2FP    	| <span dir="rtl">فعل.أمر.انتن</span>    	| <span dir="rtl">شوفن</span>   	| see               	| GLF                                                                           	|>
 
-</details>
+
 
 #### VERB_PSEUDO - <span dir="rtl">شبه_فعل</span>
 
@@ -586,7 +575,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Pseduo verbs don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss                 	| Comments/Examples/Diaclect                            	|
 |--------------	|-------------------------------	|-------------------------------	|-------------------------------	|-------------------------------------------------------	|
@@ -594,7 +583,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | VERB_PSEUDO  	| <span dir="rtl">شبه_فعل</span>   	| <span dir="rtl">ترى</span>    	| by the way, for your information 	| GLF, <span dir="rtl">ترى الرحلة طويلة لإيطاليا</span>  	|
 | VERB_PSEUDO  	| <span dir="rtl">شبه_فعل</span>   	| <span dir="rtl">تو</span>     	| just now, at the moment          	| GLF, <span dir="rtl">كانت توها داشة الفيلا</span>      	|
 
-</details>
+
 
 #### VERB_NOM - <span dir="rtl">اسم_فعل</span>
 
@@ -602,7 +591,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 : These are frozen expressions that behave like verbs syntactically but not morphologically. From a morphological point of view they are not inflectional, meaning that they do not inflect for all their tenses, sometimes none, and they do not have gender/number agreement. Syntactically, they subcategorize for arguments in the form of prepositional phrases and direct objects.
 
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example                	| English Gloss                 	| Comments/Examples/Diaclect                        	|
 |--------------	|-----------------------------------	|-------------------------------	|-------------------------------	|---------------------------------------------------	|
@@ -623,7 +612,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | VERB_NOM     	| <span dir="rtl">اسم_فعل</span>    	| <span dir="rtl">آمينْ</span>   	| Amen                           	| GLF <span dir="rtl">آمِينْ رب العالمينْ</span>       	|
 | VERB_NOM     	| <span dir="rtl">اسم_فعل</span>    	| <span dir="rtl">اف</span>     	| (ugh)                          	| GLF <span dir="rtl">أُفّ مِنّكْ</span>                 	|
 
-</details>
+
 
 #### ADV - <span dir="rtl">ظرف</span>
 
@@ -634,7 +623,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 - Some adverbs take pronominal clitics, in such cases, those pronouns are going to be cliticized normally. Example, <span dir="rtl">يا دوب +ك</span>. Also, note that adverbs with initial <span dir="rtl">يا</span> are considered to be two separate words.
 - Adverbs don't take features.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss                                                                  	| Comments/Examples/Diaclect                                               	|
 |--------------	|--------------------	|----------------	|--------------------------------------------------------------------------------	|--------------------------------------------------------------------------	|
@@ -661,7 +650,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADV          	| <span dir="rtl">يظرف</span>                	| <span dir="rtl">يسيدا</span>           	| straight ahead                                                                 	| GLF                                                                      	|
 | ADV          	| <span dir="rtl">يظرف</span>                	| <span dir="rtl">يهناك</span>           	| there                                                                          	| GLF                                                                      	|
 
-</details>
+
 
 
 #### ADV_INTERROG - <span dir="rtl">ظرف_استفهام</span>
@@ -671,7 +660,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Interrogative Adverbs don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example            	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|---------------------------	|---------------	|----------------------------	|
@@ -681,7 +670,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | ADV_INTERROG 	| <span dir="rtl">ظرف_استفهام</span>  	| <span dir="rtl">متى</span>  	| when          	| GLF                        	|
 | ADV_INTERROG 	| <span dir="rtl">ظرف_استفهام</span>  	| <span dir="rtl">وين</span>  	| where         	| GLF                        	|
 | ADV_INTERROG 	| <span dir="rtl">ظرف_استفهام</span>  	| <span dir="rtl">ليش</span>  	| why           	| GLF                        	|
-</details>
+
 
 #### ADV_REL - <span dir="rtl">ظرف_موصول</span>
 
@@ -691,13 +680,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Relative Adverbs don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                	| Arabic Example            	| English Gloss 	| Comments/Examples/Diaclect 	|
 |--------------	|-----------------------------------	|---------------------------	|---------------	|----------------------------	|
 | ADV_REL 	| <span dir="rtl">ظرف_موصول</span>  	| <span dir="rtl">وين</span>  	| where           	| GLF, <span dir="rtl">لازم تخبرني وين سرت</span>    	|
 
-</details>
+
 
 #### PREP - <span dir="rtl">حرف_جر</span>
 
@@ -706,7 +695,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Prepositions don't take any features.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example             	| English Gloss 	| Comments/Examples/Diaclect                   	|
 |--------------	|-------------------------------	|----------------------------	|---------------	|----------------------------------------------	|
@@ -716,7 +705,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | PREP         	| <span dir="rtl">حرف_جر</span> 	| <span dir="rtl">ب+</span>  	| with          	| GLF                                          	|
 | PREP         	| <span dir="rtl">حرف_جر</span> 	| <span dir="rtl">و+</span>  	| by            	| GLF,EGY, <span dir="rtl">والله العظيم</span> 	|
 
-</details>
+
 
 #### INTERJ - <span dir="rtl">تعجب</span>
  
@@ -725,7 +714,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Interjections don't take any features.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example                	| English Gloss      	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|-------------------------------	|--------------------	|----------------------------	|
@@ -738,7 +727,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | INTERJ       	| <span dir="rtl">تعجب</span>   	| <span dir="rtl">اوكيه</span>   	| OK                 	| GLF                        	|
 | INTERJ       	| <span dir="rtl">تعجب</span>   	| <span dir="rtl">حشى</span>    	| GLF                	|                            	|
 
-</details>
+
 
 #### CONJ - <span dir="rtl">حرف_عطف</span>
 
@@ -747,7 +736,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Conjunctions don't take any features.
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص 	| Arabic Example 	| English Gloss     	| Comments/Examples/Diaclect                                                 	|
 |--------------	|--------------------	|----------------	|-------------------	|----------------------------------------------------------------------------	|
@@ -756,7 +745,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | CONJ         	| <span dir="rtl">حرف_عطف</span>            	| <span dir="rtl">ف+ </span>            	| and, then         	| GLF                                                                        	|
 | CONJ         	| <span dir="rtl">حرف_عطف</span>            	| <span dir="rtl">ولا</span>            	| or (in questions) 	| GLF                                                                        	|
 
-</details>
+
 
 
 #### CONJ_SUB - <span dir="rtl">أداة_ربط</span>
@@ -768,13 +757,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Subordinating conjunction don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example            	| English Gloss    	| Comments/Examples/Diaclect                              	|
 |--------------	|-----------------------------------	|----------------------------	|-----------------	|----------------------------------------------------------	|
 | CONJ_SUB     	| <span dir="rtl">أداة_ربط</span>    	| <span dir="rtl">و+</span>    	| while            	| GLF,EGY , <span dir="rtl">شفتها وهي طالعة مالبيت</span> 	|
 
-</details>
+
 
 
 #### PART_VOC - <span dir="rtl">حرف_نداء</span>
@@ -785,13 +774,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Vocative Particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------- -----	|----------------------------	|
 | PART_VOC     	| <span dir="rtl">حرف_نداء</span>    	| <span dir="rtl">يا</span> 	| o, hey           	| GLF,EGY                   	|
 
-</details>
+
 
 
 #### PART_RESTRICT - <span dir="rtl">اداة_استثناء</span>
@@ -803,13 +792,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Restrictive Particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                            	| Arabic Example               	| English Gloss    	| Comments/Examples/Diaclect                            	|
 |--------------	|-----------------------------------------------	|----------------------------	|---------------	|-------------------------------------------------------	|
 | PART_RESTRICT     	| <span dir="rtl">اداة_استثناء</span>    	| <span dir="rtl">الا</span> 	| Except for/only  	| GLF,EGY , <span dir="rtl">ما يعلم به إلاّ ربّنا</span>    	|
 
-</details>
+
 
 
 #### PART_NEG - <span dir="rtl">اداة_نفي</span>
@@ -821,7 +810,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Negative particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص            	| Arabic Example            	| English Gloss     	| Comments/Examples/Diaclect 	|
 |--------------	|-------------------------------	|---------------------------	|-------------------	|----------------------------	|
@@ -831,7 +820,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 | PART_NEG     	| <span dir="rtl">اداة_نفي</span>  	| <span dir="rtl">هب</span>  	| not               	| GLF                        	|
 | PART_NEG     	| <span dir="rtl">اداة_نفي</span>  	| <span dir="rtl">لا</span>  	| not, neither, nor 	| GLF                        	|
 
-</details>
+
 
 
 #### PART_DET - <span dir="rtl">اداة_تعريف</span>
@@ -843,13 +832,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Determiner particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------- -----	|----------------------------	|
 | PART_DET     	| <span dir="rtl">اداة_تعريف</span>    	| <span dir="rtl">ال+</span> 	| the           	| GLF,EGY                   	|
 
-</details>
+
 
 #### PART_INTERROG - <span dir="rtl">اداة_استفهام</span>
 
@@ -860,7 +849,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Interrogative particles don't take any features
 
-</details>
+
 
 #### PART_FUT - <span dir="rtl">اداة_استقبال</span>
 
@@ -871,14 +860,14 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Future particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------------	|----------------------------	|
 | PART_FUT     	| <span dir="rtl">اداة_استقبال</span>    	| <span dir="rtl">ب+</span> 	| will           	| GLF                   	|
 | PART_FUT     	| <span dir="rtl">اداة_استقبال</span>    	| <span dir="rtl">رح</span> 	| will           	| GLF                   	|
 
-</details>
+
 
 #### PART_FOCUS - <span dir="rtl">اداة_تفصيل</span>
 
@@ -889,13 +878,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Focus particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|--------------	|----------------------------	|
 | PART_FOCUS     	| <span dir="rtl">اداة_تفصيل</span>    	| <span dir="rtl">اما</span> 	| As for           	| GLF                   	|
 
-</details>
+
 
 #### PART_EMPHATIC - <span dir="rtl">اداة_توكيد</span>
 
@@ -906,13 +895,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Emphatic particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|---------------	|----------------------------	|
 | PART_EMPHATIC     	| <span dir="rtl">اداة_توكيد</span>    	| <span dir="rtl">ل+</span> 	| That           	| GLF , <span dir="rtl">والله لأضاربك</span>   	|
 
-</details>
+
 
 #### PART_RC - <span dir="rtl">جواب_شرط</span>
 
@@ -921,13 +910,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Response conditional particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص                   	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect   	|
 |--------------	|-----------------------------------	|----------------------------	|---------------	|----------------------------	|
 | PART_RC     	| <span dir="rtl">جواب_شرط</span>    	| <span dir="rtl">ف+</span> 	| So then           	| EGY , <span dir="rtl">إن كنت عايز فخلّيك; إذا كان كده فمعليش</span>   	|
 
-</details>
+
 
 #### PART - <span dir="rtl">حرف</span>
 
@@ -938,14 +927,14 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features 	| قسم الكلام.الخصائص           	| Arabic Example               	| English Gloss  	| Comments/Examples/Diaclect                                	|
 |--------------	|------------------------------	|----------------------------	|---------------	|-----------------------------------------------------------	|
 | PART     	| <span dir="rtl">حرف</span>    	| <span dir="rtl">و+</span> 	| and           	| GLF,EGY , <span dir="rtl">سبق وشفته</span>                	|
 | PART     	| <span dir="rtl">حرف</span>    	| <span dir="rtl">جان</span> 	| if, and so    	| GLF , <span dir="rtl">لولاها جان ما كانت الكل بالكل</span>   	|
 
-</details>
+
 
 #### PART_PROG - <span dir="rtl">حرف_مضارعة</span>
 
@@ -956,7 +945,7 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Progressive particles don't take any features
 
-</details>
+
 
 #### PART_CONNECT - <span dir="rtl">حرف_ربط</span>
 
@@ -967,13 +956,13 @@ For example, the word <span dir="rtl">عرب</span> 'Arabs' could be a noun or a
 
 - Connective particles don't take any features
 
-<details><summary markdown='span'>Examples</summary>
+**Examples**
 
 | POS.Features  	| قسم الكلام.الخصائص               	| Arabic Example               	| English Gloss            	| Comments/Examples/Diaclect                                                       	|
 |---------------	|----------------------------------	|----------------------------	|-----------------------	|-------------------------------------------------------------------------------	|
 | PART_CONNECT  	| <span dir="rtl">حرف_ربط</span>  	| <span dir="rtl">ف+</span> 	| {Discourse connective}  	| EGY , <span dir="rtl">أمّا أنا فمش رايحة; أمّا في البيت فأنت اللّي بتتحكّم</span> 	|
 
-</details>
+
 
 * * *
 
@@ -1013,7 +1002,7 @@ except for the sukun ‘absence of a vowel’.
 | تمرات       	| تَمرَة  	| NOUN.FP   	| dates (fruit)  	| GLF,EGY                      	|
 | ناس         	| نَاس   	| NOUN.MP   	| people, humans 	| GLF,EGY , collective plurals 	|
 
-</details>
+
 
 #### Gloss
 
@@ -1027,7 +1016,7 @@ The English gloss refers to the semantic translation of the Arabic lemma.
 | كِتاب  	| كتب         	| NOUN.MP   	| book          	| GLF,EGY                    	|
 | كَتَب   	| كتبوا       	| VERB.P3MP 	| write         	|                            	|
 
-</details>
+
 
 #### Dialect Identification
 
@@ -1036,7 +1025,7 @@ Dialect identification (DID) is the task of tagging a certain context with a giv
 Deciding the dialect tag depends on the context of the sentence and/or the document. As dialects may share the same words within themselves or with MSA, the dialect is inferred from the sentence structure and word order of that specific dialect.
 
 Although all words belonging to the same sentence may get the same dialect tag, in some cases two different dialectal structure could occur in the same sentence, hence we tag per word
-</details>
+
 
 
 ## Acknowledgments
