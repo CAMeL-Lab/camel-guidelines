@@ -1,15 +1,16 @@
 site_name: CAMeL Lab Guidelines
 nav:
     - Home: index.md
-    - Test1: test1.md
-    - Topic1:
-        - Test2: test2.md
     - Morphology: morphology.md
     - Phonology: phonology.md
     - Orthography: orthography.md
 theme: 
     name: readthedocs
-    navigation_depth: 4
-
+markdown_extensions:
+  - footnotes
+  - tables
 extra_css:
     - extra.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
