@@ -1,0 +1,37 @@
+
+mark.red {
+  background-color: rgb(184, 139, 139);
+}
+
+mark.green {
+  background-color: rgb(125, 165, 125);
+}
+
+.caphi
+{
+  white-space: nowrap;
+  font-family: monospace;
+}
+
+th:hover {
+  color: #A34343;
+  cursor: pointer;
+}
+
+.wy-side-nav-search {
+  background: #A34343;
+  }
+  .wy-nav-side {
+  background: #A34343;
+  }
+  .rst-versions .rst-current-version {
+  background: #A34343;
+  }
+
+.rst-versions{
+  border-top:solid 10px #A34343;
+  }
+
+.wy-side-nav-search input[type=text]{
+    border-color: #A34343;
+}
