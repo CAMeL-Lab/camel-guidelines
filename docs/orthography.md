@@ -10,6 +10,20 @@ sidebar:
 ---
 
 
+
+<details><summary markdown='span'>hoo</summary>
+
+ CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
+|----------------------------------|-------------------------------------------------|--------------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------------| 
+| <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Base word initial Hamza is normalized (not written)                                                      | 
+| <span dir="rtl">مألوف</span>     | <span class='caphi'>m a 2 l uu f</span>         | familiar                 | مألوف           | Sanaa       |                                                                                                          | 
+| <span dir="rtl">لا مؤاخذة</span> | <span class='caphi'>l a # m u 2 a kh z a</span> | excuse me                | لا مؤاخذة       | Cairo       |                                                                                                          | 
+| <span dir="rtl">فئة</span>       | <span class='caphi'>f i 2 e</span>              | denomination             | فئة             | Sanaa       |                                                                                                          | 
+
+
+  </details>
+
+
 # CODA*: Conventional Orthography for Dialectal Arabic 
 
 
@@ -83,11 +97,12 @@ Arabic’s templatic morphology makes common reference to the concept of the roo
 We define an Arabic base word to consist of a stem and the minimal number of concatenative affixes needed to specify the obligatory features for its part of speech (POS). A stem can be non-templatic or it can be composed from the interdigitation of a root and a pattern. The pattern may specify the features fully, as in broken plurals. Base words are as such the smallest fully formed words. Examples include: كتابين 'two books' and يكتبون 'they write'. Clitics are syntactically independent but phonologically dependent morphemes that are attached to the word phonologically. Words can be base words or base words with added clitics. We use the term word to refer to the phonological utterance or the orthographic string, and we specify as needed. In CODA, phonological words typically map one-to-one to orthographic words; but there are many exceptions, pertaining mostly to clitics that are spelled as separate orthographic words.
 
 
-![words basewords clitics](img/words_basewords_clitics_1.png)
+{% include 'html/words_basewords_clitics1.html' %}
 
 ***
 
-![words basewords clitics](img/words_basewords_clitics_2.png)
+{% include 'html/words_basewords_clitics2.html' %}
+
 
 
 
@@ -100,7 +115,7 @@ We define an Arabic base word to consist of a stem and the minimal number of con
 
 Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is unchanged from previous CODA versions. 
 
-(For a detailed explanation of Hamza spelling rules in MSA, you can refer to chapter 7 of the [QALB annotation guidelines](http://nlp.qatar.cmu.edu/qalb/QALB-guidelines_0.90.pdf){:target="_blank"})
+(For a detailed explanation of Hamza spelling rules in MSA, you can refer to chapter 7 of the [QALB annotation guidelines](http://nlp.qatar.cmu.edu/qalb/QALB-guidelines_0.90.pdf))
 
 ***
 
@@ -114,7 +129,7 @@ Note on **word initial Madda**: any word that starts with a long vowel of the qu
 
 Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. In other words, dialectal words that have MSA cognates containing Hamza but do not contain an /2/ in their phonology are spelled without the Hamza.
 
-| CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | e.g Dialect | Examples; Comments                                                                                       | 
+| CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
 |----------------------------------|-------------------------------------------------|--------------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------------| 
 | <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Base word initial Hamza is normalized (not written)                                                      | 
 | <span dir="rtl">مألوف</span>     | <span class='caphi'>m a 2 l uu f</span>         | familiar                 | مألوف           | Sanaa       |                                                                                                          | 
@@ -141,7 +156,7 @@ Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. I
 
 While Arabic diacritics are optional in general, they can be crucial for disambiguation in certain contexts. Arabic diacritics are primarily used for representing short vowels, or absence of vowels. However, the Shadda diacritic is used to represent consonantal gemination, e.g. كَتَّب /k a t t a b/ ‘he dictated’. As such, the Shadda interacts with the number of letters in a word. The Shadda general rule states that it is used within the base word (including suffixes and prefixes), but not across word-clitic boundaries. Any exceptions must be specified in the specific rules (see specific rule: "The Definite Article" for an example of where the general Shadda rule is overriden.
 
-| CODA                             | CAPHI                                             | Gloss                  | Tokenized CODA | e.g Dialect | NON-CODA examples; Comments                                                                                  | 
+| CODA                             | CAPHI                                             | Gloss                  | Tokenized CODA | Dialect | NON-CODA examples; Comments                                                                                  | 
 |----------------------------------|---------------------------------------------------|------------------------|----------------|-------------|--------------------------------------------------------------------------------------------------------------| 
 | <span dir="rtl">جنَّنَاهم</span> | <span class='caphi'>g a n n a n n aa h u m</span> | we made them crazy     | جنننا+هم       | Cairo       | Note that this نا  is an obligatory suffix referring to the verbal feature [1p] and is part of the base word | 
 | <span dir="rtl">جنَّنَنا</span>  | <span class='caphi'>g a n n a n n a</span>        | he/it mad us crazy     | جنَن+نا        | Cairo       |                                                                                                              | 
@@ -158,7 +173,7 @@ While Arabic diacritics are optional in general, they can be crucial for disambi
 
 In many dialects, base word long vowels may be shortened in certain contexts. Generally, the rule is to prefer the long letter-based spelling over the shortened diacritic spelling.
 
-| CODA                            | CAPHI                                     | Gloss         | MSA Cognate | e.g Dialect | Examples; Comments                                                                                  | 
+| CODA                            | CAPHI                                     | Gloss         | MSA Cognate | Dialect | Examples; Comments                                                                                  | 
 |---------------------------------|-------------------------------------------|---------------|-------------|-------------|-----------------------------------------------------------------------------------------------------| 
 | <span dir='rtl'>قانون</span>    | <span class='caphi'>2 a n uu n</span>     | law           | قانون       | Cairo       | So long as the vowel is the same quality as the MSA, we can keep the MSA spelling                   | 
 | <span dir='rtl'>قولوا له</span> | <span class='caphi'>2 u l uu # l u</span> | tell him [2p] | قولوا له    | Cairo       | this is because قول is not always short in Cairene and can be pronounced long in different contexts | 
@@ -200,7 +215,7 @@ Our list of allowed pairings is presented in the table below:
   
   
 
-| CODA                          | CAPHI                                       | Gloss           | CODA Letter | Dialectal Sound | MSA Sound | e.g Dialect  | NON-CODA examples; Comments                                                                                                                                                                                      | 
+| CODA                          | CAPHI                                       | Gloss           | CODA Letter | Dialectal Sound | MSA Sound | Dialect  | NON-CODA examples; Comments                                                                                                                                                                                      | 
 |-------------------------------|---------------------------------------------|-----------------|-------------|-----------------|-----------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | <span dir='rtl'>برتقان</span> | <span class='caphi'>b u r t u 2 aa n</span> | orange          | ق           | 2               | q         | Jeddah       | برتئان، برتقال; only the sound-letter pairs that are in the list of permitted changes are changed                                                                                                                | 
 | <span dir='rtl'>ثامن</span>   | <span class='caphi'>t aa m i n</span>       | eighth          | ث           | t               | th        | Jeddah       | تامن                                                                                                                                                                                                             | 
@@ -210,7 +225,7 @@ Our list of allowed pairings is presented in the table below:
 
 <details><summary markdown='span'>{{ page.moreExamples }}</summary>
 
-| CODA                          | CAPHI                                       | Gloss           | CODA Letter | Dialectal Sound | MSA Sound | e.g Dialect  | NON-CODA examples; Comments  
+| CODA                          | CAPHI                                       | Gloss           | CODA Letter | Dialectal Sound | MSA Sound | Dialect  | NON-CODA examples; Comments  
 |-------------------------------|---------------------------------------------|-----------------|-------------|-----------------|-----------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | <span dir='rtl'>ضفدعة</span>  | <span class='caphi'>d. u f d. a 3 a</span>  | frog            | د           | d.              | d         | Cairo        | ضفضعة                                                                                                                                                                                                            | 
 | <span dir='rtl'>ظهرية</span>  | <span class='caphi'>d. u h r i y y a</span> | shaddow         | ظ           | d.              | dh.       | Jeddah       | ضهرية                                                                                                                                                                                                            | 
@@ -261,7 +276,7 @@ Our list of allowed pairings is presented in the table below:
 
 Dialectal words with patterns that are cognates of MSA patterns will retain the spelling choice of the MSA pattern if the difference in pronunciation can be expressed using diacritics (for vowel change or absence), or if the pronunciation is a shortened form of the MSA pattern vowels.
 
-| Example in CODA               | Example in CAPHI                               | Gloss          | CODA Letter | Dialectal Sound | MSA Sound | e.g Dialect | NON-CODA examples; Comments | 
+| Example in CODA               | Example in CAPHI                               | Gloss          | CODA Letter | Dialectal Sound | MSA Sound | Dialect | NON-CODA examples; Comments | 
 |-------------------------------|------------------------------------------------|----------------|-------------|-----------------|-----------|-------------|-----------------------------| 
 | <span dir='rtl'>اتضرب</span>  | <span class='caphi'>2 i d. d. a r a b</span>   | he got hit     | ت           | d.              | t         | Cairo       | ادضرب، اضّرب                | 
 | <span dir='rtl'>اتدشدش</span> | <span class='caphi'>2 i d d a sh d a sh</span> | he got smashed | ت           | d               | t         | Cairo       | ادّشدش                      | 
@@ -276,7 +291,7 @@ Dialectal words with patterns that are cognates of MSA patterns will retain the 
 
 The MSA rules for spelling the Alif-Maqsura (ى), which are sometimes based on roots and sometimes on patterns, apply in CODA*.
 
-| CODA                        | CAPHI                                 | Gloss      | e.g Dialect | NON-CODA examples; Comments | 
+| CODA                        | CAPHI                                 | Gloss      | Dialect | NON-CODA examples; Comments | 
 |-----------------------------|---------------------------------------|------------|-------------|-----------------------------| 
 | <span dir='rtl'>اعطى</span> | <span class='caphi'>2 a 3 t. a</span> | give [3ms] | Abu Dhabi   | اعطا                        | 
 | <span dir='rtl'>بغى</span>  | <span class='caphi'>b gh a</span>     | want [3ms] | Rabat       | بغا                         | 
@@ -294,7 +309,7 @@ The MSA rules for spelling the Alif-Maqsura (ى), which are sometimes based on r
 
 The general rule on phonological clitic spelling is that clitics that are mapped into single letters (with possible diacritics) will be spelled attached to the word, and will not interact with the spelling of the word. (For examples of specifc rules that override this rule, see "The Definite Article" and "Nominative Pronouns")
 
-| CODA                               | CAPHI                                                     | Gloss                 | Tokenized CODA | e.g Dialect | Comments                                                                                       | 
+| CODA                               | CAPHI                                                     | Gloss                 | Tokenized CODA | Dialect | Comments                                                                                       | 
 |------------------------------------|-----------------------------------------------------------|-----------------------|----------------|-------------|------------------------------------------------------------------------------------------------| 
 | <span dir='rtl'>ولحد ما يجي</span> | <span class='caphi'>w l a 7 a d d #</span> <span class='caphi'> m a # y ii g i</span> | and until he/it comes | و+ل+حد ما يجي  | Cairo       | notice how و and ل -- single letter clitics -- attach to adjacent morphemes while ما does not. | 
 
@@ -310,7 +325,7 @@ The general rule on phonological clitic spelling is that clitics that are mapped
 The Arabic definite article is always written as a proclitic ال+ـ, regardless of how it is pronounced (keep in mind that in DA, lunar/solar letters are not always the same as in MSA). As with MSA spelling, general cliticization rules apply except when following the proclitic ل+ـ, where the article is spelled without its ا. The general Shadda rule is overridden in the specific context of ل+ ال+ـ followed by an ل-initial base word.
 
 
-| CODA                           | CAPHI                                        | Gloss             | Tokenized CODA | e.g Dialect | Examples; Comments                                                                                             | 
+| CODA                           | CAPHI                                        | Gloss             | Tokenized CODA | Dialect | Examples; Comments                                                                                             | 
 |--------------------------------|----------------------------------------------|-------------------|----------------|-------------|----------------------------------------------------------------------------------------------------------------| 
 | <span dir='rtl'>القمر</span>   | <span class='caphi'>2 i l 2 a m a r</span>   | the moon          | ال+قمر         | Cairo       |                                                                                                                | 
 | <span dir='rtl'>الشمس</span>   | <span class='caphi'>2 i sh sh a m e s</span> | the sun           | ال+شمس         | Jerusalem   |                                                                                                                | 
@@ -337,7 +352,7 @@ The Arabic definite article is always written as a proclitic ال+ـ, regardless
 
 The Ta-Marbuta (ة) is a secondary letter of the Arabic alphabet used to represent a particular suffix morpheme that is often (but not exclusively) associated with the feminine-singular feature (Alkuhlani and Habash, 2011). This morpheme has a number of allomorphs with differing pronunciations. Most notably, it appears as a vowel at the end of nominals, and changes to a ∼ /t/ when followed by possessive pronominal enclitics. The Ta-Marbuta should be written as ة in word-final positions, regardless of its pronunciation, and following general CODA rules in non-word-final positions.
 
-| CODA                               | CAPHI                                                    | Gloss               | e.g Dialect | 
+| CODA                               | CAPHI                                                    | Gloss               | Dialect | 
 |------------------------------------|----------------------------------------------------------|---------------------|-------------| 
 | <span dir='rtl'>حاجة</span>        | <span class='caphi'>7 aa g a</span>                      | something           | Cairo       | 
 | <span dir='rtl'>حاجتي</span>       | <span class='caphi'>7 aa g t i </span>                   | my thing            | Cairo       | 
@@ -359,7 +374,7 @@ The Ta-Marbuta (ة) is a secondary letter of the Arabic alphabet used to represe
 
 Verbal suffixes that indicate the feature plural subject [2p] & [3p] and end with the sounds (/u/, /uu/, /o/, /oo/, and /aw/) will represent those sounds as وا+ (‘Waw of Plurality’ واو الجماعة) in word-final positions, and also when followed by other attached clitics. This rule is similar to the MSA rule, except for expanding the phonetic definition.
 
-| CODA                            | CAPHI                                        | Gloss            | e.g Dialect | 
+| CODA                            | CAPHI                                        | Gloss            | Dialect | 
 |---------------------------------|----------------------------------------------|------------------|-------------| 
 | <span dir='rtl'>قالوا</span>    | <span class='caphi'>2 aa l u</span>          | they said        | Cairo       | 
 | <span dir='rtl'>بيقولوا</span>  | <span class='caphi'>b i y 2 uu l u</span>    | they say         | Cairo       | 
@@ -382,7 +397,7 @@ Verbal suffixes that indicate the feature plural subject [2p] & [3p] and end wit
 The negation particle (/m a/, /m aa/) has phonologically become a proclitic in many dialects. However, it is always written as a separate particle ما except when overridden by other specification rules. One example of such a rule is the case of negated pronouns (see "Nominative Pronouns"), in which ما is written attached. Another example involves some negated existentials (see "Existentials") in which the Alif can be ellided.
 
 
-| CODA                            | CAPHI                                            | Gloss          | e.g Dialect | 
+| CODA                            | CAPHI                                            | Gloss          | Dialect | 
 |---------------------------------|--------------------------------------------------|----------------|-------------| 
 | <span dir='rtl'>ما قال</span>   | <span class='caphi'>m aa # 2 aa l</span>         | he did not say | Damascus    | 
 | <span dir='rtl'>ما قالش</span>  | <span class='caphi'>m a # 2 a l sh</span>        | he did not say | Cairo       | 
@@ -402,7 +417,7 @@ The negation particle (/m a/, /m aa/) has phonologically become a proclitic in m
 Post-verbal and post-nominal prepositions that have phonologically become enclitics will nonetheless be spelled separately from the words they follow. The most prominent such case is the preposition ل+ـ ‘to, for’ which introduces indirect verb objects in a number of dialects.
 
 
-| CODA                                | CAPHI                                              | Gloss                     | e.g Dialect | 
+| CODA                                | CAPHI                                              | Gloss                     | Dialect | 
 |-------------------------------------|----------------------------------------------------|---------------------------|-------------| 
 | <span dir='rtl'>قالوها لي</span>    | <span class='caphi'>2 a l u h aa # l i</span>      | they said it to me        | Cairo       | 
 | <span dir='rtl'>ما قالوا ليش</span> | <span class='caphi'>m a # 2 a l u # l ii sh</span> | they did not say it to me | Cairo       | 
@@ -426,7 +441,7 @@ The words for numbers in Arabic dialects are amongst the most rich in phonologic
 The above rules apply to all number words, whether ordinal, cardinal, or fractions. Number words sometimes have different masculine and feminine forms that are used according to different dialect-specific rules. CODA guidelines do not interact with these dialect-specific decisions.
 
 
-| CODA                             | CAPHI                                                | Gloss        | e.g Dialect | 
+| CODA                             | CAPHI                                                | Gloss        | Dialect | 
 |----------------------------------|------------------------------------------------------|--------------|-------------| 
 | <span dir='rtl'>ثمانية</span>    | <span class='caphi'>th a m a n y e</span>            | eight        | Salt        | 
 | <span dir='rtl'>ثمانية</span>    | <span class='caphi'>t a m a n y e</span>             | eight        | Amman       | 
@@ -479,7 +494,7 @@ Here is the specification table for Pronominal Clitics:
 
 *** 
 
-| CODA                          | CAPHI                                   | Gloss    | e.g Dialect | 
+| CODA                          | CAPHI                                   | Gloss    | Dialect | 
 |-------------------------------|-----------------------------------------|----------|-------------| 
 | <span dir='rtl'>كتابها</span> | <span class='caphi'>k i t aa b a</span> | her book | Damascus    | 
 | <span dir='rtl'>كتابه</span>  | <span class='caphi'>k i t aa b a</span> | his book | Abu Dhabi   | 
@@ -505,7 +520,7 @@ Decision notes:
     * Multiples of Alif: In the cases of negation particles ending with “ا” attaching to pronouns starting with “ا”, only one “ا” should remain, e.g. /m a 7 n aa sh/ → ماحناش → ما+احنا+ش.
 
 
-| CODA                        | CAPHI                                | Gloss     | e.g Dialect | 
+| CODA                        | CAPHI                                | Gloss     | Dialect | 
 |-----------------------------|--------------------------------------|-----------|-------------| 
 | <span dir='rtl'>احنا</span> | <span class='caphi'>2 i 7 n a</span> | we        | Cairo       | 
 | <span dir='rtl'>انا</span>  | <span class='caphi'>2 a n a</span>   | I         | Cairo       | 
@@ -522,7 +537,7 @@ Decision notes:
 
 ***
 
-| CODA                          | CAPHI                                        | Gloss                 | Tokenized CODA | e.g Dialect | 
+| CODA                          | CAPHI                                        | Gloss                 | Tokenized CODA | Dialect | 
 |-------------------------------|----------------------------------------------|-----------------------|----------------|-------------| 
 | <span dir='rtl'>ماحناش</span> | <span class='caphi'>m a 7 n aa sh</span>     | we are not            | ما+احنا+ش      | Cairo       | 
 | <span dir='rtl'>مانتاش</span> | <span class='caphi'>m a n t aa sh</span>     | you are not           | ما+انت+ش       | Cairo       | 
@@ -543,7 +558,7 @@ Decision notes:
 
 Some of the vocative expressions used primarily for familial reference have vocalic endings that are homophonous with pronominal suffixes. These endings are spelled following the general phonology-to-orthography rules. For example, the word /3 a m m o/ in the dialect of Amman can mean ‘uncle!’ (spelled in CODA as عمو) or ‘his uncle’ (spelled in CODA as عمه).
 
-| CODA                       | CAPHI                                | Gloss     | e.g Dialect | 
+| CODA                       | CAPHI                                | Gloss     | Dialect | 
 |----------------------------|--------------------------------------|-----------|-------------| 
 | <span dir='rtl'>عمو</span> | <span class='caphi'>3 a m m o</span> | uncle!    | Amman       | 
 | <span dir='rtl'>عمه</span> | <span class='caphi'>3 a m m o</span> | his uncle | Amman       | 
@@ -558,7 +573,7 @@ Some of the vocative expressions used primarily for familial reference have voca
 
 Some forms containing relative pronouns can have different spelling rules, primarily to disambiguate differences in meaning.
 
-| CODA                           | CAPHI                                | Gloss            | e.g Dialect                                                                | Examples; Comments                                                                                                                                               | 
+| CODA                           | CAPHI                                | Gloss            | Dialect                                                                | Examples; Comments                                                                                                                                               | 
 |--------------------------------|--------------------------------------|------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | <span dir='rtl'>اللي</span>    | <span class='caphi'>2 i l l i</span> | who, which, whom | Cairo, Abu Dhabi, Rabat, Tunis, Beirut, Riyadh, Damascus, Jerusalem, Sanaa | Follows general spelling rules                                                                                                                                   | 
 | <span dir='rtl'>يا اللي</span> | <span class='caphi'>y a l l i</span> | O you who..      | Cairo, Jerusalem, Riyadh, Sanaa, Abu Dhabi                                 | Following general rules, the vocative morpheme يا is spelled separately connoting a vocative expression                                                          | 
@@ -576,7 +591,7 @@ Some forms containing relative pronouns can have different spelling rules, prima
 
 Some forms related to time, such as the Cairene /d i l w a 2 t i/, دلوقتي, 'now', are frozen forms which etymologically transform and combine various morphemes, in this case: هذا + الوقت. Instead of spelling it phonologically دلوئتي, we preserve etymological information by considering the nominal part of the word and spelling it according to general root radical cognate rules.
 
-| CODA                          | CAPHI                                      | Gloss         | e.g Dialect                        | 
+| CODA                          | CAPHI                                      | Gloss         | Dialect                        | 
 |-------------------------------|--------------------------------------------|---------------|------------------------------------| 
 | <span dir='rtl'>لسا</span>    | <span class='caphi'>l i s s a</span>       | not yet       | Abu Dhabi, Beirut                  | 
 | <span dir='rtl'>هسا</span>    | <span class='caphi'>h a s s a</span>       | now, just now | Baghdad, Amman                     | 
@@ -611,7 +626,7 @@ Decision notes:
   * It is observed that “يلا” is sometimes preferred over “يالله” to avoid using the name of God in contexts that might be considered indecent.
   * In some dialects such as Tunisian, “يلا” inflect as a verb in the command aspect, hence the spelling “يلا” is more appropriate.
 
-| CODA                               | CAPHI                                                     | Gloss              | e.g Dialect                     | 
+| CODA                               | CAPHI                                                     | Gloss              | Dialect                     | 
 |------------------------------------|-----------------------------------------------------------|--------------------|---------------------------------| 
 | <span dir='rtl'>يلا</span>         | <span class='caphi'>y a l. l a</span>                     | hurry up, come on! | Abu Dhabi                       | 
 | <span dir='rtl'>يلا</span>         | <span class='caphi'>y a l. l. a</span>                    | hurry up, come on! | Cairo                           | 
@@ -636,7 +651,7 @@ Decision notes:
 1) The existential expression /f ii/, فيه, 'there is', is attached to the pronominal clitic [3ms] ه+, known in Arabic grammar as Dhameer Al Sha'n, ضمير الشأن, though its often not prounounced.
 2) Another existential rule involves negated existentials, as in the Cairene /m a f ii sh/, مفيش, 'there isn't', in which the negation clitic is shortened and attached.
 
-| CODA                       | CAPHI                            | Gloss    | e.g Dialect | 
+| CODA                       | CAPHI                            | Gloss    | Dialect | 
 |----------------------------|----------------------------------|----------|-------------| 
 | <span dir='rtl'>فيه</span> | <span class='caphi'>f ii</span>  | there is | Cairo       | 
 | <span dir='rtl'>به</span>  | <span class='caphi'>b e h</span> | there is | Sanaa       | 
@@ -645,7 +660,7 @@ Decision notes:
 
 ***
 
-| CODA                        | CAPHI                                  | Gloss       | Tokenized CODA | e.g Dialect | Examples; Comments                       | 
+| CODA                        | CAPHI                                  | Gloss       | Tokenized CODA | Dialect | Examples; Comments                       | 
 |-----------------------------|----------------------------------------|-------------|----------------|-------------|------------------------------------------| 
 | <span dir='rtl'>مفيش</span> | <span class='caphi'>m a f ii sh</span> | there isn't | ما+في+ه+ش      | Cairo       |                                          | 
 | <span dir='rtl'>مابش</span> | <span class='caphi'>m aa b i sh</span> | there isn't | ما+ب+ه+ش       | Sanaa       | Note how long vowels are never shortened | 
@@ -666,7 +681,7 @@ Demonstrative pronouns can be found in three forms:
 * If extended, spell the extensions according to the general rules.
 * If complex, determine the personal pronoun and spell it according to the rules in "Nominative Pronouns", spell the demonstrative pronoun part according to the simple pronoun rules.
 
-| CODA                            | CAPHI                                         | Gloss                     | e.g Dialect      | 
+| CODA                            | CAPHI                                         | Gloss                     | Dialect      | 
 |---------------------------------|-----------------------------------------------|---------------------------|------------------| 
 | <span dir='rtl'>اهو</span>      | <span class='caphi'>2 a h a w w a</span>      | there he is, there it is  | Tunis            | 
 | <span dir='rtl'>اهو</span>      | <span class='caphi'>2 a h o</span>            | there he is, there it is  | Cairo            | 
@@ -702,7 +717,7 @@ Demonstrative pronouns can be found in three forms:
 1) Similar to demonstrative pronouns, this class of adverbials keeps general CODA rules, except for the "د" which is spelled as pronounced. Also note that "كده" was preferred with ه rather than ا (counter to general rules), because it appears much more frequently.
 
 
-| CODA                         | CAPHI                                     | Gloss                | e.g Dialect                | 
+| CODA                         | CAPHI                                     | Gloss                | Dialect                | 
 |------------------------------|-------------------------------------------|----------------------|----------------------------| 
 | <span dir='rtl'>كي</span>    | <span class='caphi'>tsh ii y</span>       | like this, like that | Abu Dhabi                  | 
 | <span dir='rtl'>كي</span>    | <span class='caphi'>tsh ii</span>         | like this, like that | Abu Dhabi                  | 

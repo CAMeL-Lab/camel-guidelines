@@ -26,5 +26,8 @@ plugins:
     - search:
         lang: ar
         lang: en
+    - macros
+
 extra:
     issue_tracker: https://github.com/slkh/camel-guidelines/issues
+

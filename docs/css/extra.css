@@ -13,6 +13,10 @@ mark.green {
   font-family: monospace;
 }
 
+/* .wy-nav-content {
+  max-width: 1000px !important;
+} */
+
 th:hover {
   color: #A34343;
   cursor: pointer;
