@@ -44,14 +44,88 @@ as the baseword (i.e.`PRON.features`).
 ## Schema details
 
 ### Core POS
-The following table shows the list of `POS` tagset used in this schema compared 
+The following tables show the list of `POS` tagset used in this schema compared 
 with the ones used ARZATB. The tagset is divided into three categories according 
 to the D3 tokenization scheme (Habash et al, 2010): proclitics (14 tags), enclitics
 (2 tags) and baseword (39 tags). Together with the features, CAMEL POS tagset
 maps to ARZATB and retains backward compatibility. It also offers an intuitive 
 Arabic scheme that is suitable to use for annotation.
 
+**Proclitics tags**
+
+| CAMEL POS Arabic 	| CAMEL POS     	| ATB POS       	|
+|------------------	|---------------	|---------------	|
+| أداة_تعريف       	| PART_DET      	| DET           	|
+| حرف_عطف          	| CONJ          	| CONJ          	|
+| حرف_جر           	| PREP          	| PREP          	|
+| أداة_نفي         	| PART_NEG      	| NEG_PART      	|
+| أداة_استقبال     	| PART_FUT      	| FUT_PART      	|
+| أداة_مضارعة      	| PART_PROG     	| PROG_PART     	|
+| أداة_ربط         	| CONJ_SUB      	| SUB_CONJ      	|
+| ضمير_إشارة       	| PRON_DEM      	| DEM_PRON      	|
+| ضمير_استفهام     	| PRON_INTERROG 	| INTERROG_PRON 	|
+| أداة             	| PART          	| PART          	|
+| حرف_ربط          	| PART_CONNECT  	| CONNEC_PART   	|
+| أداة_توكيد       	| PART_EMPHATIC 	| EMPHATIC_PART 	|
+| جواب_شرط         	| PART_RC       	| RC_PART       	|
+| أداة_نداء        	| PART_VOC      	| VOC_PART      	|
+
+**Enclitics tags**
+
+| CAMEL POS Arabic 	| CAMEL POS 	| ATB POS           	|
+|------------------	|-----------	|-------------------	|
+| أداة_نفي         	| PART_NEG  	| NEG_PART          	|
+| ضمير             	| PRON      	| *SUFF_DO:\[PGN\]  	|
+| ضمير             	| PRON      	| POSS_PRON_[\PGN\] 	|
+| ضمير             	| PRON      	| PRON_\[PGN\]      	|
+
+**Baseword tags**
+
+| CAMEL POS Arabic 	| CAMEL POS     	| ATB POS       	|
+|------------------	|---------------	|---------------	|
+| اسم              	| NOUN          	| NOUN          	|
+| اسم_عدد          	| NOUN_NUM      	| NOUN_NUM      	|
+| اسم_علم          	| NOUN_PROP     	| NOUN_PROP     	|
+| اسم_كم           	| NOUN_QUANT    	| NOUN_QUANT    	|
+| صفة              	| ADJ           	| ADJ           	|
+| صفة_عدد          	| ADJ_NUM       	| ADJ_NUM       	|
+| صفة_مقارنة       	| ADJ_COMP      	| ADJ_COMP      	|
+| ظرف              	| ADV           	| ADV           	|
+| ظرف_استفهام      	| ADV_INTERROG  	| INTERROG_ADV  	|
+| ظرف_موصول        	| ADV_REL       	| REL_ADV       	|
+| فعل              	| VERB          	| IV/PV/CV      	|
+| شبه_فعل          	| VERB_PSEUDO   	| PSEUDO_VERB   	|
+| اسم_فعل          	| VERB_NOM      	| VERB          	|
+| ضمير             	| PRON          	| PRON_[PGN]    	|
+| ضمير_إشارة       	| PRON_DEM      	| DEM_PRON_[GN] 	|
+| ضمير_استفهام     	| PRON_INTERROG 	| INTERROG_PRON 	|
+| ضمير_تعجب        	| PRON_EXCLAM   	| EXCLAM_PRON   	|
+| ضمير_موصول       	| PRON_REL      	| REL_PRON      	|
+| أداة             	| PART          	| PART          	|
+| أداة_تعريف       	| PART_DET      	| DET           	|
+| أداة_نفي         	| PART_NEG      	| NEG_PART      	|
+| أداة_استقبال     	| PART_FUT      	| FUT_PART      	|
+| أداة_مضارعة      	| PART_PROG     	| PROG_PART     	|
+| أداة_فعل         	| PART_VERB     	| VERB_PART     	|
+| أداة_نداء        	| PART_VOC      	| VOC_PART      	|
+| أداة_استفهام     	| PART_INTERROG 	| INTERROG_PART 	|
+| أداة_استثناء     	| PART_RESTRICT 	| RESTRIC_PART  	|
+| أداة_تفصيل       	| PART_FOCUS    	| FOCUS_PART    	|
+| أداة_توكيد       	| PART_EMPHATIC 	| EMPHATIC_PART 	|
+| جواب_شرط         	| PART_RC       	| RC_PART       	|
+| أداة_ربط         	| CONJ_SUB      	| SUB_CONJ      	|
+| حرف_جر           	| PREP          	| PREP          	|
+| حرف_عطف          	| CONJ          	| CONJ          	|
+| أداة_ربط         	| PART_CONNECT  	| CONNEC_PART   	|
+| رقم              	| DIGIT         	| NOUN_NUM      	|
+| اختصار           	| ABBREV        	| ABBREV        	|
+| تعجب             	| INTERJ        	| INTERJ        	|
+| أجنبي            	| FORIEGN       	| FOREIGN       	|
+| علامة_ترقيم      	| PUNC          	| PUNC          	|
+
+
 ### Features
+
 CAMEL POS provides full array of features: 
 
 - **A**spect with the values **P**erfective, **I**mperfective and **C**ommand.
@@ -106,8 +180,10 @@ In this section we provide detailed guidelines in the context of a comperhensive
 
 ### Tokenization
 
-The tokenization scheme recommended when annotating using {{ page.cameltools}} is D3.
-: **D3** tokenizes all clitics: question particle, conjunctions, particles, prepositions, articles, and pronominal enclitics.
+The tokenization scheme recommended when annotating using CAMEL POS is D3.
+
+**D3 Tokenization**
+:    D3 tokenizes all clitics: question particle, conjunctions, particles, prepositions, articles, and pronominal enclitics.
 
 - In the tokenization task, all tokens must be orthographically normalized, that is undoing all of the morphophonemic and orthographic rewrite rules. For example, the word <span dir="rtl">مكتبتها</span> should be tokenized as <span dir="rtl">مكتبة +ها</span> NOT <span dir="rtl">مكتبت +ها</span>
 - Remember that clitics are optional to word formation and they include particles and pronouns.
