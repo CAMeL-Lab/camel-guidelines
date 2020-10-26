@@ -13,9 +13,10 @@ mark.green {
   font-family: monospace;
 }
 
-/* .wy-nav-content {
-  max-width: 1000px !important;
-} */
+.wy-nav-content {
+  max-width: 70%;
+  margin: auto;
+}
 
 th:hover {
   color: #A34343;
@@ -25,13 +26,15 @@ th:hover {
 .wy-side-nav-search {
   background: #A34343;
   }
-  .wy-nav-side {
+.wy-nav-side {
   background: #A34343;
   }
-  .rst-versions .rst-current-version {
+.rst-versions .rst-current-version {
   background: #A34343;
   }
-
+.wy-nav-top {
+  background: #A34343;
+}
 .rst-versions{
   border-top:solid 10px #A34343;
   }
