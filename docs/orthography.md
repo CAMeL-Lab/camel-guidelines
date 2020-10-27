@@ -9,28 +9,9 @@ sidebar:
   nav: "docs"
 ---
 
-
-??? optional-class "Summary"
-
-    CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
-    |----------------------------------|-------------------------------------------------|--------------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------------| 
-    | <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Base word initial Hamza is normalized (not written)                                                      | 
-    | <span dir="rtl">مألوف</span>     | <span class='caphi'>m a 2 l uu f</span>         | familiar                 | مألوف           | Sanaa       |                                                                                                          | 
-    | <span dir="rtl">لا مؤاخذة</span> | <span class='caphi'>l a # m u 2 a kh z a</span> | excuse me                | لا مؤاخذة       | Cairo       |                                                                                                          | 
-    | <span dir="rtl">فئة</span>       | <span class='caphi'>f i 2 e</span>              | denomination             | فئة             | Sanaa       |                                                                                                          | 
-
-<details><summary markdown='span'>hoo</summary>
-
-
- CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
-|----------------------------------|-------------------------------------------------|--------------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------------| 
-| <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Base word initial Hamza is normalized (not written)                                                      | 
-| <span dir="rtl">مألوف</span>     | <span class='caphi'>m a 2 l uu f</span>         | familiar                 | مألوف           | Sanaa       |                                                                                                          | 
-| <span dir="rtl">لا مؤاخذة</span> | <span class='caphi'>l a # m u 2 a kh z a</span> | excuse me                | لا مؤاخذة       | Cairo       |                                                                                                          | 
-| <span dir="rtl">فئة</span>       | <span class='caphi'>f i 2 e</span>              | denomination             | فئة             | Sanaa       |                                                                                                          | 
-
-
-  </details>
+{%set more = 'See examples' %}
+<!-- ??? optional-class "{{ more }}"
+    abc -->
 
 
 # CODA*: Conventional Orthography for Dialectal Arabic 
@@ -110,7 +91,10 @@ We define an Arabic base word to consist of a stem and the minimal number of con
 
 ***
 
-{% include 'html/words_basewords_clitics2.html' %}
+??? optional-class "Click to see another example"
+    {% include 'html/words_basewords_clitics2.html' %}
+
+<br>
 
 
 
@@ -138,19 +122,20 @@ Note on **word initial Madda**: any word that starts with a long vowel of the qu
 
 Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. In other words, dialectal words that have MSA cognates containing Hamza but do not contain an /2/ in their phonology are spelled without the Hamza.
 
-| CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
-|----------------------------------|-------------------------------------------------|--------------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------------| 
-| <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Base word initial Hamza is normalized (not written)                                                      | 
-| <span dir="rtl">مألوف</span>     | <span class='caphi'>m a 2 l uu f</span>         | familiar                 | مألوف           | Sanaa       |                                                                                                          | 
-| <span dir="rtl">لا مؤاخذة</span> | <span class='caphi'>l a # m u 2 a kh z a</span> | excuse me                | لا مؤاخذة       | Cairo       |                                                                                                          | 
-| <span dir="rtl">فئة</span>       | <span class='caphi'>f i 2 e</span>              | denomination             | فئة             | Sanaa       |                                                                                                          | 
-| <span dir="rtl">يأنتر</span>     | <span class='caphi'>y i 2 a n t i r</span>      | he is using the internet | يستعمل الإنترنت | Sanaa       |                                                                                                          | 
-| <span dir="rtl">بريء</span>      | <span class='caphi'>b a r ii 2</span>           | innocent                 | بريء            | Sanaa       |                                                                                                          | 
-| <span dir="rtl">بير</span>       | <span class='caphi'>b ii r</span>               | well                     | بئر             | Sanaa       | Spelling follows dialect phonology: Hamza is dropped                                                     | 
-| <span dir="rtl">سما</span>       | <span class='caphi'>s a m e</span>              | sky                      | سماء            | Sanaa       | Hamza is dropped from dialect, but final vowel spelling maintains the Alif taking etymology into account | 
-| <span dir="rtl">ما</span>        | <span class='caphi'>m aa</span>                 | water                    | ماء             | ِAlgiers    | Hamza is dropped from, but final vowel spelling maintains the Alif taking etymology into account         | 
-| <span dir="rtl">آسف</span>       | <span class='caphi'>2 aa s i f</span>           | sorry                    | آسف             | Sanaa       | Madda rule                                                                                               | 
-| <span dir="rtl">تأمين</span>     | <span class='caphi'>t e 2 m ii n</span>         | insurance                | تأمين           | Beirut      |                                                                                                          | 
+??? optional-class "{{ more }}"
+    | CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
+    |----------------------------------|-------------------------------------------------|--------------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------------| 
+    | <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Base word initial Hamza is normalized (not written)                                                      | 
+    | <span dir="rtl">مألوف</span>     | <span class='caphi'>m a 2 l uu f</span>         | familiar                 | مألوف           | Sanaa       |                                                                                                          | 
+    | <span dir="rtl">لا مؤاخذة</span> | <span class='caphi'>l a # m u 2 a kh z a</span> | excuse me                | لا مؤاخذة       | Cairo       ||
+    | <span dir="rtl">فئة</span>       | <span class='caphi'>f i 2 e</span>              | denomination             | فئة             | Sanaa    |                                                                                                          | 
+    | <span dir="rtl">يأنتر</span>     | <span class='caphi'>y i 2 a n t i r</span>      | he is using the internet | يستعمل الإنترنت | Sanaa       |                                                                                                          | 
+    | <span dir="rtl">بريء</span>      | <span class='caphi'>b a r ii 2</span>           | innocent                 | بريء            | Sanaa       |                                                                                                          | 
+    | <span dir="rtl">بير</span>       | <span class='caphi'>b ii r</span>               | well                     | بئر             | Sanaa       | Spelling follows dialect phonology: Hamza is dropped                                                     | 
+    | <span dir="rtl">سما</span>       | <span class='caphi'>s a m e</span>              | sky                      | سماء            | Sanaa       | Hamza is dropped from dialect, but final vowel spelling maintains the Alif taking etymology into account | 
+    | <span dir="rtl">ما</span>        | <span class='caphi'>m aa</span>                 | water                    | ماء             | ِAlgiers    | Hamza is dropped from, but final vowel spelling maintains the Alif taking etymology into account         | 
+    | <span dir="rtl">آسف</span>       | <span class='caphi'>2 aa s i f</span>           | sorry                    | آسف             | Sanaa       | Madda rule                                                                                               | 
+    | <span dir="rtl">تأمين</span>     | <span class='caphi'>t e 2 m ii n</span>         | insurance                | تأمين           | Beirut      |                                                                                                          | 
 
 
 
@@ -755,7 +740,7 @@ Demonstrative pronouns can be found in three forms:
 ## CODA* Seed Lexicon
 A large and growing database containing verified examples of CODA* spelling for dialectal words, including affixes and clitics, is available here.
 
-<iframe height="500" width="120%" src="https://datastudio.google.com/embed/reporting/9c0c420a-0ba2-440a-942e-b3e61cf6306d/page/jeFhB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe height="800" width="100%" src="https://datastudio.google.com/embed/reporting/9c0c420a-0ba2-440a-942e-b3e61cf6306d/page/jeFhB" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 ## Publications
 - Habash, Nizar, Fadhl Eryani, Salam Khalifa, Owen Rambow,† Dana Abdulrahim, Alexander Erdmann, Reem Faraj, Wajdi Zaghouani, Houda Bouamor, Nasser Zalmout, Sara Hassan, Faisal Al-Shargi, Sakhar Alkhereyf, Basma Abdulkareem, Ramy Eskander, Mohammad Salameh, Hind Saddiki. "Unified Guidelines and Resources for Arabic Dialect Orthography". LREC 2018. [PDF](http://www.lrec-conf.org/proceedings/lrec2018/pdf/395.pdf){:target="_blank"}
