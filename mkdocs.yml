@@ -7,6 +7,7 @@ nav:
     - Morphology: morphology.md
     - Phonology: phonology.md
     - Orthography: orthography.md
+    - Syntax: syntax.md
 theme: 
     name: readthedocs
     custom_dir: custom_theme
