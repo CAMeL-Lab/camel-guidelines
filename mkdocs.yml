@@ -33,6 +33,10 @@ plugins:
     - macros
     - add-number:
         order: 2
+    - bibtex:
+        bib_file: "refs.bib"
+        cite_style: "pandoc"
+        bib_command: "\\bib"
 
 extra:
     issue_tracker: https://github.com/slkh/camel-guidelines/issues
