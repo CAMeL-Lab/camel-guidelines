@@ -8,6 +8,7 @@ nav:
     - Phonology: phonology.md
     - Orthography: orthography.md
     - Syntax: syntax.md
+    - Data: data.md
 theme: 
     name: readthedocs
     custom_dir: custom_theme

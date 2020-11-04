@@ -269,7 +269,7 @@ Our list of allowed pairings is presented in the table below:
 
 Dialectal words with patterns that are cognates of MSA patterns will retain the spelling choice of the MSA pattern if the difference in pronunciation can be expressed using diacritics (for vowel change or absence), or if the pronunciation is a shortened form of the MSA pattern vowels.
 
-| CODA               | CAPHI                               | Gloss          | CODA Letter | Dialectal Sound | MSA Sound | Dialect | NON-CODA examples; Comments | 
+| CODA               | CAPHI                               | Gloss          | Letter | Dialectal Sound | MSA Sound | Dialect | NON-CODA examples; Comments | 
 |-------------------------------|------------------------------------------------|----------------|-------------|-----------------|-----------|-------------|-----------------------------| 
 | <span dir='rtl'>اتضرب</span>  | <span class='caphi'>2 i d. d. a r a b</span>   | he got hit     | ت           | d.              | t         | Cairo       | ادضرب، اضّرب                | 
 | <span dir='rtl'>اتدشدش</span> | <span class='caphi'>2 i d d a sh d a sh</span> | he got smashed | ت           | d               | t         | Cairo       | ادّشدش                      | 
@@ -780,30 +780,41 @@ A large and growing database containing verified examples of CODA* spelling for 
 
 ## Contributors
 
+---
+Project Lead
+---
 - Nizar Habash, New York University Abu Dhabi, UAE.
-- Mona Diab, George Washington University, USA.
-- Owen Rambow, Columbia University, USA.
-- Inès Zribi, Université de Sfax, Tunisia.
-- Rahma Boujelbane, Université de Sfax, Tunisia.
-- Abir Masmoudi, Université de Sfax, Tunisia.
-- Mariem Ellouze, Université de Sfax, Tunisia.
-- Lamia Belguith, Université de Sfax, Tunisia.
-- Houda Saadane, Université de Marne-la-Vallée, France.
-- Mustafa Jarrar, Birzeit University, Palestine.
+
+---
+Current Maintainer
+---
+- Fadhl Eryani, New York University Abu Dhabi, UAE.
+
+---
+Team
+---
+- Dana Abdulrahim, University of Bahrain, Bahrain.
+- Emad Adel, Sbikha 1979 High School, Tunisia.
 - Diyam Akra, Birzeit University, Palestine.
 - Faeq Alrimawi, Birzeit University, Palestine.
-- Nasser Zalmout, New York University Abu Dhabi, UAE.
 - Mahdi Arar, Birzeit University, Palestine.
 - Eric Bartolotti.
-- Houcemeddine Turki, Université de Sfax, Tunisia.
-- Emad Adel, Sbikha 1979 High School, Tunisia.
+- Lamia Belguith, Université de Sfax, Tunisia.
+- Rahma Boujelbane, Université de Sfax, Tunisia.
 - Tariq Daouda, Université de Montréal, Canada.
-- Nassim Regragui, Copenhagen Business School, Denmark.
-- Salam Khalifa, New York University Abu Dhabi, UAE.
-- Dana Abdulrahim, University of Bahrain, Bahrain.
+- Mona Diab, George Washington University, USA.
+- Mariem Ellouze, Université de Sfax, Tunisia.
+- Alex Erdmann, New York University Abu Dhabi, UAE.
 - Sara Hassan, New York University Abu Dhabi, UAE.
-- Fadhl Eryani, New York University Abu Dhabi, UAE.
-- Alex Erdmann.
+- Mustafa Jarrar, Birzeit University, Palestine.
+- Salam Khalifa, New York University Abu Dhabi, UAE.
+- Abir Masmoudi, Université de Sfax, Tunisia.
+- Owen Rambow, Stony Brook University, USA.
+- Nassim Regragui, Copenhagen Business School, Denmark.
+- Houda Saadane, Université de Marne-la-Vallée, France.
+- Houcemeddine Turki, Université de Sfax, Tunisia.
+- Nasser Zalmout, New York University Abu Dhabi, UAE.
+- Inès Zribi, Université de Sfax, Tunisia.
 
 \bib
 
