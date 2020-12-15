@@ -1,4 +1,4 @@
-# CAMeL Lab Guideliens  ![camel-lab](img/camel_lab.png){: align=right style="width:150px" } 
+# CAMeL Lab Guidelines  ![camel-lab](img/camel_lab.png){: align=right style="width:150px" } 
 
 In the [Computational Approaches to Modeling Language (CAMeL)](http://www.camel-lab.com){:target="_blank"} Lab we work on the
 development of a wide range of Arabic and Arabic dialect resources (tools,
