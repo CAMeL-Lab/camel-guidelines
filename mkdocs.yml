@@ -4,9 +4,9 @@ site_url: https://camel-guidelines.rtfd.io
 site_author: Salam Khalifa
 nav:
     - Home: index.md
-    - Morphology: morphology.md
     - Phonology: phonology.md
     - Orthography: orthography.md
+    - Morphology: morphology.md
     - Syntax: syntax.md
     - Data: data.md
 theme: 
