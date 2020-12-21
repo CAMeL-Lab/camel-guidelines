@@ -18,7 +18,7 @@ In this site, we provide our guidelines for representing:
 * [Morphology (how are words put together)](morphology.md)
 * [Syntax (how words come together to form sentences)](syntax.md)
   
-The guidelines are versioned and backed up on [GitHub](https://github.com/CAMeL-Lab/camel-guidelines){:target="_blank"}. We invite you to check them out, and give your feedback.
+The guidelines are versioned and backed up [on GitHub](https://github.com/CAMeL-Lab/camel-guidelines){:target="_blank"}. We invite you to check them out, and give your feedback.
 Each guideline section includes a discussion of high level philosophy as well as specific details, and links to publications on the
 guidelines and publications and projects using the guidelines.
 
