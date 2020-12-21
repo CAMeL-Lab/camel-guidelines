@@ -1,6 +1,6 @@
 # CAMeL Guidelines
 
-In the [Computational Approaches to Modeling Language (CAMeL) Lab](www.camel-lab.com){:target="_blank"} we work on the development of a wide range of Arabic and Arabic dialect resources (tools, corpora and lexicons). One goal we hold high is to follow consistent standards for all of our resources. Of course, working with Arabic dialects comes with many challenges, as they are resource poor and have no official standards. Our overall approach to annotation guidelines of Arabic and its dialects, is to create common standards that are compatible with Modern Standard Arabic but easily and naturally extended to the various dialects.
+In the [Computational Approaches to Modeling Language (CAMeL) Lab](www.camel-lab.com){:target=_blank} we work on the development of a wide range of Arabic and Arabic dialect resources (tools, corpora and lexicons). One goal we hold high is to follow consistent standards for all of our resources. Of course, working with Arabic dialects comes with many challenges, as they are resource poor and have no official standards. Our overall approach to annotation guidelines of Arabic and its dialects, is to create common standards that are compatible with Modern Standard Arabic but easily and naturally extended to the various dialects.
 
 In this site, we provide our guidelines for representing:
 
