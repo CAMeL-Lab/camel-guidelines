@@ -187,7 +187,7 @@ The tokenization scheme recommended when annotating using CAMEL POS is D3.
 | Alif Maqsura            	| حكاها       	| حكى +ها        	| he recounted it             	| MSA,GLF,EGY 	|
 | Hamza Form              	| بهاؤه،بهائه،بهاءه       	| بهاء +ه        	| his glory                   	| MSA,GLF,EGY 	|
 | Waw-of-Plurality        	| قالوها      	| قالوا +ها      	| They said it                	| MSA,GLF,EGY 	|
-| Various clitics         	| وستجننني    	| و+ س+ تجنن +ني 	| and she will drive me crazy 	| EGY     	|
+| Various clitics         	| وستجننني    	| و+ س+ تجنن +ني 	| and she will drive me crazy 	| MSA     	|
 | Various clitics         	| وهتجننني    	| و+ ه+ تجنن +ني 	| and she will drive me crazy 	| EGY     	|
 | Various clitics         	| وبتجننني    	| و+ ب+ تجنن +ني 	| and she will drive me crazy 	| GLF     	|
 
