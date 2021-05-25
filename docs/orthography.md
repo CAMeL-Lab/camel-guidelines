@@ -800,6 +800,7 @@ Team
 - Mahdi Arar, Birzeit University, Palestine.
 - Eric Bartolotti.
 - Lamia Belguith, Université de Sfax, Tunisia.
+- Houda Bouamor, Carnegie Mellon University in Qatar 
 - Rahma Boujelbane, Université de Sfax, Tunisia.
 - Tariq Daouda, Université de Montréal, Canada.
 - Mona Diab, George Washington University, USA.
