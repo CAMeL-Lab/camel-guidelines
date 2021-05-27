@@ -215,7 +215,7 @@ Our list of allowed pairings is presented in the table below:
 
 | CODA                          | CAPHI                                       | Gloss           | Letter | Dialectal Sound | MSA Sound | Dialect  | NON-CODA examples; Comments                                                                                                                                                                                      | 
 |-------------------------------|---------------------------------------------|-----------------|-------------|-----------------|-----------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| <span dir='rtl'>برتقان</span> | <span class='caphi'>b u r t u 2 aa n</span> | orange          | ق           | 2               | q         | Jeddah       | برتئان، برتقال; only the sound-letter pairs that <br> are in the list of permitted changes are changed                                                                                                                | 
+| <span dir='rtl'>برتقان</span> | <span class='caphi'>b u r t u 2 aa n</span> | orange          | ق           | 2               | q         | Cairo       | برتئان، برتقال; only the sound-letter pairs that <br> are in the list of permitted changes are changed                                                                                                                | 
 | <span dir='rtl'>ثامن</span>   | <span class='caphi'>t aa m i n</span>       | eighth          | ث           | t               | th        | Jeddah       | تامن                                                                                                                                                                                                             | 
 | <span dir='rtl'>فستان</span>  | <span class='caphi'>f u s t. aa n</span>    | dress           | ت           | t.              | t         | Amman        | فسطان، فصطان                                                                                                                                                                                                     | 
 | <span dir='rtl'>ذيل</span>    | <span class='caphi'>d ee l</span>           | tail            | ذ           | d               | dh        | Beirut       | ديل                                                                                                                                                                                                              | 
@@ -237,18 +237,18 @@ Our list of allowed pairings is presented in the table below:
 | <span dir='rtl'>سمك</span>    | <span class='caphi'>s i m a ts</span>       | fish            | ك           | ts              | k         | Riyadh(B)    | سمتس                                                                                                                                                                                                             | 
 | <span dir='rtl'>كتابج</span>  | <span class='caphi'>k i t aa b i ts</span>  | your [2fs] book | ج           | ts              | dj, g     | Riyadh(B)    | كتابتس، كتابك; Remember that root radicals only <br> apply to the root of the base word, and that <br> clitics such as the possessive pronoun ج+ <br> may have their own rules (see specification tables)                       | 
 | <span dir='rtl'>جزاير</span>  | <span class='caphi'>dz aa y i r</span>      | Algeria         | ج           | dz              | dj, g     | Algiers      | دزاير                                                                                                                                                                                                            | 
-| <span dir='rtl'>طريق</span>   | <span class='caphi'>t. a r ii dz</span>     | road            | ق           | dz              | q         | Baghdad      | طريدز                                                                                                                                                                                                            | 
+| <span dir='rtl'>طريق</span>   | <span class='caphi'>t. a r ii dz</span>     | road            | ق           | dz              | q         | Riyadh(B)      | طريدز                                                                                                                                                                                                            | 
 | <span dir='rtl'>عيونج</span>  | <span class='caphi'>3 y uu n i tsh</span>   | your eyes [2fs] | ج           | tsh             | dj, g     | Doha         | عيونش، عيونتس; Remember that root radicals only <br> apply to the root of the base word, and that <br> clitics such as the possessive pronoun ج+ <br> may have their own rules (see specification tables)                       | 
 | <span dir='rtl'>شاف</span>    | <span class='caphi'>tsh aa f</span>         | he saw          | ش           | tsh             | sh        | Doha         | تشاف                                                                                                                                                                                                             | 
-| <span dir='rtl'>سمك</span>    | <span class='caphi'>s i m a tsh</span>      | fish            | ك           | tsh             | k         | Riyadh(B)    | سمج، سمتش                                                                                                                                                                                                        | 
-| <span dir='rtl'>طريق</span>   | <span class='caphi'>t. i r ii dj</span>     | road            | ق           | dj              | q         | Baghdad      | طريج                                                                                                                                                                                                             | 
+| <span dir='rtl'>سمك</span>    | <span class='caphi'>s i m a tsh</span>      | fish            | ك           | tsh             | k         | Basra    | سمج، سمتش                                                                                                                                                                                                        | 
+| <span dir='rtl'>طريق</span>   | <span class='caphi'>t. i r ii dj</span>     | road            | ق           | dj              | q         | Abu Dhabi      | طريج                                                                                                                                                                                                             | 
 | <span dir='rtl'>رقم</span>    | <span class='caphi'>r a k a m</span>        | number          | ق           | k               | q         | Jerusalem(R) | ركم                                                                                                                                                                                                              | 
 | <span dir='rtl'>قال</span>    | <span class='caphi'>g aa l</span>           | he said         | ق           | g               | q         | Aswan        | جال، كال                                                                                                                                                                                                         | 
 | <span dir='rtl'>بنك</span>    | <span class='caphi'>b. a n g</span>         | bank            | ك           | g               | k         | Baghdad      | بنج، بنق                                                                                                                                                                                                         | 
-| <span dir='rtl'>رقم</span>    | <span class='caphi'>r a qh a m</span>       | number          | ق           | qh              | q         | Jerusalem(R) | رغم، رجم                                                                                                                                                                                                         | 
+| <span dir='rtl'>رقم</span>    | <span class='caphi'>r a qh a m</span>       | number          | ق           | qh              | q         | Khartoum | رغم، رجم                                                                                                                                                                                                         | 
 | <span dir='rtl'>غسالة</span>  | <span class='caphi'>kh a s s ee l a</span>  | washer          | غ           | kh              | gh        | Tunis        | خسالة; while there is no /kh/ to غ mapping in the <br> root radical cognate table, this switch is allowed <br> in this particualr case because Tunisian use <br> of /kh a s s ee l a/ and /gh a s s ee l a/ is in free variance | 
 | <span dir='rtl'>اريد</span>   | <span class='caphi'>2 a gh ii d</span>      | I want          | ر           | gh              | r         | Mosul        | اغيد                                                                                                                                                                                                             | 
-| <span dir='rtl'>طريق</span>   | <span class='caphi'>t. a r ii 2</span>      | road            | ق           | 2               | q         | Baghdad      | طريء                                                                                                                                                                                                             | 
+| <span dir='rtl'>طريق</span>   | <span class='caphi'>t. a r ii 2</span>      | road            | ق           | 2               | q         | Damascus      | طريء                                                                                                                                                                                                             | 
 | <span dir='rtl'>جنب</span>    | <span class='caphi'>j a m b</span>          | besides         | ن           | m               | n         | Jeddah       | جمب                                                                                                                                                                                                              | 
 | <span dir='rtl'>جلس</span>    | <span class='caphi'>y a l a s</span>        | he sat down     | ج           | y               | dj, g     | Abu Dhabi    | يلس                                                                                                                                                                                                              | 
 
@@ -267,12 +267,20 @@ Our list of allowed pairings is presented in the table below:
 #### Pattern Spelling
 
 
-Dialectal words with patterns that are cognates of MSA patterns will retain the spelling choice of the MSA pattern if the difference in pronunciation can be expressed using diacritics (for vowel change or absence), or if the pronunciation is a shortened form of the MSA pattern vowels.
+Dialectal words with patterns that are cognates of MSA patterns will retain the spelling choice of the MSA pattern if the difference in pronunciation can be expressed using diacritics (for vowel change or vowel absence), or if the pronunciation is a shortened form of the MSA pattern vowels.
 
-| CODA               | CAPHI                               | Gloss          | Letter | Dialectal Sound | MSA Sound | Dialect | NON-CODA examples; Comments | 
+Elongated vowels and initial vowels in otherwise cognate MSA patterns will be spelled using the general rules, e.g اتدشدش below. 
+
+Consonants in the underlying pattern are generally preserved in the final form of the word regardless of any phonetic interactions.  The only exception to this rule are MSA patterns whose form changes in the standard MSA spelling, such as افتعل -- for example: ازدهر، اضطرب.
+
+<!-- TODO: add additional examples -->
+
+| CODA               | CAPHI                               | Gloss          | Pattern | Dialect | NON-CODA examples; Comments | 
 |-------------------------------|------------------------------------------------|----------------|-------------|-----------------|-----------|-------------|-----------------------------| 
-| <span dir='rtl'>اتضرب</span>  | <span class='caphi'>2 i d. d. a r a b</span>   | he got hit     | ت           | d.              | t         | Cairo       | ادضرب، اضّرب                | 
-| <span dir='rtl'>اتدشدش</span> | <span class='caphi'>2 i d d a sh d a sh</span> | he got smashed | ت           | d               | t         | Cairo       | ادّشدش                      | 
+| <span dir='rtl'>اتضرب</span>  | <span class='caphi'>2 i d. d. a r a b</span>   | he got hit     | اتفعل           | Cairo       | ادضرب، اضّرب            | 
+| <span dir='rtl'>اتدشدش</span> | <span class='caphi'>2 i d d a sh d a sh</span> | he got smashed | اتفعلل          | Cairo       | ادّشدش                  |
+| <span dir='rtl'>انضرب</span>  | <span class='caphi'>n d. a r a b</span>        | he got hit     | انفعل           | Amman       | نضرب                   |
+
 
 
 
@@ -431,11 +439,14 @@ The words for numbers in Arabic dialects are amongst the most rich in phonologic
 * The sometimes reduced or altered final letter of عشر ‘ten, -teen’ will be written as pronounced. The variation in this form marks different syntactic construction in some dialects.
 * The hundreds will be written as a single word only if the hundred part is singular in form.
 * The remnant /t/ of the historical Ta-Marbuta appearing only before Alif-initial words after number words will not be written.
+* In complex number conjunctions such as خمسة وخمسين 'fifty-five (lit. five and fifty)', the vowel at the end of the first number is sometimes elided or assimiliated with the conjuction و /w/ or /u/ thus making the form hard to determine.  We assume by default that it is the same as the non-Idafa construction form in that particular dialect.  
 
 The above rules apply to all number words, whether ordinal, cardinal, or fractions. Number words sometimes have different masculine and feminine forms that are used according to different dialect-specific rules. CODA guidelines do not interact with these dialect-specific decisions.
 
+In the below table the gloss of number words used in Idafa construction will have an X marking the position of the noun that follows the number.
 
-| CODA                             | CAPHI                                                | Gloss        | Dialect | 
+
+| CODA                             | CAPHI                                                | Gloss        | Dialect     | 
 |----------------------------------|------------------------------------------------------|--------------|-------------| 
 | <span dir='rtl'>ثمانية</span>    | <span class='caphi'>th a m a n y e</span>            | eight        | Salt        | 
 | <span dir='rtl'>ثمانية</span>    | <span class='caphi'>t a m a n y e</span>             | eight        | Amman       | 
@@ -451,8 +462,9 @@ The above rules apply to all number words, whether ordinal, cardinal, or fractio
 | <span dir='rtl'>اربعمية</span>   | <span class='caphi'>2 a r b a 3 m i y y e</span>     | 400          | Amman       | 
 | <span dir='rtl'>اربعمية</span>   | <span class='caphi'>2 a r b a 3 m ii t</span>        | 400 X        | Amman       | 
 | <span dir='rtl'>ربعمية</span>    | <span class='caphi'>r u b 3 u m i y y a</span>       | 400          | Cairo       | 
-| <span dir='rtl'>اربع الاف</span> | <span class='caphi'>2 a r b a 3 # t a l aa f</span>  | 4,000        | Cairo       | 
-| <span dir='rtl'>خمس ارباع</span> | <span class='caphi'>kh a m a s # t i r b aa 3</span> | five-fourths | Cairo       | 
+| <span dir='rtl'>اربع الاف</span>  | <span class='caphi'>2 a r b a 3 # t a l aa f</span>  | 4,000        | Cairo       | 
+| <span dir='rtl'>خمس ارباع</span> | <span class='caphi'>kh a m a s # t i r b aa 3</span> | five-fourths | Cairo       |
+| <span dir='rtl'>خمس ايام</span>  | <span class='caphi'>kh a m a s # t i y y aa m</span> | five days    | Amman       | 
 
 
 
@@ -800,6 +812,7 @@ Team
 - Mahdi Arar, Birzeit University, Palestine.
 - Eric Bartolotti.
 - Lamia Belguith, Université de Sfax, Tunisia.
+- Houda Bouamor, Carnegie Mellon University in Qatar.
 - Rahma Boujelbane, Université de Sfax, Tunisia.
 - Tariq Daouda, Université de Montréal, Canada.
 - Mona Diab, George Washington University, USA.
