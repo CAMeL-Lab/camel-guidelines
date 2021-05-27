@@ -276,7 +276,7 @@ Consonants in the underlying pattern are generally preserved in the final form o
 <!-- TODO: add additional examples -->
 
 | CODA               | CAPHI                               | Gloss          | Pattern | Dialect | NON-CODA examples; Comments | 
-|-------------------------------|------------------------------------------------|----------------|-------------|-----------------|-----------|-------------|-----------------------------| 
+|-------------------------------|------------------------------------------------|----------------|-------------|-----------------|-----------|
 | <span dir='rtl'>اتضرب</span>  | <span class='caphi'>2 i d. d. a r a b</span>   | he got hit     | اتفعل           | Cairo       | ادضرب، اضّرب            | 
 | <span dir='rtl'>اتدشدش</span> | <span class='caphi'>2 i d d a sh d a sh</span> | he got smashed | اتفعلل          | Cairo       | ادّشدش                  |
 | <span dir='rtl'>انضرب</span>  | <span class='caphi'>n d. a r a b</span>        | he got hit     | انفعل           | Amman       | نضرب                   |
@@ -812,11 +812,7 @@ Team
 - Mahdi Arar, Birzeit University, Palestine.
 - Eric Bartolotti.
 - Lamia Belguith, Université de Sfax, Tunisia.
-<<<<<<< HEAD
 - Houda Bouamor, Carnegie Mellon University in Qatar.
-=======
-- Houda Bouamor, Carnegie Mellon University in Qatar 
->>>>>>> 840365a1e6fe8a7ad0d7b3cbce8a5f199892e95e
 - Rahma Boujelbane, Université de Sfax, Tunisia.
 - Tariq Daouda, Université de Montréal, Canada.
 - Mona Diab, George Washington University, USA.
