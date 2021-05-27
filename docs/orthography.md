@@ -812,7 +812,11 @@ Team
 - Mahdi Arar, Birzeit University, Palestine.
 - Eric Bartolotti.
 - Lamia Belguith, Université de Sfax, Tunisia.
+<<<<<<< HEAD
 - Houda Bouamor, Carnegie Mellon University in Qatar.
+=======
+- Houda Bouamor, Carnegie Mellon University in Qatar 
+>>>>>>> 840365a1e6fe8a7ad0d7b3cbce8a5f199892e95e
 - Rahma Boujelbane, Université de Sfax, Tunisia.
 - Tariq Daouda, Université de Montréal, Canada.
 - Mona Diab, George Washington University, USA.

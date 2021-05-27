@@ -1,4 +1,4 @@
-# CAMeL Lab Guideliens  ![camel-lab](img/camel_lab.png){: align=right style="width:150px" } 
+# CAMeL Lab Guidelines  ![camel-lab](img/camel_lab.png){: align=right style="width:150px" } 
 
 In the [Computational Approaches to Modeling Language (CAMeL)](http://www.camel-lab.com){:target="_blank"} Lab we work on the
 development of a wide range of Arabic and Arabic dialect resources (tools,
@@ -16,9 +16,9 @@ In this site, we provide our guidelines for representing:
 * [Phonology (how words are pronounced)](phonology.md)
 * [Orthography (how words are written)](orthography.md)
 * [Morphology (how are words put together)](morphology.md)
-* [syntax (how words come together to form sentences)](syntax.md)
+* [Syntax (how words come together to form sentences)](syntax.md)
   
-The guidelines are versioned and backed up on GitHub. We invite you to check them out, and give your feedback.
+The guidelines are versioned and backed up [on GitHub](https://github.com/CAMeL-Lab/camel-guidelines){:target="_blank"}. We invite you to check them out, and give your feedback.
 Each guideline section includes a discussion of high level philosophy as well as specific details, and links to publications on the
 guidelines and publications and projects using the guidelines.
 
