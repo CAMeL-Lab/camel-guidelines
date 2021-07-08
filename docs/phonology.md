@@ -47,7 +47,7 @@ Be sure to describe the entire phrase as you would pronounce it naturally withou
 * Say the word or utterance out loud and try to imagine a natural situation in which you would say it.
 * Pay attention to how an utterance is said and not to how it is written, keeping in mind that pronunciation can change depending on the context of the utterance.
   
-| Arabic (Leventine)              | English                                                    | CAPHI                                                                                       |
+| Arabic (Levantine)              | English                                                    | CAPHI                                                                                       |
 |--|--|--|
 | باكْتِب اِسْمِك يا بِلادِي<br> عالشَمس الِي ما بِتغِيب| I write your name o’ my country <br> on the sun that never sets | /b a k t i b # 2 i s m i k # y a # b l aa d i # <br> 3 a sh sh a m s # i l # m aa # b i t gh ii b/ |
 
