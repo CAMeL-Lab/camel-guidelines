@@ -159,7 +159,7 @@ placeholder since the possible feature values are ordered and unique. For exampl
 the imperfective 1st person verb <span dir="rtl">أقول</span> <span class="caphi">/2 a g uu l/</span> ‘I say’ will be
 tagged as `VERB.I1S`
 
-## Detailed annotation guideliens
+## Detailed annotation guidelines
 Morphological annotation using CAMEL POS assumes that each word is 
 tokenized using the D3 tokenization scheme. Therefore, each token gets at least a `POS` tag according to the table above.
 In a large-scale full morphological annotation task, additional annotations are usually provided, such as lemmatization, English gloss, amd dialect identification.
