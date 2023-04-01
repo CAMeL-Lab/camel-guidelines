@@ -539,7 +539,7 @@ Nominative Pronouns are spelled as pronounced using general phonolgical rules, e
 | <span dir='rtl'>انت</span>  | <span class='caphi'>2 i n t a</span> | you [2m]  | Cairo       |
 | <span dir='rtl'>انت</span>  | <span class='caphi'>n t a</span> | you [2m]  | Rabat       |
 | <span dir='rtl'>انتو</span> | <span class='caphi'>2 i n t u</span> | you [2p]  | Cairo       |
-| <span dir='rtl'>انتوما</span> | <span class='caphi'>2 i n t u m a</span> | you [2p]  | Tunis       |
+| <span dir='rtl'>انتوما</span> | <span class='caphi'>n t uu m a</span> | you [2p]  | Tunis       |
 | <span dir='rtl'>انتي</span> | <span class='caphi'>2 i n t i</span> | you [2fs] | Cairo       |
 | <span dir='rtl'>انتي</span> | <span class='caphi'>n t i</span> | you [2fs] | Rabat       |
 | <span dir='rtl'>اني</span>  | <span class='caphi'>2 a n i</span>   | I         | Tripoli     | 
