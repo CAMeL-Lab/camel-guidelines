@@ -518,23 +518,30 @@ Here is the specification table for Pronominal Clitics:
 Nominative Pronouns are spelled as pronounced using general phonolgical rules, except for the final vowels, which are spelled in two different ways:
 
 * (a) as diacritical forms if (i) the vowel is short and (ii) the spelling of the undiacritized base word exactly matches the MSA form for هو، هي، هم، هن and انتَ [masculine singular].
-* Else (b) as letter form (ا، و، ي) regardless of their length: احنا or انتو.
-Decision notes:
-* انتي - as in /2 i n t i/, ‘you [fs]’ is spelled with the final “ي” always to reflect its common usage - and distinguish it from the undiacratized form of انت.
-* نحنا - as in /n i 7 n a/, ‘we’ is spelled with a final “ا” and not as نِحْنَ because the MSA form is perceived to be highly associated with the final vowel /u/ as in /n a 7 n u/.
+* Else (b) as letter form (ا، و، ي) regardless of their length: احنا or انتو or انتي.
+
+
+**Decision notes**
+
+* The pronoun انتي - as in /2 i n t i/, ‘you [fs]’ is spelled with the final “ي” always.  We acknoweldge that this makes it marked compared to MSA, but the decision reflects its very common usage in dialectal Arabic - and allows us to distinguish it from the undiacratized form of انت.   
+* The pronoun نحنا - as in /n i 7 n a/, ‘we’ is spelled with a final “ا” and not as نِحْنَ because the MSA form is perceived to be highly associated with the final vowel /u/ as in /n a 7 n u/.
 * The rule treats هو، هي، هم، هن exceptionally because adding additional letters used for vowel marking (ا،و،ي،ه) can cause added ambiguity: هوا، هما،هيا
 * The Lebanese Arabic /h u w w i/, ‘he’ is spelled as هُوِّ as the final vowel /i/ is a short vowel and as such it follows from Rule Part (a).
 * Negated pronouns may become a single word when negated using a circumfix negation, e.g. /m a n ii sh/ “مانيش”.
-    * Multiples of Alif: In the cases of negation particles ending with “ا” attaching to pronouns starting with “ا”, only one “ا” should remain, e.g. /m a 7 n aa sh/ → ماحناش → ما+احنا+ش.
+* Multiples of Alif: In the cases of negation particles ending with “ا” attaching to pronouns starting with “ا”, only one “ا” should remain, e.g. /m a 7 n aa sh/ → ماحناش → ما+احنا+ش.
+ 
 
 
 | CODA                        | CAPHI                                | Gloss     | Dialect | 
 |-----------------------------|--------------------------------------|-----------|-------------| 
 | <span dir='rtl'>احنا</span> | <span class='caphi'>2 i 7 n a</span> | we        | Cairo       | 
 | <span dir='rtl'>انا</span>  | <span class='caphi'>2 a n a</span>   | I         | Cairo       | 
-| <span dir='rtl'>انت</span>  | <span class='caphi'>2 i n t a</span> | you [2m]  | Cairo       | 
-| <span dir='rtl'>انتو</span> | <span class='caphi'>2 i n t u</span> | you [2p]  | Cairo       | 
-| <span dir='rtl'>انتي</span> | <span class='caphi'>2 i n t i</span> | you [2fs] | Cairo       | 
+| <span dir='rtl'>انت</span>  | <span class='caphi'>2 i n t a</span> | you [2m]  | Cairo       |
+| <span dir='rtl'>انت</span>  | <span class='caphi'>n t a</span> | you [2m]  | Rabat       |
+| <span dir='rtl'>انتو</span> | <span class='caphi'>2 i n t u</span> | you [2p]  | Cairo       |
+| <span dir='rtl'>انتوما</span> | <span class='caphi'>2 i n t u m a</span> | you [2p]  | Tunis       |
+| <span dir='rtl'>انتي</span> | <span class='caphi'>2 i n t i</span> | you [2fs] | Cairo       |
+| <span dir='rtl'>انتي</span> | <span class='caphi'>n t i</span> | you [2fs] | Rabat       |
 | <span dir='rtl'>اني</span>  | <span class='caphi'>2 a n i</span>   | I         | Tripoli     | 
 | <span dir='rtl'>نحنا</span> | <span class='caphi'>n i 7 n a</span> | we        | Cairo       | 
 | <span dir='rtl'>هم</span>   | <span class='caphi'>h u m m a</span> | they      | Cairo       | 
