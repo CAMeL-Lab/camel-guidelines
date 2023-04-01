@@ -162,7 +162,6 @@ While Arabic diacritics are optional in general, they can be crucial for disambi
 | <span dir="rtl">جنَّنَنا</span>  | <span class='caphi'>g a n n a n n a</span>        | he/it mad us crazy     | جنَن+نا        | Cairo       |                                                                                                              | 
 | <span dir="rtl">يبارككم</span>   | <span class='caphi'>b aa r i k k u m</span>       | [he] congratulates you | يبارك+كم       | Cairo       |                                                                                                              | 
 | <span dir="rtl">واحشيننا</span>  | <span class='caphi'>w aa 7 sh i n n a</span>      | we miss you            | واحشين+نا      | Cairo       |                                                                                                              | 
-
 | <span dir="rtl">مْمَلَّح</span>  | <span class='caphi'>m m a l l a 7</span>      | salted            | مْمَلَّح      | Jerusalem       |  مَّلَّح                                                                                                            |
 
 <!-- #### General
