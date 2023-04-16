@@ -116,7 +116,10 @@ Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is
 
 ***
 
-Note on **base word initial Hamza**: In previous versions of CODA, and in MSA spelling, base word initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell base word initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional
+Note on **base word initial Hamza**: In previous versions of CODA, and in MSA spelling, base word initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell base word initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional to reflect the actual pronunciation of a glottal stop. For example, note the difference bewteen the MSA pronunciation of الاتصالات  
+<span class='caphi'>2 a l i t t i s. aa l aa t </span> and the dialectal version   الإتصالات / الاتصالات 
+<span class='caphi'>2 i l 2 i t t i s. a l aa t </span>.
+
 
 ***
 
@@ -151,8 +154,11 @@ Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. I
 
 #### Diacritics
 
+While Arabic diacritics are optional in general, they can be crucial for disambiguation in certain contexts. Arabic diacritics are primarily used for representing short vowels, or absence of vowels.   Details on the use of diacritics for vowels are presented in the next section.
 
-While Arabic diacritics are optional in general, they can be crucial for disambiguation in certain contexts. Arabic diacritics are primarily used for representing short vowels, or absence of vowels. However, the Shadda diacritic is used to represent consonantal gemination, e.g. كَتَّب /k a t t a b/ ‘he dictated’. As such, the Shadda interacts with the number of letters in a word. The Shadda general rule states that it is used within the base word (including suffixes and prefixes), but not across word-clitic boundaries (see examples below for يبارككم and واحشيننا). Any exceptions must be specified in the specific rules (see specific rule: "The Definite Article" for an example of where the general Shadda rule is overriden.
+##### A Note on the Shadda Diacritic
+
+The Shadda diacritic is used to represent consonantal gemination, e.g. كَتَّب /k a t t a b/ ‘he dictated’. As such, the Shadda interacts with the number of letters in a word. The Shadda general rule states that it is used within the base word (including suffixes and prefixes), but not across word-clitic boundaries (see examples below for يبارككم and واحشيننا). Any exceptions must be specified in the specific rules (see specific rule: "The Definite Article" for an example of where the general Shadda rule is overriden.
 
 **Clarification (April 1, 2023, NYH):** The general Shadda rule is overriden in base-word-initial positions where a prefix or template consonant matches a root radical in form. In such cases, using a Sukun is prefered to preserve the morphological integrity of the word, e.g. مْمَلَّح /m m a l l a 7/ ‘salted’ (LEV) or نْنَشِّف /n n a sh sh e f/ ‘we dry’ (LEV).
 
@@ -171,13 +177,49 @@ While Arabic diacritics are optional in general, they can be crucial for disambi
 
 #### Long/Short Vowel Spelling
 
-In many dialects, base word long vowels may be shortened in certain contexts. Generally, the rule is to prefer the long letter-based spelling over the shortened diacritic spelling.
+Vowel spelling in CODA is sensitive to the location of the vowel, and its underlying form.  
+
+* Base word intial vowels are spelled with an intitial Alif letter.
+* Base word final vowels have many forms that interact with morphology, e.g., final root radical, or Ta-Marbuta.
+* Base word medial vowels are spelled as listed in the table below; and do interact with other morphological considerations, especially pattern spelling. 
+
+In terms of underlying form, we distinguish three types of vowels: short vowels, long vowels, and shortened vowels. Shortened vowels are underlyingly long but shorten due to phonological interactions in the word. Shortened vowels are spelled as if they are long vowels. 
+
+##### Short Vowles
+
+| CAPHI      | CODA        | Example CAPHI |  Example CODA | Comments       |
+|------------|-------------|---------------|---------------|----------------| 
+| <span class='caphi'> a </span> | -َ |  <span class='caphi'> k a t a b </span> |<span dir='rtl'> كَتَب </span>     |                | 
+| <span class='caphi'> i </span> | -ِ |  <span class='caphi'> 3 i l m </span>   |<span dir='rtl'> عِلْم </span>     |                |
+| <span class='caphi'> u </span> | -ُ |  <span class='caphi'> 7 u b b </span>   | <span dir='rtl'> حُبّ </span>     |                |
+| <span class='caphi'> e  </span> | -ِ |  <span class='caphi'> 3 e l e m </span>   |<span dir='rtl'> عِلِم </span>  | There is no distinction between  <span class='caphi'> i  </span> and <span class='caphi'> e  </span>              |
+| <span class='caphi'> o </span> | -ُ |  <span class='caphi'> 7 o b b </span>   | <span dir='rtl'> حُبّ </span>     |There is no distinction between  <span class='caphi'> u  </span> and <span class='caphi'> o </span>              ||
+
+
+##### Long and Shortened Vowles
+
+| CAPHI      | CODA        | Example CAPHI |  Example CODA | Comments       |
+|------------|-------------|---------------|---------------|----------------| 
+| <span class='caphi'> aa </span> | ـَا |  <span class='caphi'> d aa r </span>   | <span dir='rtl'> دَار </span>    | Same as MSA           | 
+| <span class='caphi'> ii </span> | ـِي |  <span class='caphi'> d ii r </span>   | <span dir='rtl'> دِير </span>    | Same as MSA              |
+| <span class='caphi'> uu </span> | ـُو |  <span class='caphi'> d uu r </span>   | <span dir='rtl'> دُور </span>    | Same as MSA                |
+| <span class='caphi'> a y </span> | ـَيْ |  <span class='caphi'> d a y r </span> | <span dir='rtl'> دَيْر </span>    | The "diphthong" is marked by adding a sukun to the cognate letter |
+| <span class='caphi'> a w </span> | ـَوْ |  <span class='caphi'> d a w r </span> | <span dir='rtl'> دَوْر </span>    | The "diphthong" is marked by adding a sukun to the cognate letter |
+| <span class='caphi'> ee </span> | ـَي |  <span class='caphi'> d ee r </span>   | <span dir='rtl'> دَير </span>    | If etymologically related to MSA <span class='caphi'> a y </span>|
+| <span class='caphi'> oo </span> | ـَو |  <span class='caphi'> d oo r </span>   | <span dir='rtl'> دَور </span>    | If etymologically related to MSA <span class='caphi'> a w </span>|
+| <span class='caphi'> ee </span> | ـِا |  <span class='caphi'> 7 r ee m </span>   | <span dir='rtl'> حْرِام </span>    | If etymologically related to MSA <span class='caphi'> aa </span> as in displaying Imala|
+| <span class='caphi'> oo </span> | ـُا |  <span class='caphi'> kh oo l e d </span>   | <span dir='rtl'> خُالِد </span>    | If etymologically related to MSA <span class='caphi'> aa </span> |
+
+
+In many dialects, base word long vowels may be shortened in certain contexts. Generally, the rule is to prefer the long letter-based spelling over the shortened diacritic spelling.  Here are a couple of examples:
+
 
 | CODA                            | CAPHI                                     | Gloss         | MSA Cognate | Dialect | Examples; Comments                                                                                  | 
 |---------------------------------|-------------------------------------------|---------------|-------------|-------------|-----------------------------------------------------------------------------------------------------| 
 | <span dir='rtl'>قانون</span>    | <span class='caphi'>2 a n uu n</span>     | law           | قانون       | Cairo       | So long as the vowel is the same quality as <br> the MSA, we can keep the MSA spelling                   | 
 | <span dir='rtl'>قولوا له</span> | <span class='caphi'>2 u l uu # l u</span> | tell him [2p] | قولوا له    | Cairo       | this is because قول is not always short in Cairene <br> and can be pronounced long in different contexts | 
 
+Finally, while the phonetic quality for many vowels may be affected by nearby emphatic consonants, we do not distinguish these vowels in writing (compare the pronunciation of <span class='caphi'> aa </span> in باس <span class='caphi'> b aa s </span> and باص <span class='caphi'> b aa. s.</span>.
 
 
 <!-- #### General
