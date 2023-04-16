@@ -375,18 +375,19 @@ The Arabic definite article is always written as a proclitic ال+ـ, regardless
 
 
 The Ta-Marbuta (ة) is a secondary letter of the Arabic alphabet used to represent a particular suffix morpheme that is often (but not exclusively) associated with the feminine-singular feature (Alkuhlani and Habash, 2011). This morpheme has a number of allomorphs with differing pronunciations. Most notably, it appears as a vowel at the end of nominals, and changes to a ∼ /t/ when followed by possessive pronominal enclitics. The Ta-Marbuta should be written as ة in word-final positions, regardless of its pronunciation, and following general CODA rules in non-word-final positions.
+The /t/ pronunciation can be explicitily marked with the use of a sukun diacritic in diacritized text; but otherwise, the vowelization is indicated on the preceeding letter to the Ta-Marbuta. We indicate some of the relevant diacritics below, but they are all optional.
 
 | CODA                               | CAPHI                                                    | Gloss               | Dialect | 
 |------------------------------------|----------------------------------------------------------|---------------------|-------------| 
-| <span dir='rtl'>حاجة</span>        | <span class='caphi'>7 aa g a</span>                      | something           | Cairo       | 
-| <span dir='rtl'>حاجتي</span>       | <span class='caphi'>7 aa g t i </span>                   | my thing            | Cairo       | 
-| <span dir='rtl'>حاجتها</span>      | <span class='caphi'>7 aa g i t h a</span>                | her thing           | Cairo       | 
-| <span dir='rtl'>طاولة</span>       | <span class='caphi'>t. aa w l e</span>                   | table               | Jerusalem   | 
-| <span dir='rtl'>غزالة</span>       | <span class='caphi'>gh a z ee l i</span>                 | gazelle             | Beirut      | 
-| <span dir='rtl'>معلمة مدرسة</span> | <span class='caphi'>m 3 a l m i t # m a d r a s e</span> | school teacher      | Jerusalem   | 
-| <span dir='rtl'>معلمة مدرسة</span> | <span class='caphi'>m 3 a l m e # m a d r a s e</span>   | she taught a school | Jerusalem   | 
-| <span dir='rtl'>معلمتهم</span>     | <span class='caphi'>m 3 a l m i t h u m</span>           | their teacher       | Jerusalem   | 
-| <span dir='rtl'>معلماهم</span>     | <span class='caphi'>m 3 a l m aa h u m</span>            | she taught them     | Jerusalem   | 
+| <span dir='rtl'>حاجَة</span>        | <span class='caphi'>7 aa g a</span>                      | something           | Cairo       | 
+| <span dir='rtl'>حاجْتِي</span>       | <span class='caphi'>7 aa g t i </span>                   | my thing            | Cairo       | 
+| <span dir='rtl'>حاجِتْها</span>      | <span class='caphi'>7 aa g i t h a</span>                | her thing           | Cairo       | 
+| <span dir='rtl'>طاولِة</span>       | <span class='caphi'>t. aa w l e</span>                   | table               | Jerusalem   | 
+| <span dir='rtl'>غزالِة</span>       | <span class='caphi'>gh a z ee l i</span>                 | gazelle             | Beirut      | 
+| <span dir='rtl'>معلمِةْ مدرسة</span> | <span class='caphi'>m 3 a l m i t # m a d r a s e</span> | school teacher      | Jerusalem   | 
+| <span dir='rtl'>معلمِة مدرسة</span> | <span class='caphi'>m 3 a l m e # m a d r a s e</span>   | she taught a school | Jerusalem   | 
+| <span dir='rtl'>معلمِتْهم</span>     | <span class='caphi'>m 3 a l m i t h u m</span>           | their teacher       | Jerusalem   | 
+| <span dir='rtl'>معلمَاهم</span>     | <span class='caphi'>m 3 a l m aa h u m</span>            | she taught them     | Jerusalem   | 
 
 
 
