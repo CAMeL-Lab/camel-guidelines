@@ -85,10 +85,10 @@ Arabic’s templatic morphology makes common reference to the concept of the roo
 
 <!-- #### Basic Terminology -->
 
-#### Words - Base Words - Clitics
+#### Words - Basewords - Clitics
 
 
-We define an Arabic base word to consist of a stem and the minimal number of concatenative affixes needed to specify the obligatory features for its part of speech (POS). A stem can be non-templatic or it can be composed from the interdigitation of a root and a pattern. The pattern may specify the features fully, as in broken plurals. Base words are as such the smallest fully formed words. Examples include: كتابين 'two books' and يكتبون 'they write'. Clitics are syntactically independent but phonologically dependent morphemes that are attached to the word phonologically. Words can be base words or base words with added clitics. We use the term word to refer to the phonological utterance or the orthographic string, and we specify as needed. In CODA, phonological words typically map one-to-one to orthographic words; but there are many exceptions, pertaining mostly to clitics that are spelled as separate orthographic words.
+We define an Arabic baseword to consist of a stem and the minimal number of concatenative affixes needed to specify the obligatory features for its part of speech (POS). A stem can be non-templatic or it can be composed from the interdigitation of a root and a pattern. The pattern may specify the features fully, as in broken plurals. Basewords are as such the smallest fully formed words. Examples include: كتابين 'two books' and يكتبون 'they write'. Clitics are syntactically independent but phonologically dependent morphemes that are attached to the word phonologically. Words can be basewords or basewords with added clitics. We use the term word to refer to the phonological utterance or the orthographic string, and we specify as needed. In CODA, phonological words typically map one-to-one to orthographic words; but there are many exceptions, pertaining mostly to clitics that are spelled as separate orthographic words.
 
 
 {% include 'html/words_basewords_clitics1.html' %}
@@ -103,17 +103,18 @@ We define an Arabic base word to consist of a stem and the minimal number of con
 
 
 
-### General
+### General Rules
 
-### Basic Phonology to Orthography Mapping
+#### Basic Phonology to Orthography Mapping
 
-#### Hamza Rules
+
+##### Hamza Rules
 
 Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is unchanged from previous CODA versions. 
 
 (For a detailed explanation of Hamza spelling rules in MSA, you can refer to chapter 7 of the [QALB annotation guidelines](http://nlp.qatar.cmu.edu/qalb/QALB-guidelines_0.90.pdf))
 
-* Note on **base word initial Hamza**: In previous versions of CODA, and in MSA spelling, base word initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell base word initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional to reflect the actual pronunciation of a glottal stop. For example, note the difference bewteen these two related words.
+* Note on **baseword initial Hamza**: In previous versions of CODA, and in MSA spelling, baseword initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell baseword initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional to reflect the actual pronunciation of a glottal stop. For example, note the difference bewteen these two related words.
 
 
 | Variant  | CODA        |  CAPHI | Comments |
@@ -129,7 +130,7 @@ Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is
 <!-- ??? optional-class "{{ more }}" -->
 | CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
 |----------------------------------|-------------------------------------------------|--------------------------|-----------------|-------------|----------------------------------------------------------------------------------------------------------| 
-| <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Base word initial Hamza is normalized (not written)                                                      | 
+| <span dir="rtl">الف</span>       | <span class='caphi'>2 a l f</span>              | thousand                 | ألف             | Sanaa       | Baseword initial Hamza is normalized (not written)                                                      | 
 | <span dir="rtl">مألوف</span>     | <span class='caphi'>m a 2 l uu f</span>         | familiar                 | مألوف           | Sanaa       |                                                                                                          | 
 | <span dir="rtl">لا مؤاخذة</span> | <span class='caphi'>l a # m u 2 a kh z a</span> | excuse me                | لا مؤاخذة       | Cairo       ||
 | <span dir="rtl">فئة</span>       | <span class='caphi'>f i 2 e</span>              | denomination             | فئة             | Sanaa    |                                                                                                          | 
@@ -141,44 +142,40 @@ Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is
 | <span dir="rtl">آسف</span>       | <span class='caphi'>2 aa s i f</span>           | sorry                    | آسف             | Sanaa       | Madda rule                                                                                               | 
 | <span dir="rtl">تأمين</span>     | <span class='caphi'>t e 2 m ii n</span>         | insurance                | تأمين           | Beirut      |                                                                                                          | 
 
-#### Diacritics
+##### Diacritics
 
 While Arabic diacritics are optional in general, they can be crucial for disambiguation in certain contexts. Arabic diacritics are primarily used for representing short vowels, or absence of vowels.   Details on the use of diacritics for vowels are presented in the next section.
 
-##### To Diacritize or Not to Diacritize
+###### To Diacritize or Not to Diacritize
 
 CODA rules follow Standard Arabic orthography of leaving it to the writer to decide how many diacrtics to include given a specific context, e.g. to resolve ambiguity or to higlight specificity of pronunciation. In MSA news text, about 1.5% of all words have at least one diacritic.  The common wisdom in building Arabic lexicons is to diacritize the lexical entries, as it is easier to remove diacritics than to add them.  
 
-##### A Note on the Shadda Diacritic
+###### A Note on the Shadda Diacritic
 
-The Shadda diacritic is used to represent consonantal gemination, e.g. كَتَّب /k a t t a b/ ‘he dictated’. As such, the Shadda interacts with the number of letters in a word. The Shadda general rule states that it is used within the base word (including suffixes and prefixes), but not across word-clitic boundaries (see examples below for يبارككم and واحشيننا). Any exceptions must be specified in the specific rules (see specific rule: "The Definite Article" for an example of where the general Shadda rule is overriden.
+The Shadda diacritic is used to represent consonantal gemination, e.g. كَتَّب /k a t t a b/ ‘he dictated’. As such, the Shadda interacts with the number of letters in a word. The Shadda general rule states that it is used within the baseword (including suffixes and prefixes), but not across word-clitic boundaries (see examples below for يبارككم and واحشيننا). Any exceptions must be specified in the specific rules (see specific rule: "The Definite Article" for an example of where the general Shadda rule is overriden.
 
 **Clarification (April 1, 2023, NYH):** The general Shadda rule is overriden in base-word-initial positions where a prefix or template consonant matches a root radical in form. In such cases, using a Sukun is prefered to preserve the morphological integrity of the word, e.g. مْمَلَّح /m m a l l a 7/ ‘salted’ (LEV) or نْنَشِّف /n n a sh sh e f/ ‘we dry’ (LEV).
 
 
 | CODA                             | CAPHI                                             | Gloss                  | Tokenized CODA | Dialect | NON-CODA examples; Comments                                                                                  | 
 |----------------------------------|---------------------------------------------------|------------------------|----------------|-------------|--------------------------------------------------------------------------------------------------------------| 
-| <span dir="rtl">جنَّنَاهم</span> | <span class='caphi'>g a n n a n n aa h u m</span> | we made them crazy     | جنَّنَّا+هم       | Cairo       | Note that this نا  is an obligatory suffix referring <br> to the verbal feature [1p] and is part of the base word | 
+| <span dir="rtl">جنَّنَاهم</span> | <span class='caphi'>g a n n a n n aa h u m</span> | we made them crazy     | جنَّنَّا+هم       | Cairo       | Note that this نا  is an obligatory suffix referring <br> to the verbal feature [1p] and is part of the baseword | 
 | <span dir="rtl">جنَّنَنا</span>  | <span class='caphi'>g a n n a n n a</span>        | he/it mad us crazy     | جنَن+نا        | Cairo       |    جنّنّا                                                                                                          | 
 | <span dir="rtl">يبارككم</span>   | <span class='caphi'>b aa r i k k u m</span>       | [he] congratulates you | يبارك+كم       | Cairo       |   يباركّم                                                                                                        | 
 | <span dir="rtl">واحشيننا</span>  | <span class='caphi'>w aa 7 sh i n n a</span>      | we miss you            | واحشين+نا      | Cairo       |   واحشنّا                                                                                                           | 
 | <span dir="rtl">مْمَلَّح</span>  | <span class='caphi'>m m a l l a 7</span>      | salted            | مْمَلَّح      | Jerusalem       |  مَّلَّح                                                                                                            |
 
-<!-- #### General
-
-##### Basic Phonology to Orthography Mapping -->
-
-#### Long/Short Vowel Spelling
+##### Long/Short Vowel Spelling
 
 Vowel spelling in CODA is sensitive to the location of the vowel, and its underlying form.  
 
-* Base word intial vowels are spelled with an intitial Alif letter.
-* Base word final vowels have many forms that interact with morphology, e.g., final root radical, or Ta-Marbuta.
-* Base word medial vowels are spelled as listed in the table below; and do interact with other morphological considerations, especially pattern spelling. 
+* Baseword intial vowels are spelled with an intitial Alif letter.
+* Baseword final vowels have many forms that interact with morphology, e.g., final root radical, or Ta-Marbuta.
+* Baseword medial vowels are spelled as listed in the table below; and do interact with other morphological considerations, especially pattern spelling. 
 
 In terms of underlying form, we distinguish three types of vowels: short vowels, long vowels, and shortened vowels. Shortened vowels are underlyingly long but shorten due to phonological interactions in the word. Shortened vowels are spelled as if they are long vowels. 
 
-##### Short Vowles
+###### Short Vowles
 
 | CAPHI      | CODA        | Example CAPHI |  Example CODA | Comments       |
 |------------|-------------|---------------|---------------|----------------| 
@@ -189,7 +186,7 @@ In terms of underlying form, we distinguish three types of vowels: short vowels,
 | <span class='caphi'> o </span> | -ُ |  <span class='caphi'> 7 o b b </span>   | <span dir='rtl'> حُبّ </span>     |There is no distinction between  <span class='caphi'> u  </span> and <span class='caphi'> o </span>              ||
 
 
-##### Long and Shortened Vowles
+###### Long and Shortened Vowles
 
 | CAPHI      | CODA        | Example CAPHI |  Example CODA | Comments       |
 |------------|-------------|---------------|---------------|----------------| 
@@ -204,7 +201,7 @@ In terms of underlying form, we distinguish three types of vowels: short vowels,
 | <span class='caphi'> oo </span> | ـُا |  <span class='caphi'> kh oo l e d </span>   | <span dir='rtl'> خُالِد </span>    | If etymologically related to MSA <span class='caphi'> aa </span> |
 
 
-In many dialects, base word long vowels may be shortened in certain contexts. Generally, the rule is to prefer the long letter-based spelling over the shortened diacritic spelling.  Here are a couple of examples:
+In many dialects, baseword long vowels may be shortened in certain contexts. Generally, the rule is to prefer the long letter-based spelling over the shortened diacritic spelling.  Here are a couple of examples:
 
 
 | CODA                            | CAPHI                                     | Gloss         | MSA Cognate | Dialect | Examples; Comments                                                                                  | 
@@ -215,11 +212,9 @@ In many dialects, base word long vowels may be shortened in certain contexts. Ge
 Finally, while the phonetic quality for many vowels may be affected by nearby emphatic consonants, we do not distinguish these vowels in writing (compare the pronunciation of <span class='caphi'> aa </span> in باس <span class='caphi'> b aa s </span> and باص <span class='caphi'> b aa. s.</span>.
 
 
-<!-- #### General
+#### BaseWord Spelling
 
-##### Basic Phonology to Orthography Mapping -->
-
-#### Root Radical Spelling
+##### Root Radical Spelling
 
 Dialectal word root radicals which have MSA cognates will be spelled using the MSA cognate radical if the dialectal radical sound and the MSA radical sounds are paired according to a specific set of common sound changes.
 
@@ -272,10 +267,10 @@ Our list of allowed pairings is presented in the table below:
 | <span dir='rtl'>عظيم</span>   | <span class='caphi'>3 a z. ii m</span>      | great           | ظ           | z.              | dh.       | Damascus     | عزيم                                                                                                                                                                                                             | 
 | <span dir='rtl'>طريق</span>   | <span class='caphi'>t. a r ii j</span>      | road            | ق           | j               | q         | Baghdad      | طريج                                                                                                                                                                                                             | 
 | <span dir='rtl'>سمك</span>    | <span class='caphi'>s i m a ts</span>       | fish            | ك           | ts              | k         | Riyadh(B)    | سمتس                                                                                                                                                                                                             | 
-| <span dir='rtl'>كتابج</span>  | <span class='caphi'>k i t aa b i ts</span>  | your [2fs] book | ج           | ts              | dj, g     | Riyadh(B)    | كتابتس، كتابك; Remember that root radicals only <br> apply to the root of the base word, and that <br> clitics such as the possessive pronoun ج+ <br> may have their own rules (see specification tables)                       | 
+| <span dir='rtl'>كتابج</span>  | <span class='caphi'>k i t aa b i ts</span>  | your [2fs] book | ج           | ts              | dj, g     | Riyadh(B)    | كتابتس، كتابك; Remember that root radicals only <br> apply to the root of the baseword, and that <br> clitics such as the possessive pronoun ج+ <br> may have their own rules (see specification tables)                       | 
 | <span dir='rtl'>جزاير</span>  | <span class='caphi'>dz aa y i r</span>      | Algeria         | ج           | dz              | dj, g     | Algiers      | دزاير                                                                                                                                                                                                            | 
 | <span dir='rtl'>طريق</span>   | <span class='caphi'>t. a r ii dz</span>     | road            | ق           | dz              | q         | Riyadh(B)      | طريدز                                                                                                                                                                                                            | 
-| <span dir='rtl'>عيونج</span>  | <span class='caphi'>3 y uu n i tsh</span>   | your eyes [2fs] | ج           | tsh             | dj, g     | Doha         | عيونش، عيونتس; Remember that root radicals only <br> apply to the root of the base word, and that <br> clitics such as the possessive pronoun ج+ <br> may have their own rules (see specification tables)                       | 
+| <span dir='rtl'>عيونج</span>  | <span class='caphi'>3 y uu n i tsh</span>   | your eyes [2fs] | ج           | tsh             | dj, g     | Doha         | عيونش، عيونتس; Remember that root radicals only <br> apply to the root of the baseword, and that <br> clitics such as the possessive pronoun ج+ <br> may have their own rules (see specification tables)                       | 
 | <span dir='rtl'>شاف</span>    | <span class='caphi'>tsh aa f</span>         | he saw          | ش           | tsh             | sh        | Doha         | تشاف                                                                                                                                                                                                             | 
 | <span dir='rtl'>سمك</span>    | <span class='caphi'>s i m a tsh</span>      | fish            | ك           | tsh             | k         | Basra    | سمج، سمتش                                                                                                                                                                                                        | 
 | <span dir='rtl'>طريق</span>   | <span class='caphi'>t. i r ii dj</span>     | road            | ق           | dj              | q         | Abu Dhabi      | طريج                                                                                                                                                                                                             | 
@@ -297,11 +292,8 @@ Our list of allowed pairings is presented in the table below:
 
 
 
-<!-- #### General
 
-##### Base Word Spelling -->
-
-#### Pattern Spelling
+##### Pattern Spelling
 
 
 Dialectal words with patterns that are cognates of MSA patterns will retain the spelling choice of the MSA pattern if the difference in pronunciation can be expressed using diacritics (for vowel change or vowel absence), or if the pronunciation is a shortened form of the MSA pattern vowels.
@@ -319,13 +311,9 @@ Consonants in the underlying pattern are generally preserved in the final form o
 | <span dir='rtl'>انضرب</span>  | <span class='caphi'>n d. a r a b</span>        | he got hit     | انفعل           | Amman       | نضرب                   |
 
 
+ 
 
-
-<!-- #### General
-
-##### Base Word Spelling -->
-
-#### Alif Maqsura
+##### Alif Maqsura
 
 The MSA rules for spelling the Alif-Maqsura (ى), which are sometimes based on roots and sometimes on patterns, apply in CODA*.
 
@@ -336,12 +324,7 @@ The MSA rules for spelling the Alif-Maqsura (ى), which are sometimes based on r
 | <span dir='rtl'>حكى</span>  | <span class='caphi'>7 a k e</span>    | chat [3ms] | Beirut      | حكي                         | 
 
 
-
-
-
-<!-- #### General
-
-##### Base Word Spelling -->
+  
 
 #### Clitic Spelling
 
@@ -360,7 +343,7 @@ The general rule on phonological clitic spelling is that clitics that are mapped
 ### The Definite Article
 
 
-The Arabic definite article is always written as a proclitic ال+ـ, regardless of how it is pronounced (keep in mind that in DA, lunar/solar letters are not always the same as in MSA). As with MSA spelling, general cliticization rules apply except when following the proclitic ل+ـ, where the article is spelled without its ا. The general Shadda rule is overridden in the specific context of ل+ ال+ـ followed by an ل-initial base word.
+The Arabic definite article is always written as a proclitic ال+ـ, regardless of how it is pronounced (keep in mind that in DA, lunar/solar letters are not always the same as in MSA). As with MSA spelling, general cliticization rules apply except when following the proclitic ل+ـ, where the article is spelled without its ا. The general Shadda rule is overridden in the specific context of ل+ ال+ـ followed by an ل-initial baseword.
 
 
 | CODA                           | CAPHI                                        | Gloss             | Tokenized CODA | Dialect | Examples; Comments                                                                                             | 
@@ -553,7 +536,7 @@ Here is the specification table for Pronominal Clitics:
 
 Nominative Pronouns are spelled as pronounced using general phonolgical rules, except for the final vowels, which are spelled in two different ways:
 
-* (a) as diacritical forms if (i) the vowel is short and (ii) the spelling of the undiacritized base word exactly matches the MSA form for هو، هي، هم، هن and انتَ [masculine singular].
+* (a) as diacritical forms if (i) the vowel is short and (ii) the spelling of the undiacritized baseword exactly matches the MSA form for هو، هي، هم، هن and انتَ [masculine singular].
 * Else (b) as letter form (ا، و، ي) regardless of their length: احنا or انتو or انتي.
 
 
