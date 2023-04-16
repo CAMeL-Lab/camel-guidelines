@@ -116,9 +116,11 @@ Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is
 
 ***
 
-Note on **base word initial Hamza**: In previous versions of CODA, and in MSA spelling, base word initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell base word initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional to reflect the actual pronunciation of a glottal stop. For example, note the difference bewteen the MSA pronunciation of الاتصالات  
-<span class='caphi'>2 a l i t t i s. aa l aa t </span> and the dialectal version   الإتصالات / الاتصالات 
-<span class='caphi'>2 i l 2 i t t i s. a l aa t </span>.
+Note on **base word initial Hamza**: In previous versions of CODA, and in MSA spelling, base word initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell base word initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional to reflect the actual pronunciation of a glottal stop. For example, note the difference bewteen these two related words:
+
+* The MSA pronunciation of الاتصالات  <span class='caphi'>2 a l i t t i s. aa l aa t </span>
+* The dialectal version of the MSA word   الإتصالات / الاتصالات 
+<span class='caphi'>2 i l 2 i t t i s. a l aa t </span>
 
 
 ***
