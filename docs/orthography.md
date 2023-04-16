@@ -423,7 +423,7 @@ The following decision notes specify the choices made in writing these particles
 
 * Single letter will be written as clitics; multi letter particles will be written as separate words.
 * Etymological origina may be considered if a phonological trace can be established. This guide was used in the early CODA guidelines to write the Egyptian future particle as ح+ regardless of its pronunciation as <span class='caphi'> h a </span> or <span class='caphi'> 7 a </span>, whoever, this has been overwritten since sub-dialects of Egyptian have strong socilinguistic preference to distinguish the two pronunciations, so we write them differently.
-* Phonological allomorphs are suppressed, e.g., the Levantine progressive particle is written always as <span dir='rtl'> ب+ </span> regardless of its pronuncation: compare بيكتب <span class='caphi'> b + y o k t o b </span> vs  بنكتب <span class='caphi'> m + n o k t o b </span> and  بنحب <span class='caphi'> m + e n 7 e b b </span> 
+* Phonological allomorphs are suppressed, e.g., the Levantine progressive particle is written always as <span dir='rtl'>  ب+  </span> regardless of its pronuncation: compare بيكتب <span class='caphi'> b + y o k t o b </span> vs  بنكتب <span class='caphi'> m + n o k t o b </span> and  بنحب <span class='caphi'> m + e n 7 e b b </span> 
 
 | CODA | CAPHI | Type | Dialect |
 | ---- | ---- | ---- | ---- |
