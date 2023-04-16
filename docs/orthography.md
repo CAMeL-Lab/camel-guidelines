@@ -417,13 +417,13 @@ Verbal suffixes that indicate the feature plural subject [2p] & [3p] and end wit
 
 ### The Verbal Particles
 
-MSA has a small numbe rof verbal particles and clitics, e.g. سوف، قد، <span dir='rtl'> س+ </span>.
+MSA has a small number of verbal particles and clitics, e.g. سوف، قد، <span dir='rtl'> س+ </span>.
 However there are many additional particles and clitics in the dialects, particlalry for marking verbs as being future or progressive.
 
 The following decision notes specify the choices made in writing these particles.
 
-* Single letter will be written as clitics; multi letter particles will be written as separate words.
-* Etymological origina may be considered if a phonological trace can be established. This guide was used in the early CODA guidelines to write the Egyptian future particle as ح+ regardless of its pronunciation as <span class='caphi'> h a </span> or <span class='caphi'> 7 a </span>, whoever, this has been overwritten since sub-dialects of Egyptian have strong socilinguistic preference to distinguish the two pronunciations, so we write them differently.
+* Single letters will be written as clitics; multi-letter particles will be written as separate words.
+* Etymological origins may be considered if a phonological trace can be established. This guide was used in the early CODA guidelines to write the Egyptian future particle as ح+ regardless of its pronunciation as <span class='caphi'> h a </span> or <span class='caphi'> 7 a </span>, however, this has been overwritten since sub-dialects of Egyptian have strong socilinguistic preference to distinguish the two pronunciations, so we write them differently.
 * Phonological allomorphs are suppressed, e.g., the Levantine progressive particle is written always as <span dir='rtl'>  ب+  </span> regardless of its pronuncation: compare بيكتب <span class='caphi'> b + y o k t o b </span> vs  بنكتب <span class='caphi'> m + n o k t o b </span> and  بنحب <span class='caphi'> m + e n 7 e b b </span> 
 
 | CODA | CAPHI | Type | Dialect |
