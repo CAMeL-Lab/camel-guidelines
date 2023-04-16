@@ -145,6 +145,10 @@ Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is
 
 While Arabic diacritics are optional in general, they can be crucial for disambiguation in certain contexts. Arabic diacritics are primarily used for representing short vowels, or absence of vowels.   Details on the use of diacritics for vowels are presented in the next section.
 
+##### To Diacritize or Not to Diacritize
+
+CODA rules follow Standard Arabic orthography of leaving it to the writer to decide how many diacrtics to include given a specific context, e.g. to resolve ambiguity or to higlight specificity of pronunciation. In MSA news text, about 1.5% of all words have at least one diacritic.  The common wisdom in building Arabic lexicons is to diacritize the lexical entries, as it is easier to remove diacritics than to add them.  
+
 ##### A Note on the Shadda Diacritic
 
 The Shadda diacritic is used to represent consonantal gemination, e.g. كَتَّب /k a t t a b/ ‘he dictated’. As such, the Shadda interacts with the number of letters in a word. The Shadda general rule states that it is used within the base word (including suffixes and prefixes), but not across word-clitic boundaries (see examples below for يبارككم and واحشيننا). Any exceptions must be specified in the specific rules (see specific rule: "The Definite Article" for an example of where the general Shadda rule is overriden.
