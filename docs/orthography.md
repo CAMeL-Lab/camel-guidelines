@@ -105,8 +105,7 @@ We define an Arabic baseword to consist of a stem and the minimal number of conc
 
 ### General Rules
 
-#### Basic Phonology to Orthography Mapping
-
+#### Basic Phonology to Orthography Mapping 
 
 ##### Hamza Rules
 
@@ -210,6 +209,10 @@ In many dialects, baseword long vowels may be shortened in certain contexts. Gen
 | <span dir='rtl'>قولوا له</span> | <span class='caphi'>2 u l uu # l u</span> | tell him [2p] | قولوا له    | Cairo       | this is because قول is not always short in Cairene <br> and can be pronounced long in different contexts | 
 
 Finally, while the phonetic quality for many vowels may be affected by nearby emphatic consonants, we do not distinguish these vowels in writing (compare the pronunciation of <span class='caphi'> aa </span> in باس <span class='caphi'> b aa s </span> and باص <span class='caphi'> b aa. s.</span>.
+
+##### Phonological Assimilation
+
+Given CODA's attention to etymology, and following the spirit of morphophenemic spelling in MSA, as a general rule, general phonetic assimilations are not indicated in spellign the words unless otherwise specified. This prinicple is also followed in MSA spelling in words like جنب /<span class='caphi'> j a n b </span>/ [<span class='caphi'> j a m b </span>].
 
 
 #### BaseWord Spelling
