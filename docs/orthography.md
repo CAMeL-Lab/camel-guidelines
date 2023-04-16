@@ -109,14 +109,11 @@ We define an Arabic base word to consist of a stem and the minimal number of con
 
 #### Hamza Rules
 
-
 Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is unchanged from previous CODA versions. 
 
 (For a detailed explanation of Hamza spelling rules in MSA, you can refer to chapter 7 of the [QALB annotation guidelines](http://nlp.qatar.cmu.edu/qalb/QALB-guidelines_0.90.pdf))
 
-***
-
-Note on **base word initial Hamza**: In previous versions of CODA, and in MSA spelling, base word initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell base word initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional to reflect the actual pronunciation of a glottal stop. For example, note the difference bewteen these two related words.
+* Note on **base word initial Hamza**: In previous versions of CODA, and in MSA spelling, base word initial Hamza have complex spelling rules. The rule is now simplified to normalize and not spell base word initial Hamzas, though the option remains to considers the Hamzation (أ, إ) at the beginning of a word as optional to reflect the actual pronunciation of a glottal stop. For example, note the difference bewteen these two related words.
 
 
 | Variant  | CODA        |  CAPHI | Comments |
@@ -125,14 +122,9 @@ Note on **base word initial Hamza**: In previous versions of CODA, and in MSA sp
 | DIA | <span dir='rtl'> الإتصالات / الاتصالات </span>  | <span class='caphi'> 2 i l 2 i t t i s. a l aa t </span> / <span class='caphi'> l i t t i s. a l aa t </span> | |
 
 
+* Note on **word initial Madda**: any word that starts with a long vowel of the quality /2 aa/ is spelled with a Madda آ
 
-***
-
-Note on **word initial Madda**: any word that starts with a long vowel of the quality /2 aa/ is spelled with a Madda آ
-
-***
-
-Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. In other words, dialectal words that have MSA cognates containing Hamza but do not contain an /2/ in their phonology are spelled without the Hamza.
+* Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. In other words, dialectal words that have MSA cognates containing Hamza but do not contain an /2/ in their phonology are spelled without the Hamza.
 
 <!-- ??? optional-class "{{ more }}" -->
 | CODA                             | CAPHI                                           | Gloss                    | MSA Cognate     | Dialect | Examples; Comments                                                                                       | 
@@ -148,14 +140,6 @@ Note on **DA divergence from MSA cognates**: Hamza spelling matches the sound. I
 | <span dir="rtl">ما</span>        | <span class='caphi'>m aa</span>                 | water                    | ماء             | ِAlgiers    | Hamza is dropped from, but final vowel spelling maintains the Alif taking etymology into account         | 
 | <span dir="rtl">آسف</span>       | <span class='caphi'>2 aa s i f</span>           | sorry                    | آسف             | Sanaa       | Madda rule                                                                                               | 
 | <span dir="rtl">تأمين</span>     | <span class='caphi'>t e 2 m ii n</span>         | insurance                | تأمين           | Beirut      |                                                                                                          | 
-
-
-
-
-<!-- 
-#### General
-
-##### Basic Phonology to Orthography Mapping -->
 
 #### Diacritics
 
