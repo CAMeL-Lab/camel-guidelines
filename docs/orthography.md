@@ -412,6 +412,35 @@ Verbal suffixes that indicate the feature plural subject [2p] & [3p] and end wit
 
 
 
+<!-- ## Specific Rules -->
+
+### The Verbal Particles
+
+MSA has a small numbe rof verbal particles and clitics, e.g. سوف، قد، <span dir='rtl'> س+ </span>.
+However there are many additional particles and clitics in the dialects, particlalry for marking verbs as being future or progressive.
+
+The following decision notes specify the choices made in writing these particles.
+
+* Single letter will be written as clitics; multi letter particles will be written as separate words.
+* Etymological origina may be considered if a phonological trace can be established. This guide was used in the early CODA guidelines to write the Egyptian future particle as ح+ regardless of its pronunciation as <span class='caphi'> h a </span> or <span class='caphi'> 7 a </span>, whoever, this has been overwritten since sub-dialects of Egyptian have strong socilinguistic preference to distinguish the two pronunciations, so we write them differently.
+* Phonological allomorphs are suppressed, e.g., the Levantine progressive particle is written always as <span dir='rtl'> ب+ </span> regardless of its pronuncation: compare بيكتب <span class='caphi'> b + y o k t o b </span> vs  بنكتب <span class='caphi'> m + n o k t o b </span> and  بنحب <span class='caphi'> m + e n 7 e b b </span> 
+
+| CODA | CAPHI | Type | Dialect |
+| ---- | ---- | ---- | ---- |
+| <span dir='rtl'> رح </span> | <span class='caphi'> r a 7 </span> | future particle | Levantine, Egyptian, Gulf |
+| <span dir='rtl'> بش </span> | <span class='caphi'> b e sh </span> | future particle | Tunisian |
+| <span dir='rtl'> باش </span> | <span class='caphi'> b ee sh </span> | future particle | Tunisian |
+| <span dir='rtl'> غادي </span> | <span class='caphi'> gh aa d i </span> | future particle | Moroccan |
+| <span dir='rtl'> ح+ </span> | <span class='caphi'> 7 a </span> | future particle | Levantine, Egyptian |
+| <span dir='rtl'> هـ+ </span> | <span class='caphi'> h a </span> | future particle | Egyptian |
+| <span dir='rtl'> غ+ </span> | <span class='caphi'> gh a </span> | future particle | Moroccan |
+| <span dir='rtl'> ب+ </span> | <span class='caphi'> b  </span> | future particle | Gulf |
+| <span dir='rtl'> ش+ </span> | <span class='caphi'> sh  </span> | future particle | Yemen |
+| <span dir='rtl'> ك+ </span> | <span class='caphi'> k a </span> | progressive particle | Moroccan |
+| <span dir='rtl'> ت+ </span> | <span class='caphi'> t a </span> | progressive particle | Moroccan |
+| <span dir='rtl'> ب+ </span> | <span class='caphi'> b </span> | progressive particle | Egyptian |
+| <span dir='rtl'> ب+ </span> | <span class='caphi'> b / m </span> | progressive particle | Levantine |
+
  
 
 <!-- #### Specific Rules -->
