@@ -51,7 +51,7 @@ CODA* (pronounced CODA Star, as in, for any dialect) is a conventional orthograp
 
 Some sections of these guidelines are continuously researched and updated as more dialectal data is incorporated.
 
-(CODA* version: 0.43)
+(CODA* version: 0.5, April 16, 2023, NYH)
   
 ### Basic Terminology
 
