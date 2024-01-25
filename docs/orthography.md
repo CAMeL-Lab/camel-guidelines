@@ -205,7 +205,7 @@ In many dialects, baseword long vowels may be shortened in certain contexts. Gen
 
 | CODA                            | CAPHI                                     | Gloss         | MSA Cognate | Dialect | Examples; Comments                                                                                  | 
 |---------------------------------|-------------------------------------------|---------------|-------------|-------------|-----------------------------------------------------------------------------------------------------| 
-| <span dir='rtl'>قانون</span>    | <span class='caphi'>2 a n uu n</span>     | law           | قانون       | Cairo       | So long as the vowel is the same quality as <br> the MSA, we can keep the MSA spelling                   | 
+| <span dir='rtl'>قانون</span>    | <span class='caphi'>q a n uu n</span>     | law           | قانون       | Cairo       | So long as the vowel is the same quality as <br> the MSA, we can keep the MSA spelling                   | 
 | <span dir='rtl'>قولوا له</span> | <span class='caphi'>2 u l uu # l u</span> | tell him [2p] | قولوا له    | Cairo       | this is because قول is not always short in Cairene <br> and can be pronounced long in different contexts | 
 
 Finally, while the phonetic quality for many vowels may be affected by nearby emphatic consonants, we do not distinguish these vowels in writing (compare the pronunciation of <span class='caphi'> aa </span> in باس <span class='caphi'> b aa s </span> and باص <span class='caphi'> b aa. s.</span>.
