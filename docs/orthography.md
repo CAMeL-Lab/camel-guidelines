@@ -174,7 +174,7 @@ Vowel spelling in CODA is sensitive to the location of the vowel, and its underl
 
 In terms of underlying form, we distinguish three types of vowels: short vowels, long vowels, and shortened vowels. Shortened vowels are underlyingly long but shorten due to phonological interactions in the word. Shortened vowels are spelled as if they are long vowels. 
 
-###### Short Vowles
+###### Short Vowels
 
 | CAPHI      | CODA        | Example CAPHI |  Example CODA | Comments       |
 |------------|-------------|---------------|---------------|----------------| 
@@ -185,7 +185,7 @@ In terms of underlying form, we distinguish three types of vowels: short vowels,
 | <span class='caphi'> o </span> | -ُ |  <span class='caphi'> 7 o b b </span>   | <span dir='rtl'> حُبّ </span>     |There is no distinction between  <span class='caphi'> u  </span> and <span class='caphi'> o </span>              ||
 
 
-###### Long and Shortened Vowles
+###### Long and Shortened Vowels
 
 | CAPHI      | CODA        | Example CAPHI |  Example CODA | Comments       |
 |------------|-------------|---------------|---------------|----------------| 
