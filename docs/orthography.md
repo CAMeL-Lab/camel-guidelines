@@ -107,6 +107,8 @@ We define an Arabic baseword to consist of a stem and the minimal number of conc
 
 #### Basic Phonology to Orthography Mapping 
 
+The default mapping is indicated in [the phonology table (section 5 of the CAPHI phonology guidelines)]([url](https://camel-guidelines.readthedocs.io/en/latest/phonology/#5-caphi-phonetic-inventory)). All other pairings in that table follow from other general and specification rules, some of which are discussed below.
+
 ##### Hamza Rules
 
 Hamza (Glottal Stop) spelling follows from the same rules as those of MSA and is unchanged from previous CODA versions. 
