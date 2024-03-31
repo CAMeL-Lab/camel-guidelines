@@ -212,7 +212,7 @@ Finally, while the phonetic quality for many vowels may be affected by nearby em
 
 ##### Phonological Assimilation
 
-Given CODA's attention to etymology, and following the spirit of morphophenemic spelling in MSA, as a general rule, general phonetic assimilations are not indicated in spellign the words unless otherwise specified. This prinicple is also followed in MSA spelling in words like جنب /<span class='caphi'> j a n b </span>/ [<span class='caphi'> j a m b </span>].
+Given CODA's attention to etymology, and following the spirit of morphophenemic spelling in MSA, as a general rule, general phonetic assimilations are not indicated in spelling the words unless otherwise specified. This prinicple is also followed in MSA spelling in words like جنب /<span class='caphi'> j a n b </span>/ [<span class='caphi'> j a m b </span>].
 
 
 #### BaseWord Spelling
