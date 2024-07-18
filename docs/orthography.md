@@ -160,9 +160,9 @@ The Shadda diacritic is used to represent consonantal gemination, e.g. كَتَ�
 
 | CODA                             | CAPHI                                             | Gloss                  | Tokenized CODA | Dialect | NON-CODA examples; Comments                                                                                  | 
 |----------------------------------|---------------------------------------------------|------------------------|----------------|-------------|--------------------------------------------------------------------------------------------------------------| 
-| <span dir="rtl">جنَّنَاهم</span> | <span class='caphi'>g a n n a n n aa h u m</span> | we made them crazy     | جنَّنَّا+هم       | Cairo       | Note that this نا  is an obligatory suffix referring <br> to the verbal feature [1p] and is part of the baseword | 
+| <span dir="rtl">جنِّنَاهُم</span> | <span class='caphi'>g a n n i n n aa h u m</span> | we made them crazy     | جنَّنَّا+هم       | Cairo       | Note that this نا  is an obligatory suffix referring <br> to the verbal feature [1p] and is part of the baseword | 
 | <span dir="rtl">جنَّنَنا</span>  | <span class='caphi'>g a n n a n n a</span>        | he/it mad us crazy     | جنَن+نا        | Cairo       |    جنّنّا                                                                                                          | 
-| <span dir="rtl">يبارككم</span>   | <span class='caphi'>b aa r i k k u m</span>       | [he] congratulates you | يبارك+كم       | Cairo       |   يباركّم                                                                                                        | 
+| <span dir="rtl">يبارككم</span>   | <span class='caphi'>y i b aa r i k k u m</span>       | [he] blesses you | يبارك+كم       | Cairo       |   يباركّم                                                                                                        | 
 | <span dir="rtl">واحشيننا</span>  | <span class='caphi'>w aa 7 sh i n n a</span>      | we miss you            | واحشين+نا      | Cairo       |   واحشنّا                                                                                                           | 
 | <span dir="rtl">مْمَلَّح</span>  | <span class='caphi'>m m a l l a 7</span>      | salted            | مْمَلَّح      | Jerusalem       |  مَّلَّح                                                                                                            |
 
@@ -430,7 +430,7 @@ The following decision notes specify the choices made in writing these particles
 
 | CODA | CAPHI | Type | Dialect |
 | ---- | ---- | ---- | ---- |
-| <span dir='rtl'> رح </span> | <span class='caphi'> r a 7 </span> | future particle | Levantine, Egyptian, Gulf |
+| <span dir='rtl'> رح </span> | <span class='caphi'> r a 7 </span> | future particle | Levantine, Gulf |
 | <span dir='rtl'> بش </span> | <span class='caphi'> b e sh </span> | future particle | Tunisian |
 | <span dir='rtl'> باش </span> | <span class='caphi'> b ee sh </span> | future particle | Tunisian |
 | <span dir='rtl'> غادي </span> | <span class='caphi'> gh aa d i </span> | future particle | Moroccan |
@@ -597,7 +597,7 @@ Nominative Pronouns are spelled as pronounced using general phonolgical rules, e
 | <span dir='rtl'>انتي</span> | <span class='caphi'>2 i n t i</span> | you [2fs] | Cairo       |
 | <span dir='rtl'>انتي</span> | <span class='caphi'>n t i</span> | you [2fs] | Rabat       |
 | <span dir='rtl'>اني</span>  | <span class='caphi'>2 a n i</span>   | I         | Tripoli     | 
-| <span dir='rtl'>نحنا</span> | <span class='caphi'>n i 7 n a</span> | we        | Cairo       | 
+| <span dir='rtl'>نحنا</span> | <span class='caphi'>n i 7 n a</span> | we        | Beirut       | 
 | <span dir='rtl'>هم</span>   | <span class='caphi'>h u m m a</span> | they      | Cairo       | 
 | <span dir='rtl'>هو</span>   | <span class='caphi'>h u w w a</span> | he, it    | Cairo       | 
 | <span dir='rtl'>هي</span>   | <span class='caphi'>h i y y a</span> | she, it   | Cairo       | 
