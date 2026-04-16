@@ -17,4 +17,5 @@ python:
   version: 3.6
   install:
     - requirements: docs/requirements.txt
-os: ubuntu-24.04
+build:
+  os: ubuntu-24.04
