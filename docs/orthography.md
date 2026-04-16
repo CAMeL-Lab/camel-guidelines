@@ -648,9 +648,8 @@ Some forms containing relative pronouns follow different spelling rules, mainly 
 | <span dir='rtl'>يا اللي</span> | <span class='caphi'>y a l l i</span> | O you who..      | Cairo | Following general rules, the vocative morpheme يا is spelled <br> separately connoting a vocative expression                                                          | 
 | <span dir='rtl'>يا اللي</span> | <span class='caphi'>y e l l i</span> | O you who..      | Tunis                                                                      | Following general rules, the vocative morpheme يا is spelled <br> separately connoting a vocative <br> expression                                                          | 
 | <span dir='rtl'>ياللي</span>   | <span class='caphi'>y a l l i</span> | who, which, whom | Beirut | هو ياللي اخترته; Note from the meaning how this is not a vocative <br> expression, and the يا is simply a part of the relative pronoun in <br> some dialects of the Levant | 
-| <span dir='rtl'>للي</span>   | <span class='caphi'>l i l l i</span> | to whom..        | Riyadh | Following general cliticization rules, the ل prepositional clitic <br> attaches to the relative pronoun without changing its spelling                                 | 
-
-
+| <span dir='rtl'>للي</span>   | <span class='caphi'>l i l l i</span> | to whom..        | Riyadh | Following general spelling rules                                 | 
+| <span dir='rtl'>باللي</span>   | <span class='caphi'>b i l l i</span> | in which..        | Riyadh | Following general cliticization rules, the ب prepositional clitic <br> attaches to the relative pronoun without changing its spelling                                 | 
 
 
 <!-- #### Specific Rules -->
