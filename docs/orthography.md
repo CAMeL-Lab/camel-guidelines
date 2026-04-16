@@ -640,7 +640,7 @@ Some of the vocative expressions used primarily for familial reference have voca
 
 ### Relative Pronouns
 
-Some forms containing relative pronouns can have different spelling rules, primarily to disambiguate differences in meaning.
+Some forms containing relative pronouns follow different spelling rules, mainly to clarify distinctions in meaning. The Alif-Lam in the form اللي is treated similarly to that in الذي، التي، etc., and is therefore modified with certain clitics in a way comparable to the definite article.
 
 | CODA                           | CAPHI                                | Gloss            | Dialect                                                                | Examples; Comments                                                                                                                                               | 
 |--------------------------------|--------------------------------------|------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
@@ -648,7 +648,7 @@ Some forms containing relative pronouns can have different spelling rules, prima
 | <span dir='rtl'>يا اللي</span> | <span class='caphi'>y a l l i</span> | O you who..      | Cairo | Following general rules, the vocative morpheme يا is spelled <br> separately connoting a vocative expression                                                          | 
 | <span dir='rtl'>يا اللي</span> | <span class='caphi'>y e l l i</span> | O you who..      | Tunis                                                                      | Following general rules, the vocative morpheme يا is spelled <br> separately connoting a vocative <br> expression                                                          | 
 | <span dir='rtl'>ياللي</span>   | <span class='caphi'>y a l l i</span> | who, which, whom | Beirut | هو ياللي اخترته; Note from the meaning how this is not a vocative <br> expression, and the يا is simply a part of the relative pronoun in <br> some dialects of the Levant | 
-| <span dir='rtl'>لاللي</span>   | <span class='caphi'>l i l l i</span> | to whom..        | Riyadh | Following general cliticization rules, the ل prepositional clitic <br> attaches to the relative pronoun without changing its spelling                                 | 
+| <span dir='rtl'>للي</span>   | <span class='caphi'>l i l l i</span> | to whom..        | Riyadh | Following general cliticization rules, the ل prepositional clitic <br> attaches to the relative pronoun without changing its spelling                                 | 
 
 
 
